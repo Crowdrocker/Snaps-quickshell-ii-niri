@@ -1,0 +1,13 @@
+sudo pacman -Syyu
+sudo pacman -Scc
+sudo pacman -Rns $(pacman -Qdtq)
+sudo pacman yay -Scc
+sudo pacman yay -Rns $(yay -Qdtq)
+sudo fc-cache -fv
+sudo flatpak update
+sudo rm -rf /run/media/wehttamsnaps/LINUXDRIVE-1/.Trash-1000/
+sudo rm -rf /run/media/wehttamsnaps/GAMEDRIVE/.Trash-1000/
+sudo rm -rf /run/media/wehttamsnaps/Wettam-Snaps-Main/.Trash-1000/
+sudo rm -rf /run/media/wehttamsnaps/PC-EXTRA-2/.Trash-1000/
+sudo rm -rf /run/media/wehttamsnaps/PC-EXTRA-2/$RECYCLE.BIN/
+sudo rm -rf /run/media/wehttamsnaps/Wettam-Snaps-Main/Games/The Witcher 3 Wild Hunt GOTY
