@@ -51,7 +51,7 @@
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/Crowdrocker/WehttamSnaps-Niri?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/Crowdrocker/WehttamSnaps-Niri?style=for-the-badge&color=b4befe) 
+![GitHub Repo stars](https://img.shields.io/github/stars/Crowdrocker/Snaps-quickshell-ii-niri?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/Crowdrocker/Snaps-quickshell-ii-niri?style=for-the-badge&color=b4befe) 
 
 <br/>
 </div>
