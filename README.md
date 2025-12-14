@@ -5,15 +5,15 @@
 </a>
 
 <p align="center">
-  <img src="https://github.com/Crowdrocker/Snaps-quickshell-ii-niri/blob/main/assets/latte.png" width="400" />
+  <img src="https://github.com/Crowdrocker/WehttamSnaps-Niri/blob/main/assets/latte.png" width="400" />
 </p>
 
 <h3 align="center">
-<img align="center" width="80%" src=https://github.com/Crowdrocker/Snaps-quickshell-ii-niri/blob/main/assets/github-header.png />
+<img align="center" width="80%" src=https://github.com/Crowdrocker/WehttamSnaps-Niri/blob/main/assets/github-header.png />
 </h3>
 
 <p align="center">
-  <img src="https://github.com/Crowdrocker/Snaps-quickshell-ii-niri/blob/main/assets/latte.png" width="400" />
+  <img src="https://github.com/Crowdrocker/WehttamSnaps-Niri/blob/main/assets/latte.png" width="400" />
 </p>
 
 <div align="center">
@@ -23,7 +23,7 @@
 ![Niri](https://img.shields.io/badge/WM-Niri-89b4fa)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
-![Stars](https://img.shields.io/github/stars/Crowdrocker/Snaps-quickshell-ii-niri?style=social)
+![Stars](https://img.shields.io/github/stars/Crowdrocker/WehttamSnaps-Niri?style=social)
 
  
 [![Twitch](https://img.shields.io/badge/Twitch-WehttamSnaps-9146FF?style=for-the-badge&logo=twitch)](https://www.twitch.tv/wehttamsnaps)
@@ -51,7 +51,7 @@
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/Crowdrocker/Snaps-quickshell-ii-niri?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/Crowdrocker/Snaps-quickshell-ii-niri?style=for-the-badge&color=b4befe) 
+![GitHub Repo stars](https://img.shields.io/github/stars/Crowdrocker/WehttamSnaps-Niri?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/Crowdrocker/WehttamSnaps-Niri?style=for-the-badge&color=b4befe) 
 
 <br/>
 </div>
@@ -214,8 +214,8 @@ Read these or suffer.
 Arch-based? Run this:
 
 ```bash
-git clone https://github.com/Crowdrocker/Snaps-quickshell-ii-niri.git
-cd Snaps-quickshell-ii-niri
+git clone https://github.com/Crowdrocker/WehttamSnaps-Niri.git
+cd WehttamSnaps-Niri
 ./setup install -y
 ```
 
@@ -229,7 +229,7 @@ Not on Arch? Check [docs/INSTALL.md](docs/INSTALL.md) for manual steps.
 Already installed? Pull and sync:
 
 ```bash
-cd Snaps-quickshell-ii-niri
+cd WehttamSnaps-Niri
 git pull
 ./setup update
 ```
@@ -374,4 +374,4 @@ This fork diverged a lot from the original - different compositor, different fea
 
 Made with ❤️ by WehttamSnaps If you found this helpful, please consider giving it a star! It helps others discover this project.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Crowdrocker/Snaps-quickshell-ii-niri&type=date&legend=top-left)](https://www.star-history.com/#Crowdrocker/Snaps-quickshell-ii-niri&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=Crowdrocker/WehttamSnaps-Niri&type=date&legend=top-left)](https://www.star-history.com/#Crowdrocker/WehttamSnaps-Niri&type=date&legend=top-left)
