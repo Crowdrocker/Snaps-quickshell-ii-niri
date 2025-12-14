@@ -162,7 +162,7 @@ Press `Mod+Shift+W` to cycle between styles, or go to Settings → Modules to mi
 4. **Mesa Optimizations:** Pre-configured for RX 580
 5. **Disable Compositor Effects:** Gaming mode toggle
 
-See `docs/GAMING.md` for detailed per-game configurations and troubleshooting.
+See [docs/GAMING.md](docs/GAMING.md) for detailed per-game configurations and troubleshooting.
 
 ```
 
