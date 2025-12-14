@@ -1,0 +1,2 @@
+# Snaps-quickshell-ii-niri
+ 
