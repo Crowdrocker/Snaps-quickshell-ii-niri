@@ -36,13 +36,16 @@
 
 <div align="center">
   
-<a href="#installation"><kbd> <br> Installation <br> </kbd></a>&ensp;&ensp;
-<a href="#Customization"><kbd> <br> Customization <br> </kbd></a>&ensp;&ensp;
 <a href="#Overview"><kbd> <br> Overview <br> </kbd></a>&ensp;&ensp;
-<a href="#Features"><kbd> <br> Features <br> </kbd></a>&ensp;&ensp;
-<a href="#Contributing"><kbd> <br> Contributing <br> </kbd></a>&ensp;&ensp;
-<a href="#Keybindings"><kbd> <br> Keybindings <br> </kbd></a>&ensp;&ensp;
-  
+<a href="#Overview"><kbd> <br> Screenshots <br> </kbd></a>&ensp;&ensp;
+<a href="#Features"><kbd> <br> Whatisthis <br> </kbd></a>&ensp;&ensp;
+<a href="#Contributing"><kbd> <br> Documentation <br> </kbd></a>&ensp;&ensp;
+<a href="#installation"><kbd> <br> QuickInstall <br> </kbd></a>&ensp;&ensp;
+<a href="#installation"><kbd> <br> Updating <br> </kbd></a>&ensp;&ensp;
+<a href="#Keybindings"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
+<a href="#Keybindings"><kbd> <br> Troubleshooting <br> </kbd></a>&ensp;&ensp; 
+<a href="#Keybindings"><kbd> <br> Credits <br> </kbd></a>&ensp;&ensp; 
+
 <br/>
 </div>
 
@@ -55,36 +58,14 @@
 
 <h3 align="center">
   <img src="https://github.com/Crowdrocker/Telegram-Animated-Emojis/blob/main/Activity/Video%20Game.webp" alt="Game" width="38" height="38" />
-  Professional Arch Linux configuration optimized for photography, gaming, and content creation.
+  Arch Linux configuration optimized for photography, gaming, and content creation.
   <img src="https://github.com/Crowdrocker/Telegram-Animated-Emojis/blob/main/People/Thumbs%20Up.webp" alt="Up" width="38" height="38" />
 </h3>
-
-  
-📸<a id="Screenshots"></a>
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Screenshots" width="450"/>
-<p align="center">
-  <img src="screenshots/desktop-overview.png" width="48%" alt="Desktop Overview">
-  <img src="screenshots/gradient-borders.png" width="48%" alt="Gradient Borders">
-</p>
-
-<p align="center">
-  <img src="screenshots/gaming-workspace.png" width="48%" alt="Gaming">
-  <img src="screenshots/photo-editing.png" width="48%" alt="Photography">
-</p>
 
 <a id="Overview"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Overview" width="450"/>
 
 This repository contains a complete, modular Niri configuration featuring:
-
-- **Noctalia Shell** (Quickshell-based) – Beautiful, responsive UI
-- **J.A.R.V.I.S. Integration** – Immersive AI assistant theme with custom sounds
-- **Photography Workflow** – Optimized for photo editing and content creation
-- **Gaming Performance** – Tuned for RX 580 with Proton GE configurations
-- **Audio Routing** – PipeWire + qpwgraph for advanced audio control
-- **Custom Branding** – WehttamSnaps theme throughout
-
----
 
 A Quickshell shell for Niri. Fork of end-4's illogical-impulse, butchered to work on a different compositor.
 
@@ -93,6 +74,14 @@ A Quickshell shell for Niri. Fork of end-4's illogical-impulse, butchered to wor
 
 > **Heads up:** almost everything here is configurable. Modules, colors, fonts, animations - if something bugs you, there's probably a toggle for it. Hit `Super+,` for settings before you rage-quit.
 
+- **J.A.R.V.I.S. Integration** – Immersive AI assistant theme with custom sounds
+- **Photography Workflow** – Optimized for photo editing and content creation
+- **Gaming Performance** – Tuned for RX 580 with Proton GE configurations
+- **Audio Routing** – PipeWire + qpwgraph for advanced audio control
+- **Custom Branding** – WehttamSnaps theme throughout
+---
+📸<a id="Screenshots"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Screenshots" width="450"/>
 ### Material ii
 
 | Overview | Sidebars |
@@ -111,7 +100,8 @@ A Quickshell shell for Niri. Fork of end-4's illogical-impulse, butchered to wor
 
 ---
 
-## What is this
+<a id="Whatisthis"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Whatisthis" width="450"/>
 
 A shell. Bar at the top, sidebars on the sides, overlays that pop up when you press keys. The usual.
 
@@ -138,8 +128,8 @@ Press `Mod+Shift+W` to cycle between styles, or go to Settings → Modules to mi
 
 ---
 
-## Documentation
-
+<a id="Documentation"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Documentation" width="450"/>
 Read these or suffer.
 
 | Doc | What's in it |
@@ -153,8 +143,8 @@ Read these or suffer.
 
 ---
 
-## Quick Install
-
+<a id="QuickInstall"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=QuickInstall" width="450"/>
 Arch-based? Run this:
 
 ```bash
@@ -167,8 +157,9 @@ Not on Arch? Check [docs/INSTALL.md](docs/INSTALL.md) for manual steps.
 
 ---
 
-## Updating
 
+<a id="Updating"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Updating" width="450"/>
 Already installed? Pull and sync:
 
 ```bash
@@ -181,8 +172,9 @@ Syncs QML and configs. Your customizations stay. Missing keybinds get added. Hot
 
 ---
 
-## Keybinds (the important ones)
-
+## (the important ones)
+<a id="Keybinds"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Keybinds" width="450"/>
 These come configured by default:
 
 | Key | What it does |
@@ -238,8 +230,9 @@ Full reference with examples: [docs/IPC.md](docs/IPC.md)
 
 ---
 
-## Troubleshooting
 
+<a id="Troubleshooting"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Troubleshooting" width="450"/>
 Something broke? Shocking.
 
 ```bash
@@ -265,12 +258,15 @@ This fork diverged a lot from the original - different compositor, different fea
 
 ---
 
-## Credits
 
+<a id="Credits"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Credits" width="450"/>
 - [**end-4**](https://github.com/end-4/dots-hyprland) –  illogical-impulse for Hyprland
 - [**Quickshell**](https://quickshell.outfoxxed.me/) – the framework that makes this possible
 - [**Niri**](https://github.com/YaLTeR/niri) – the compositor that doesn't crash
 
 ---
 
-Got questions? Something broke? Wanna flex your setup? Hit me up on Discord: `snow.f`
+Made with ❤️ by WehttamSnaps If you found this helpful, please consider giving it a star! It helps others discover this project.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Crowdrocker/Snaps-quickshell-ii-niri&type=date&legend=top-left)](https://www.star-history.com/#Crowdrocker/Snaps-quickshell-ii-niri&type=date&legend=top-left)
