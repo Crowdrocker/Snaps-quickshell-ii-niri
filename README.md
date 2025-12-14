@@ -100,7 +100,7 @@ A Quickshell shell for Niri. Fork of end-4's illogical-impulse, butchered to wor
 
 ---
 
-<a id="Whatisthis"></a>
+✨ <a id="Whatisthis"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Whatisthis" width="450"/>
 
 A shell. Bar at the top, sidebars on the sides, overlays that pop up when you press keys. The usual.
@@ -116,6 +116,15 @@ A shell. Bar at the top, sidebars on the sides, overlays that pop up when you pr
 - **Settings** - GUI config with search, so you don't have to edit JSON like a caveman
 - **GameMode** - fullscreen app? Effects go bye-bye. Your games won't stutter
 - **Idle** - screen off, lock, suspend timeouts. swayidle handles it, you configure it
+- **Gamemode + Gamescope** – Performance optimization
+- **Proton GE** – Enhanced game compatibility
+- **Steam Launch Options** – Pre-configured for 16 games
+- **Mod Manager Support** – Window rules for Vortex, MO2, Wabbajack
+
+### Audio
+- **PipeWire Routing** – Separate audio channels (game, browser, Discord, Spotify)
+- **qpwgraph** – Visual audio routing like VoiceMeter
+- **J.A.R.V.I.S. Sounds** – System event audio notifications
 
 ### Two flavors, one shell
 
@@ -128,7 +137,64 @@ Press `Mod+Shift+W` to cycle between styles, or go to Settings → Modules to mi
 
 ---
 
-<a id="Documentation"></a>
+  
+🎮<a id="Gaming Optimizations"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=GamingOptimizations" width="450"/>
+### Supported Games (Pre-configured)
+- Call of Duty HQ
+- Cyberpunk 2077
+- Fallout 4
+- FarCry 5
+- Ghost Recon Breakpoint
+- Marvel's Avengers
+- Need for Speed Payback
+- Rise of the Tomb Raider
+- Shadow of the Tomb Raider
+- The First Descendant
+- Tom Clancy's The Division 1 & 2
+- Warframe
+- Watch Dogs 1, 2, & Legion
+
+### Performance Tips
+1. **Enable Gamemode:** Automatic via launch options
+2. **Use Gamescope:** Configured per-game
+3. **Proton GE:** Latest version installed
+4. **Mesa Optimizations:** Pre-configured for RX 580
+5. **Disable Compositor Effects:** Gaming mode toggle
+
+See `docs/GAMING.md` for detailed per-game configurations and troubleshooting.
+
+```
+
+### Configure Audio Routing
+```bash
+# Launch qpwgraph
+qpwgraph
+
+# Or use automated setup
+./scripts/audio-setup.sh
+```
+
+---
+
+
+🔊<a id="J.A.R.V.I.S. Integration"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=J.A.R.V.I.S.Integration" width="450"/>
+J.A.R.V.I.S. provides audio feedback for system events:
+
+- **Startup:** "Allow me to introduce myself, I am JARVIS..."
+- **Shutdown:** "Shutting down. Have a good day, Matthew."
+- **Notifications:** "Matthew, you have a notification."
+- **Gaming Mode:** "Gaming mode activated. Systems at maximum performance."
+- **Streaming:** "Streaming systems online. All feeds operational."
+- **Warnings:** Temperature alerts and system warnings
+
+### Customize J.A.R.V.I.S.
+Edit `scripts/jarvis-manager.sh` to add or modify sound triggers.
+
+---
+
+📦<a id="Documentation"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Documentation" width="450"/>
 Read these or suffer.
 
@@ -173,7 +239,7 @@ Syncs QML and configs. Your customizations stay. Missing keybinds get added. Hot
 ---
 
 ## (the important ones)
-<a id="Keybinds"></a>
+🎹<a id="Keybinds"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Keybinds" width="450"/>
 These come configured by default:
 
@@ -231,7 +297,7 @@ Full reference with examples: [docs/IPC.md](docs/IPC.md)
 ---
 
 
-<a id="Troubleshooting"></a>
+🛠️<a id="Troubleshooting"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Troubleshooting" width="450"/>
 Something broke? Shocking.
 
@@ -244,6 +310,35 @@ qs kill -c ii && qs -c ii
 
 # Nuclear option: reload everything
 niri msg action load-config-file
+```
+### Niri won't start
+```bash
+# Check logs
+journalctl --user -u niri.service -f
+
+# Validate config
+niri validate
+```
+
+### Audio routing not working
+```bash
+# Restart PipeWire
+systemctl --user restart pipewire pipewire-pulse wireplumber
+
+# Re-run audio setup
+./scripts/audio-setup.sh
+```
+
+### Gaming performance issues
+```bash
+# Check Proton version
+protonup-qt
+
+# Verify Mesa drivers
+vulkaninfo | grep "deviceName"
+
+# Enable performance mode
+./scripts/toggle-gamemode.sh on
 ```
 
 If you're still stuck, the logs usually tell you what's missing. Usually.
@@ -259,11 +354,21 @@ This fork diverged a lot from the original - different compositor, different fea
 ---
 
 
-<a id="Credits"></a>
+🙏<a id="Credits"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Credits" width="450"/>
 - [**end-4**](https://github.com/end-4/dots-hyprland) –  illogical-impulse for Hyprland
 - [**Quickshell**](https://quickshell.outfoxxed.me/) – the framework that makes this possible
-- [**Niri**](https://github.com/YaLTeR/niri) – the compositor that doesn't crash
+- [**snowarch**](https://github.com/snowarch) – Theming concepts
+- [**Chris Titus**](https://github.com/YaLTeR/niri) – Linutil tool
+- [**Community**](https://github.com/YaLTeR/niri) – Arch Linux, Niri, and PipeWire communities
+
+---
+
+## 📞 Contact
+
+- **Twitch:** [twitch.tv/WehttamSnaps](https://twitch.tv/WehttamSnaps)
+- **YouTube:** [youtube.com/@WehttamSnaps](https://youtube.com/@WehttamSnaps)
+- **GitHub:** [github.com/Crowdrocker](https://github.com/Crowdrocker)
 
 ---
 
