@@ -37,14 +37,14 @@
 <div align="center">
   
 <a href="#Overview"><kbd> <br> Overview <br> </kbd></a>&ensp;&ensp;
-<a href="#Overview"><kbd> <br> Screenshots <br> </kbd></a>&ensp;&ensp;
-<a href="#Features"><kbd> <br> Whatisthis <br> </kbd></a>&ensp;&ensp;
-<a href="#Contributing"><kbd> <br> Documentation <br> </kbd></a>&ensp;&ensp;
-<a href="#installation"><kbd> <br> QuickInstall <br> </kbd></a>&ensp;&ensp;
-<a href="#installation"><kbd> <br> Updating <br> </kbd></a>&ensp;&ensp;
-<a href="#Keybindings"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
-<a href="#Keybindings"><kbd> <br> Troubleshooting <br> </kbd></a>&ensp;&ensp; 
-<a href="#Keybindings"><kbd> <br> Credits <br> </kbd></a>&ensp;&ensp; 
+<a href="#Screenshots"><kbd> <br> Screenshots <br> </kbd></a>&ensp;&ensp;
+<a href="#Whatisthis"><kbd> <br> Whatisthis <br> </kbd></a>&ensp;&ensp;
+<a href="#Documentation"><kbd> <br> Documentation <br> </kbd></a>&ensp;&ensp;
+<a href="#QuickInstall"><kbd> <br> QuickInstall <br> </kbd></a>&ensp;&ensp;
+<a href="#Updating"><kbd> <br> Updating <br> </kbd></a>&ensp;&ensp;
+<a href="#Keybinds"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
+<a href="#Troubleshooting"><kbd> <br> Troubleshooting <br> </kbd></a>&ensp;&ensp; 
+<a href="#Credits"><kbd> <br> Credits <br> </kbd></a>&ensp;&ensp; 
 
 <br/>
 </div>
