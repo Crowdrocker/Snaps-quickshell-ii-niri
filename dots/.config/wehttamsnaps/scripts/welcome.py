@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-WehttamSnaps Welcome App v2.0
-Modern welcome screen for Niri + Noctalia + JARVIS setup
-GitHub: github.com/Crowdrocker
+WehttamSnaps Welcome App
+Branded welcome screen for first-time Niri setup
+GitHub: https://github.com/Crowdrocker
 """
 
 import gi
@@ -13,538 +13,399 @@ import os
 import json
 import sys
 import subprocess
-from datetime import datetime
 
 
 class WehttamSnapsWelcome:
     def __init__(self):
         self.window = Gtk.Window()
         self.window.set_title("Welcome to WehttamSnaps")
-        self.window.set_default_size(1000, 800)
+        self.window.set_default_size(900, 700)
         self.window.set_position(Gtk.WindowPosition.CENTER)
-        self.window.set_resizable(True)
+        self.window.set_resizable(False)
 
-        # Window properties
+        # Non-modal window
         self.window.set_modal(False)
         self.window.set_keep_above(False)
         self.window.set_focus_on_map(True)
-        self.window.set_type_hint(Gdk.WindowTypeHint.DIALOG)
+        self.window.set_type_hint(Gdk.WindowTypeHint.NORMAL)
 
-        # Main container
-        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        # Create main container
+        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=20)
+        main_box.set_margin_start(0)
+        main_box.set_margin_end(0)
+        main_box.set_margin_top(0)
+        main_box.set_margin_bottom(30)
 
-        # Header
-        self.add_header(main_box)
+        # Add logo/branding image
+        self.add_logo(main_box)
 
-        # Notebook for tabs
-        self.add_notebook(main_box)
+        # Add welcome text
+        self.add_welcome_text(main_box)
 
-        # Footer with buttons
-        self.add_footer(main_box)
+        # Add buttons
+        self.add_buttons(main_box)
 
         self.window.add(main_box)
         self.window.connect("destroy", self.on_window_destroy)
         self.window.show_all()
 
-        # Play startup sound
+        # Play J.A.R.V.I.S. startup sound
         self.play_startup_sound()
 
     def play_startup_sound(self):
         """Play J.A.R.V.I.S. startup sound"""
-        sound_script = os.path.expanduser("~/.config/wehttamsnaps/scripts/sound-system")
-        if os.path.exists(sound_script):
+        jarvis_script = os.path.expanduser("~/.config/wehttamsnaps/scripts/jarvis-manager.sh")
+        if os.path.exists(jarvis_script) and os.access(jarvis_script, os.X_OK):
             try:
-                subprocess.Popen([sound_script, "startup"],
+                subprocess.Popen([jarvis_script, "startup"],
                                stdout=subprocess.DEVNULL,
                                stderr=subprocess.DEVNULL)
-            except:
-                pass
+            except Exception as e:
+                print(f"Could not play startup sound: {e}")
 
-    def add_header(self, container):
-        """Add branded header"""
-        header_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
-        header_box.set_margin_top(20)
-        header_box.set_margin_bottom(20)
+    def add_logo(self, container):
+        """Add WehttamSnaps logo"""
+        home_dir = os.path.expanduser("~")
 
-        # Title
-        title = Gtk.Label()
-        title.set_markup(
-            '<span size="28000" weight="bold" foreground="#89b4fa">WehttamSnaps Niri Setup</span>'
-        )
-        header_box.pack_start(title, False, False, 0)
-
-        # Subtitle
-        subtitle = Gtk.Label()
-        subtitle.set_markup(
-            '<span size="12000" foreground="#cdd6f4">Photography • Gaming • Content Creation</span>'
-        )
-        header_box.pack_start(subtitle, False, False, 0)
-
-        # Version
-        version = Gtk.Label()
-        version.set_markup(
-            f'<span size="10000" foreground="#6c7086">v{self.get_version()} • Dell XPS 8700 • RX 580</span>'
-        )
-        header_box.pack_start(version, False, False, 0)
-
-        container.pack_start(header_box, False, False, 0)
-
-    def add_notebook(self, container):
-        """Add tabbed notebook"""
-        notebook = Gtk.Notebook()
-        notebook.set_margin_start(20)
-        notebook.set_margin_end(20)
-        notebook.set_margin_bottom(10)
-
-        # Quick Start Tab
-        notebook.append_page(
-            self.create_quickstart_page(),
-            Gtk.Label(label="🚀 Quick Start")
-        )
-
-        # Workspaces Tab
-        notebook.append_page(
-            self.create_workspaces_page(),
-            Gtk.Label(label="🗂️ Workspaces")
-        )
-
-        # Features Tab
-        notebook.append_page(
-            self.create_features_page(),
-            Gtk.Label(label="⚡ Features")
-        )
-
-        # Tips Tab
-        notebook.append_page(
-            self.create_tips_page(),
-            Gtk.Label(label="💡 Pro Tips")
-        )
-
-        container.pack_start(notebook, True, True, 0)
-
-    def create_quickstart_page(self):
-        """Create quick start page"""
-        scrolled = Gtk.ScrolledWindow()
-        scrolled.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
-
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=15)
-        box.set_margin_start(30)
-        box.set_margin_end(30)
-        box.set_margin_top(20)
-        box.set_margin_bottom(20)
-
-        # Essential shortcuts section
-        self.add_section_title(box, "⌨️ Essential Shortcuts")
-
-        shortcuts = [
-            ("Mod + Space", "Application Launcher", "Noctalia launcher"),
-            ("Mod + Enter", "Terminal", "Ghostty with Fira Code"),
-            ("Mod + H", "KeyHints", "Show all keybindings"),
-            ("Mod + B", "Browser", "Firefox"),
-            ("Mod + E", "File Manager", "Thunar"),
-            ("Mod + Q", "Close Window", "With J.A.R.V.I.S. sound"),
-            ("Mod + G", "Gaming Mode", "Toggle performance mode"),
-            ("Mod + 1-0", "Workspaces", "Switch between workspaces"),
+        # Try multiple possible logo locations
+        logo_paths = [
+            os.path.join(home_dir, ".config", "wehttamsnaps", "assets", "logo.png"),
+            os.path.join(home_dir, ".config", "wehttamsnaps", "assets", "wehttamsnaps-logo.png"),
+            os.path.join(home_dir, ".local", "share", "wehttamsnaps", "logo.png"),
         ]
 
-        for key, desc, note in shortcuts:
-            self.add_shortcut_row(box, key, desc, note)
+        logo_path = None
+        for path in logo_paths:
+            if os.path.exists(path):
+                logo_path = path
+                break
 
-        # Getting started section
-        self.add_section_title(box, "🎯 Getting Started")
+        if logo_path:
+            try:
+                pixbuf = GdkPixbuf.Pixbuf.new_from_file(logo_path)
+                # Scale to reasonable size
+                width = pixbuf.get_width()
+                height = pixbuf.get_height()
+                target_width = 300
+                scale_factor = target_width / width
+                new_width = target_width
+                new_height = int(height * scale_factor)
+                pixbuf = pixbuf.scale_simple(
+                    new_width, new_height, GdkPixbuf.InterpType.BILINEAR
+                )
 
-        steps = [
-            "1. Press **Mod + Space** to open the application launcher",
-            "2. Try **Mod + H** to see all keybindings",
-            "3. Navigate workspaces with **Mod + 1-9**",
-            "4. Launch apps: **Mod + B** (Browser), **Mod + Enter** (Terminal)",
-            "5. Enable gaming mode with **Mod + G** for maximum performance",
-        ]
+                image = Gtk.Image.new_from_pixbuf(pixbuf)
+                image.set_halign(Gtk.Align.CENTER)
+                container.pack_start(image, False, False, 10)
+            except Exception as e:
+                print(f"Could not load logo: {e}")
+                self.add_text_logo(container)
+        else:
+            self.add_text_logo(container)
 
-        for step in steps:
-            label = Gtk.Label()
-            label.set_markup(f'<span foreground="#cdd6f4">{step}</span>')
-            label.set_halign(Gtk.Align.START)
-            label.set_line_wrap(True)
-            label.set_margin_bottom(5)
-            box.pack_start(label, False, False, 0)
-
-        scrolled.add(box)
-        return scrolled
-
-    def create_workspaces_page(self):
-        """Create workspaces page"""
-        scrolled = Gtk.ScrolledWindow()
-        scrolled.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
-
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=15)
-        box.set_margin_start(30)
-        box.set_margin_end(30)
-        box.set_margin_top(20)
-        box.set_margin_bottom(20)
-
-        self.add_section_title(box, "🗂️ 10 Organized Workspaces")
-
-        workspaces = [
-            ("1", "🌐 Browser", "Firefox, Brave - Web browsing"),
-            ("2", "💻 Terminal", "Ghostty, Kate - Development"),
-            ("3", "🎮 Gaming", "Steam, games - Pre-configured for RX 580"),
-            ("4", "📺 Streaming", "OBS Studio - Recording/streaming"),
-            ("5", "📸 Photography", "GIMP, Darktable, Krita - Photo workflow"),
-            ("6", "🎬 Media", "Video editing, composites"),
-            ("7", "💬 Communication", "Discord, social media"),
-            ("8", "🎵 Music", "Spotify, audio production"),
-            ("9", "📂 Files", "Thunar, file management"),
-            ("10", "⚙️ Misc", "Overflow workspace"),
-        ]
-
-        for num, icon_name, desc in workspaces:
-            self.add_workspace_row(box, num, icon_name, desc)
-
-        # Add workspace tips
-        self.add_section_title(box, "💡 Workspace Tips")
-
-        tips = [
-            "• Switch: **Mod + Number**",
-            "• Move window: **Mod + Shift + Number**",
-            "• Each workspace plays a sound when you switch (J.A.R.V.I.S.)",
-            "• Gaming mode (Mod + G) switches to iDroid sound system",
-        ]
-
-        for tip in tips:
-            label = Gtk.Label()
-            label.set_markup(f'<span foreground="#cdd6f4">{tip}</span>')
-            label.set_halign(Gtk.Align.START)
-            label.set_margin_bottom(3)
-            box.pack_start(label, False, False, 0)
-
-        scrolled.add(box)
-        return scrolled
-
-    def create_features_page(self):
-        """Create features page"""
-        scrolled = Gtk.ScrolledWindow()
-        scrolled.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
-
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=15)
-        box.set_margin_start(30)
-        box.set_margin_end(30)
-        box.set_margin_top(20)
-        box.set_margin_bottom(20)
-
-        # J.A.R.V.I.S. Section
-        self.add_section_title(box, "🤖 J.A.R.V.I.S. Sound System")
-        self.add_feature_text(box,
-            "Adaptive sound system that switches between J.A.R.V.I.S. (Paul Bettany) "
-            "and iDroid voices based on context:\n\n"
-            "• **J.A.R.V.I.S. Mode**: Photography, desktop work\n"
-            "• **iDroid Mode**: Gaming, high-performance tasks\n"
-            "• **Auto-switching**: Changes based on workspace and activity\n"
-            "• **Sound effects**: Startup, workspace switch, window close, screenshots"
+    def add_text_logo(self, container):
+        """Add ASCII text logo as fallback"""
+        logo_label = Gtk.Label()
+        logo_label.set_markup(
+            '<span size="24000" weight="bold" foreground="#89b4fa">WehttamSnaps</span>'
         )
+        logo_label.set_halign(Gtk.Align.CENTER)
+        container.pack_start(logo_label, False, False, 10)
 
-        # Photography Section
-        self.add_section_title(box, "📸 Photography Workflow")
-        self.add_feature_text(box,
-            "Professional photo editing pipeline:\n\n"
-            "1. **DigiKam**: Import and organize photos\n"
-            "2. **Darktable**: RAW processing and development\n"
-            "3. **GIMP**: Advanced editing and composites\n"
-            "4. **Krita**: Digital painting and touch-ups\n"
-            "5. **Export**: Ready for Twitch, YouTube, Instagram"
-        )
+    def add_welcome_text(self, container):
+        """Add main welcome text"""
+        # Get version
+        version = self.get_version()
 
-        # Gaming Section
-        self.add_section_title(box, "🎮 Gaming Optimizations")
-        self.add_feature_text(box,
-            "Pre-configured for AMD RX 580:\n\n"
-            "• **16 Games Optimized**: Division 2, Cyberpunk, Fallout 4, Watch Dogs series\n"
-            "• **Mesa Tweaks**: RADV_PERFTEST, mesa_glthread enabled\n"
-            "• **Gaming Mode**: Disables animations, max CPU performance\n"
-            "• **Proton GE**: Latest version via ProtonUp-Qt"
-        )
+        # Create scrollable text view
+        scrolled_window = Gtk.ScrolledWindow()
+        scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        scrolled_window.set_size_request(-1, 450)
 
-        # Audio Section
-        self.add_section_title(box, "🔊 Audio Routing")
-        self.add_feature_text(box,
-            "VoiceMeeter-like audio control with PipeWire:\n\n"
-            "• **Separate channels**: Game, Browser, Discord, Spotify\n"
-            "• **qpwgraph**: Visual audio routing (Mod + A)\n"
-            "• **OBS Integration**: Route any app to stream\n"
-            "• **Virtual sinks**: Professional audio management"
-        )
+        text_view = Gtk.TextView()
+        text_view.set_editable(False)
+        text_view.set_cursor_visible(False)
+        text_view.set_wrap_mode(Gtk.WrapMode.WORD)
+        text_view.set_left_margin(40)
+        text_view.set_right_margin(40)
+        text_view.set_top_margin(20)
+        text_view.set_bottom_margin(20)
 
-        scrolled.add(box)
-        return scrolled
+        # Set font
+        font_desc = Pango.FontDescription()
+        font_desc.set_family("Fira Code, monospace")
+        font_desc.set_size(12 * Pango.SCALE)
+        text_view.override_font(font_desc)
 
-    def create_tips_page(self):
-        """Create pro tips page"""
-        scrolled = Gtk.ScrolledWindow()
-        scrolled.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        buffer = text_view.get_buffer()
 
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=15)
-        box.set_margin_start(30)
-        box.set_margin_end(30)
-        box.set_margin_top(20)
-        box.set_margin_bottom(20)
+        # Welcome content
+        content = f"""Welcome to WehttamSnaps Niri Setup v{version}
 
-        self.add_section_title(box, "💡 Pro Tips")
+🎯 YOUR PROFESSIONAL WORKSTATION
 
-        tips = [
-            ("🎮 Gaming Performance",
-             "Enable gaming mode (Mod + G) before launching games. "
-             "This disables animations and sets CPU to performance mode."),
+This Arch Linux Niri configuration is optimized for photography, content creation, and gaming. Built specifically for the WehttamSnaps brand and workflow.
 
-            ("📸 Photography Export",
-             "Use Mod + Shift + E after saving photos - plays a sound and "
-             "confirms your export is complete."),
+⚡ QUICK START
 
-            ("🔊 Audio Setup",
-             "Launch qpwgraph (Mod + A) to visually route audio. "
-             "Save your layouts for different scenarios."),
+Essential Shortcuts:
+• Mod + Space        → Application Launcher (Noctalia)
+• Mod + Enter        → Terminal (Ghostty with Fira Code)
+• Mod + H            → Help & Keybindings Cheat Sheet
+• Mod + S            → Control Center (Quick Settings)
+• Mod + B            → Browser (Brave)
+• Mod + Q            → Close Window
+• Mod + G            → Gaming Mode Toggle
 
-            ("🎨 Webapps",
-             "Use Mod + Ctrl + Y/T/S/D for YouTube, Twitch, Spotify, Discord "
-             "in floating windows with separate cookies."),
+📸 PHOTOGRAPHY WORKFLOW (Workspace 3)
+• Mod + 3            → Jump to Photo Workspace
+• Mod + Shift + D    → Darktable (RAW Processing)
+• Mod + Shift + G    → GIMP (Photo Editing)
+• Mod + Shift + K    → Krita (Digital Art)
+• Mod + Shift + P    → DigiKam (Photo Management)
 
-            ("⌨️ Keybinds",
-             "Press Mod + H anytime to see the full keybindings cheat sheet."),
+🎮 GAMING OPTIMIZATIONS (Workspace 9)
+• Mod + 9            → Jump to Gaming Workspace
+• Mod + G            → Toggle Gaming Mode (Disable Animations)
+• Mod + Shift + S    → Launch Steam
 
-            ("🖥️ Screen Capture",
-             "In OBS, add 'Screen Capture (PipeWire)' source. "
-             "A portal dialog will let you select what to share."),
+Your library includes: Division 2, Cyberpunk 2077, Fallout 4, Watch Dogs series, and more - all pre-configured with optimal launch options for RX 580.
 
-            ("🔄 Config Reload",
-             "Modified Niri config? Reload with Mod + Shift + Ctrl + R"),
+🎨 10 ORGANIZED WORKSPACES
+1. Browser   - Web browsing
+2. Terminal  - Development & files
+3. Photo     - Photography (GIMP, Darktable, Krita)
+4. Design    - Vector graphics (Inkscape)
+5. 3D        - Blender for composites
+6. Chat      - Discord, social media
+7. Media     - Spotify, YouTube, Twitch webapps
+8. Stream    - OBS Studio, audio routing
+9. Gaming    - Steam, Lutris, all games
+10. Modding  - Vortex, MO2, Wabbajack
 
-            ("📚 Documentation",
-             "Full guides in ~/.config/wehttamsnaps/docs/ including "
-             "GAMING.md, AUDIO-ROUTING.md, TROUBLESHOOTING.md"),
-        ]
+🔊 AUDIO ROUTING
+PipeWire + qpwgraph provides VoiceMeeter-like audio control:
+• Mod + A            → Open qpwgraph
+• Separate channels for: Game, Browser, Discord, Spotify
+• See docs/AUDIO-ROUTING.md for detailed setup
 
-        for title, content in tips:
-            self.add_tip_box(box, title, content)
+🤖 J.A.R.V.I.S. INTEGRATION
+Your AI assistant provides audio feedback:
+• Startup greeting when system boots
+• "Gaming mode activated" when enabling performance mode
+• "Streaming systems online" when entering OBS workspace
+• Temperature warnings if CPU/GPU gets too hot
 
-        # Links section
-        self.add_section_title(box, "🔗 Resources")
+🎨 CUSTOMIZATION
+• Mod + Comma        → Open Noctalia Settings
+• Mod + Shift + W    → Wallpaper Selector
+• Mod + Ctrl + Space → Random Wallpaper
+• Material You colors auto-generate from wallpapers
 
-        links_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=20)
-        links_box.set_halign(Gtk.Align.CENTER)
-        links_box.set_margin_top(10)
+📚 DOCUMENTATION
+Full docs available in ~/.config/wehttamsnaps/docs/:
+• INSTALL.md - Detailed installation guide
+• QUICKSTART.md - First-time setup
+• AUDIO-ROUTING.md - PipeWire configuration
+• GAMING.md - Per-game optimizations
+• TROUBLESHOOTING.md - Common issues
 
-        links = [
-            ("📺 Twitch", "https://twitch.tv/WehttamSnaps"),
-            ("🎬 YouTube", "https://youtube.com/@WehttamSnaps"),
-            ("💻 GitHub", "https://github.com/Crowdrocker"),
-        ]
+💡 TIPS
+• Use Mod + H anytime for the keybindings cheat sheet
+• Gaming mode (Mod + G) disables animations for maximum FPS
+• Your RX 580 is pre-configured with Mesa optimizations
+• Check ~/.config/wehttamsnaps/README.md for full details
 
-        for name, url in links:
-            btn = Gtk.LinkButton(uri=url, label=name)
-            links_box.pack_start(btn, False, False, 0)
+🚀 GET STARTED
+Press Mod + Space to launch apps, or Mod + Enter for a terminal. Your WehttamSnaps workstation is ready!
 
-        box.pack_start(links_box, False, False, 0)
+"""
 
-        scrolled.add(box)
-        return scrolled
+        # Insert content
+        buffer.set_text(content)
 
-    def add_section_title(self, container, title):
-        """Add section title"""
-        label = Gtk.Label()
-        label.set_markup(f'<span size="14000" weight="bold" foreground="#89b4fa">{title}</span>')
-        label.set_halign(Gtk.Align.START)
-        label.set_margin_top(10)
-        label.set_margin_bottom(5)
-        container.pack_start(label, False, False, 0)
+        # Add signature
+        iter_end = buffer.get_end_iter()
+        buffer.insert(iter_end, "\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
+        iter_end = buffer.get_end_iter()
 
-    def add_shortcut_row(self, container, key, desc, note):
-        """Add a shortcut row"""
-        box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=15)
-        box.set_margin_bottom(5)
+        signature_tag = buffer.create_tag("signature",
+                                         scale=1.3,
+                                         weight=Pango.Weight.BOLD,
+                                         foreground="#89b4fa")
+        buffer.insert_with_tags(iter_end, "WehttamSnaps", signature_tag)
+        iter_end = buffer.get_end_iter()
 
-        # Key
-        key_label = Gtk.Label()
-        key_label.set_markup(f'<span font_family="monospace" weight="bold" foreground="#f38ba8">{key}</span>')
-        key_label.set_width_chars(20)
-        key_label.set_halign(Gtk.Align.START)
-        box.pack_start(key_label, False, False, 0)
+        buffer.insert(iter_end, "\n")
+        iter_end = buffer.get_end_iter()
 
-        # Description
-        desc_label = Gtk.Label()
-        desc_label.set_markup(f'<span weight="bold" foreground="#cdd6f4">{desc}</span>')
-        desc_label.set_width_chars(20)
-        desc_label.set_halign(Gtk.Align.START)
-        box.pack_start(desc_label, False, False, 0)
+        # Links
+        link_tag = buffer.create_tag("link",
+                                     foreground="#89b4fa",
+                                     underline=Pango.Underline.SINGLE)
 
-        # Note
-        note_label = Gtk.Label()
-        note_label.set_markup(f'<span foreground="#6c7086">{note}</span>')
-        note_label.set_halign(Gtk.Align.START)
-        box.pack_start(note_label, True, True, 0)
+        buffer.insert(iter_end, "\n📺 ")
+        iter_end = buffer.get_end_iter()
+        buffer.insert_with_tags(iter_end, "Twitch", link_tag)
+        iter_end = buffer.get_end_iter()
 
-        container.pack_start(box, False, False, 0)
+        buffer.insert(iter_end, "  •  🎬 ")
+        iter_end = buffer.get_end_iter()
+        buffer.insert_with_tags(iter_end, "YouTube", link_tag)
+        iter_end = buffer.get_end_iter()
 
-    def add_workspace_row(self, container, num, name, desc):
-        """Add workspace row"""
-        box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
-        box.set_margin_bottom(5)
+        buffer.insert(iter_end, "  •  💻 ")
+        iter_end = buffer.get_end_iter()
+        buffer.insert_with_tags(iter_end, "GitHub", link_tag)
+        iter_end = buffer.get_end_iter()
 
-        num_label = Gtk.Label()
-        num_label.set_markup(f'<span font_family="monospace" weight="bold" foreground="#f9e2af">{num}</span>')
-        num_label.set_width_chars(3)
-        box.pack_start(num_label, False, False, 0)
+        # Connect click handler
+        text_view.connect("button-press-event", self.on_text_clicked)
 
-        name_label = Gtk.Label()
-        name_label.set_markup(f'<span weight="bold" foreground="#cdd6f4">{name}</span>')
-        name_label.set_width_chars(18)
-        name_label.set_halign(Gtk.Align.START)
-        box.pack_start(name_label, False, False, 0)
+        scrolled_window.add(text_view)
+        container.pack_start(scrolled_window, True, True, 0)
 
-        desc_label = Gtk.Label()
-        desc_label.set_markup(f'<span foreground="#6c7086">{desc}</span>')
-        desc_label.set_halign(Gtk.Align.START)
-        box.pack_start(desc_label, True, True, 0)
-
-        container.pack_start(box, False, False, 0)
-
-    def add_feature_text(self, container, text):
-        """Add feature description text"""
-        label = Gtk.Label()
-        label.set_markup(f'<span foreground="#cdd6f4">{text}</span>')
-        label.set_halign(Gtk.Align.START)
-        label.set_line_wrap(True)
-        label.set_margin_bottom(10)
-        container.pack_start(label, False, False, 0)
-
-    def add_tip_box(self, container, title, content):
-        """Add a tip box"""
-        frame = Gtk.Frame()
-        frame.set_margin_bottom(10)
-
-        box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=5)
-        box.set_margin_start(15)
-        box.set_margin_end(15)
-        box.set_margin_top(10)
-        box.set_margin_bottom(10)
-
-        title_label = Gtk.Label()
-        title_label.set_markup(f'<span weight="bold" foreground="#89b4fa">{title}</span>')
-        title_label.set_halign(Gtk.Align.START)
-        box.pack_start(title_label, False, False, 0)
-
-        content_label = Gtk.Label()
-        content_label.set_markup(f'<span foreground="#cdd6f4">{content}</span>')
-        content_label.set_halign(Gtk.Align.START)
-        content_label.set_line_wrap(True)
-        box.pack_start(content_label, False, False, 0)
-
-        frame.add(box)
-        container.pack_start(frame, False, False, 0)
-
-    def add_footer(self, container):
-        """Add footer with action buttons"""
+    def add_buttons(self, container):
+        """Add action buttons"""
         button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
-        button_box.set_margin_start(20)
-        button_box.set_margin_end(20)
-        button_box.set_margin_bottom(20)
+        button_box.set_halign(Gtk.Align.FILL)
+        button_box.set_margin_start(40)
+        button_box.set_margin_end(40)
 
-        # Dismiss forever
-        dismiss_btn = Gtk.Button(label="Don't Show Again")
-        dismiss_btn.connect("clicked", self.on_dismiss_forever)
-        button_box.pack_start(dismiss_btn, False, False, 0)
+        # Dismiss forever button
+        dismiss_button = Gtk.Button(label="Don't Show Again")
+        dismiss_button.connect("clicked", self.on_dismiss_forever)
+        dismiss_button.set_halign(Gtk.Align.START)
+        button_box.pack_start(dismiss_button, False, False, 0)
 
         # Spacer
-        button_box.pack_start(Gtk.Box(), True, True, 0)
+        spacer = Gtk.Box()
+        button_box.pack_start(spacer, True, True, 0)
 
-        # Quick actions
-        keybinds_btn = Gtk.Button(label="⌨️ KeyHints")
-        keybinds_btn.connect("clicked", self.on_launch_keyhints)
-        button_box.pack_start(keybinds_btn, False, False, 0)
+        # Open docs button
+        docs_button = Gtk.Button(label="📚 View Docs")
+        docs_button.connect("clicked", self.on_open_docs)
+        button_box.pack_start(docs_button, False, False, 0)
 
-        docs_btn = Gtk.Button(label="📚 Docs")
-        docs_btn.connect("clicked", self.on_open_docs)
-        button_box.pack_start(docs_btn, False, False, 0)
-
-        config_btn = Gtk.Button(label="⚙️ Config Editor")
-        config_btn.connect("clicked", self.on_open_config_editor)
-        button_box.pack_start(config_btn, False, False, 0)
-
-        # Get started
-        start_btn = Gtk.Button(label="🚀 Get Started")
-        start_btn.connect("clicked", self.on_close)
-        button_box.pack_start(start_btn, False, False, 0)
+        # Close button
+        close_button = Gtk.Button(label="Get Started")
+        close_button.connect("clicked", self.on_close)
+        close_button.set_halign(Gtk.Align.END)
+        button_box.pack_start(close_button, False, False, 0)
 
         container.pack_start(button_box, False, False, 0)
 
     def on_dismiss_forever(self, button):
-        """Don't show welcome again"""
+        """Save preference to never show welcome again"""
         config_dir = os.path.expanduser("~/.config/wehttamsnaps")
         os.makedirs(config_dir, exist_ok=True)
 
-        config = {
-            "dismissed": True,
-            "dismissed_at": datetime.now().isoformat(),
-            "version": self.get_version()
-        }
+        config_file = os.path.join(config_dir, "welcome.json")
+        config = {"dismissed": True, "timestamp": GLib.get_real_time()}
 
         try:
-            with open(os.path.join(config_dir, "welcome.json"), "w") as f:
+            with open(config_file, "w") as f:
                 json.dump(config, f, indent=2)
+            print("Welcome screen dismissed forever")
         except Exception as e:
-            print(f"Error saving config: {e}")
+            print(f"Error saving welcome config: {e}")
 
         Gtk.main_quit()
 
-    def on_launch_keyhints(self, button):
-        """Launch keyhints script"""
-        script = os.path.expanduser("~/.config/wehttamsnaps/scripts/KeyHints.sh")
-        if os.path.exists(script):
-            subprocess.Popen([script], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
     def on_open_docs(self, button):
-        """Open documentation folder"""
-        docs = os.path.expanduser("~/.config/wehttamsnaps/docs")
-        if os.path.exists(docs):
-            subprocess.Popen(["thunar", docs], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        """Open documentation in file manager"""
+        docs_path = os.path.expanduser("~/.config/wehttamsnaps/docs")
 
-    def on_open_config_editor(self, button):
-        """Open Niri quick settings"""
-        script = os.path.expanduser("~/.config/wehttamsnaps/scripts/niri-quick-settings.sh")
-        if os.path.exists(script):
-            subprocess.Popen([script], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        if os.path.exists(docs_path):
+            try:
+                subprocess.Popen(["thunar", docs_path],
+                               stdout=subprocess.DEVNULL,
+                               stderr=subprocess.DEVNULL)
+            except:
+                try:
+                    subprocess.Popen(["xdg-open", docs_path],
+                                   stdout=subprocess.DEVNULL,
+                                   stderr=subprocess.DEVNULL)
+                except Exception as e:
+                    print(f"Could not open docs: {e}")
 
     def on_close(self, button):
         """Close welcome screen"""
         Gtk.main_quit()
 
+    def on_text_clicked(self, text_view, event):
+        """Handle clicks on links"""
+        if event.button == 1:
+            x, y = text_view.window_to_buffer_coords(
+                Gtk.TextWindowType.WIDGET, int(event.x), int(event.y)
+            )
+            iter_result = text_view.get_iter_at_location(x, y)
+
+            if iter_result[0]:
+                iter_pos = iter_result[1]
+                tags = iter_pos.get_tags()
+
+                for tag in tags:
+                    if hasattr(tag, "get_property"):
+                        tag_name = tag.get_property("name")
+                        if tag_name == "link":
+                            # Determine which link based on surrounding text
+                            start = iter_pos.copy()
+                            start.backward_chars(10)
+                            end = iter_pos.copy()
+                            end.forward_chars(10)
+                            context = text_view.get_buffer().get_text(start, end, False)
+
+                            if "Twitch" in context:
+                                self.open_url("https://twitch.tv/WehttamSnaps")
+                            elif "YouTube" in context:
+                                self.open_url("https://youtube.com/@WehttamSnaps")
+                            elif "GitHub" in context:
+                                self.open_url("https://github.com/Crowdrocker")
+
+                            return True
+        return False
+
+    def open_url(self, url):
+        """Open URL in default browser"""
+        try:
+            subprocess.Popen(["xdg-open", url],
+                           stdout=subprocess.DEVNULL,
+                           stderr=subprocess.DEVNULL)
+        except Exception as e:
+            print(f"Could not open URL: {e}")
+
     def get_version(self):
-        """Get version number"""
-        paths = [
-            "~/.config/wehttamsnaps/VERSION",
-            "~/.local/share/wehttamsnaps/VERSION"
+        """Get WehttamSnaps version"""
+        version_paths = [
+            os.path.expanduser("~/.config/wehttamsnaps/VERSION"),
+            os.path.expanduser("~/.local/share/wehttamsnaps/VERSION"),
         ]
-        for path in paths:
-            expanded = os.path.expanduser(path)
-            if os.path.exists(expanded):
+
+        for path in version_paths:
+            if os.path.exists(path):
                 try:
-                    with open(expanded) as f:
+                    with open(path, "r") as f:
                         return f.read().strip()
                 except:
                     pass
-        return "2.0.0"
+
+        return "1.0.0"
 
     def on_window_destroy(self, widget):
-        """Handle window close"""
+        """Handle window destruction"""
         Gtk.main_quit()
 
 
 def should_show_welcome():
     """Check if welcome should be shown"""
     config_file = os.path.expanduser("~/.config/wehttamsnaps/welcome.json")
+
     if not os.path.exists(config_file):
         return True
 
     try:
-        with open(config_file) as f:
+        with open(config_file, "r") as f:
             config = json.load(f)
         return not config.get("dismissed", False)
     except:
@@ -553,23 +414,37 @@ def should_show_welcome():
 
 def main():
     """Main entry point"""
+    # Check for force flag
     if len(sys.argv) > 1 and sys.argv[1] == "--force":
         pass
     elif not should_show_welcome():
-        print("Welcome screen dismissed")
+        print("Welcome screen has been dismissed")
         return
 
     # Apply CSS styling
-    css = """
+    css_provider = Gtk.CssProvider()
+    css_data = """
     * {
         font-family: "Fira Code", "Monospace", monospace;
     }
 
     window {
         background: #1e1e2e;
+        color: #cdd6f4;
     }
 
     label {
+        color: #cdd6f4;
+    }
+
+    textview {
+        background: #1e1e2e;
+        color: #cdd6f4;
+        border: none;
+    }
+
+    textview text {
+        background: #1e1e2e;
         color: #cdd6f4;
     }
 
@@ -578,8 +453,9 @@ def main():
         color: #1e1e2e;
         border: none;
         border-radius: 8px;
-        padding: 8px 16px;
+        padding: 10px 20px;
         font-weight: bold;
+        min-width: 120px;
         min-height: 36px;
     }
 
@@ -587,39 +463,20 @@ def main():
         background: #b4c8fa;
     }
 
-    notebook {
+    scrolledwindow {
+        border: none;
         background: #1e1e2e;
-    }
-
-    notebook header {
-        background: #313244;
-    }
-
-    notebook tab {
-        background: #313244;
-        color: #cdd6f4;
-        padding: 8px 16px;
-    }
-
-    notebook tab:checked {
-        background: #89b4fa;
-        color: #1e1e2e;
-    }
-
-    frame {
-        border: 1px solid #45475a;
-        border-radius: 8px;
     }
     """
 
-    provider = Gtk.CssProvider()
-    provider.load_from_data(css.encode())
+    css_provider.load_from_data(css_data.encode())
+
+    screen = Gdk.Screen.get_default()
     Gtk.StyleContext.add_provider_for_screen(
-        Gdk.Screen.get_default(),
-        provider,
-        Gtk.STYLE_PROVIDER_PRIORITY_USER
+        screen, css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER
     )
 
+    # Create and show window
     WehttamSnapsWelcome()
     Gtk.main()
 
