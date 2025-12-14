@@ -1,4 +1,90 @@
-# ii on Niri
+<div align = center>
+  
+<a href="https://discord.gg/9bAVTCNZ">
+    <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FnTaknDvdUA%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=WehttamSnaps%20Community&labelColor=ebbcba&color=8A2BE2">
+</a>
+
+<p align="center">
+  <img src="https://github.com/Crowdrocker/Snaps-quickshell-ii-niri/blob/main/assets/latte.png" width="400" />
+</p>
+
+<h3 align="center">
+<img align="center" width="80%" src=https://github.com/Crowdrocker/Snaps-quickshell-ii-niri/blob/main/assets/github-header.png />
+</h3>
+
+<p align="center">
+  <img src="https://github.com/Crowdrocker/Snaps-quickshell-ii-niri/blob/main/assets/latte.png" width="400" />
+</p>
+
+<div align="center">
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Arch Linux](https://img.shields.io/badge/Arch-Linux-1793D1?logo=arch-linux&logoColor=white)
+![Niri](https://img.shields.io/badge/WM-Niri-89b4fa)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+![Stars](https://img.shields.io/github/stars/Crowdrocker/Snaps-quickshell-ii-niri?style=social)
+
+ 
+[![Twitch](https://img.shields.io/badge/Twitch-WehttamSnaps-9146FF?style=for-the-badge&logo=twitch)](https://www.twitch.tv/wehttamsnaps)
+[![YouTube](https://img.shields.io/badge/YouTube-WehttamSnaps-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@WehttamSnaps)
+[![GitHub](https://img.shields.io/badge/GitHub-Crowdrocker-181717?style=for-the-badge&logo=github)](https://github.com/Crowdrocker)
+
+</div>
+
+</div><br>
+
+<div align="center">
+  
+<a href="#installation"><kbd> <br> Installation <br> </kbd></a>&ensp;&ensp;
+<a href="#Customization"><kbd> <br> Customization <br> </kbd></a>&ensp;&ensp;
+<a href="#Overview"><kbd> <br> Overview <br> </kbd></a>&ensp;&ensp;
+<a href="#Features"><kbd> <br> Features <br> </kbd></a>&ensp;&ensp;
+<a href="#Contributing"><kbd> <br> Contributing <br> </kbd></a>&ensp;&ensp;
+<a href="#Keybindings"><kbd> <br> Keybindings <br> </kbd></a>&ensp;&ensp;
+  
+<br/>
+</div>
+
+<div align="center">
+
+![GitHub Repo stars](https://img.shields.io/github/stars/Crowdrocker/WehttamSnaps-Niri?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/Crowdrocker/WehttamSnaps-Niri?style=for-the-badge&color=b4befe) 
+
+<br/>
+</div>
+
+<h3 align="center">
+  <img src="https://github.com/Crowdrocker/Telegram-Animated-Emojis/blob/main/Activity/Video%20Game.webp" alt="Game" width="38" height="38" />
+  Professional Arch Linux configuration optimized for photography, gaming, and content creation.
+  <img src="https://github.com/Crowdrocker/Telegram-Animated-Emojis/blob/main/People/Thumbs%20Up.webp" alt="Up" width="38" height="38" />
+</h3>
+
+  
+📸<a id="Screenshots"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Screenshots" width="450"/>
+<p align="center">
+  <img src="screenshots/desktop-overview.png" width="48%" alt="Desktop Overview">
+  <img src="screenshots/gradient-borders.png" width="48%" alt="Gradient Borders">
+</p>
+
+<p align="center">
+  <img src="screenshots/gaming-workspace.png" width="48%" alt="Gaming">
+  <img src="screenshots/photo-editing.png" width="48%" alt="Photography">
+</p>
+
+<a id="Overview"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Overview" width="450"/>
+
+This repository contains a complete, modular Niri configuration featuring:
+
+- **Noctalia Shell** (Quickshell-based) – Beautiful, responsive UI
+- **J.A.R.V.I.S. Integration** – Immersive AI assistant theme with custom sounds
+- **Photography Workflow** – Optimized for photo editing and content creation
+- **Gaming Performance** – Tuned for RX 580 with Proton GE configurations
+- **Audio Routing** – PipeWire + qpwgraph for advanced audio control
+- **Custom Branding** – WehttamSnaps theme throughout
+
+---
 
 A Quickshell shell for Niri. Fork of end-4's illogical-impulse, butchered to work on a different compositor.
 
