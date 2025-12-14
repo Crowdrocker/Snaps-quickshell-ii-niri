@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Spotify
+Comment=WehttamSnaps Webapp: Spotify
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch spotify
+Icon=spotify
+Terminal=false
+Categories=music;
+Keywords=web;browser;webapp;
+StartupWMClass=Spotify

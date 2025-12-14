@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Discord Web
+Comment=WehttamSnaps Webapp: Discord Web
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch discord
+Icon=discord
+Terminal=false
+Categories=communication;
+Keywords=web;browser;webapp;
+StartupWMClass=DiscordWeb

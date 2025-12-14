@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WehttamSnaps Audio Setup
+Comment=Advanced audio routing configuration
+Exec=/scripts/audio-setup.sh
+Icon=audio-volume-high
+Terminal=true
+Type=Application
+Categories=AudioVideo;System;
+Keywords=wehttamsnaps;jarvis;audio;routing;

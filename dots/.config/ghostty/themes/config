@@ -1,0 +1,53 @@
+
+# The syntax is "key = value". The whitespace around the equals doesn't matter.
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+# wght = 12
+# keybind = clear
+# keybind = ctrl+z=close_surface
+# keybind = ctrl+d=unbind
+# keybind = ctrl+shift+t=unbind
+
+# keybind = ctrl+space>shift+\=new_split:right
+# keybind = ctrl+space>-=new_split:down
+# keybind = ctrl+space>c=new_tab
+# keybind = ctrl+space>n=next_tab
+# keybind = ctrl+space>p=previous_tab
+# keybind = ctrl+space>h=goto_split:left
+# keybind = ctrl+space>l=goto_split:right
+# keybind = ctrl+space>j=goto_split:bottom
+# keybind = ctrl+space>k=goto_split:top
+# keybind = ctrl+shift+c=copy_to_clipboard
+# keybind = ctrl+shift+v=paste_from_clipboard
+
+term = xterm-ghostty
+
+gtk-tabs-location = bottom
+gtk-wide-tabs = false
+gtk-single-instance = true
+
+window-padding-x = 7
+window-padding-y = 7
+
+window-save-state = always
+
+confirm-close-surface=false
+
+font-family = JetBrainsMono NF
+font-style = SemiBold
+font-style-bold = Bold
+font-style-italic = SemiBold Italic
+font-style-bold-italic = Bold Italic
+
+# font-family = CaskaydiaMono Nerd Font
+# font-family = JetBrainsMono Nerd Font
+# font-family = InputMono Nerd Font
+font-size = 13
+font-feature = -calt
+theme = tokyonight_night
+cursor-text = #000000
+
+window-decoration = false
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WehttamSnaps YouTube
+Comment=Gaming and streaming focused YouTube experience
+Exec=/home/wehttamsnaps/.config/wehttamsnaps-webapps/youtube.sh
+Icon=youtube
+Terminal=false
+Categories=AudioVideo;Video;Network;
+StartupWMClass=wehttamsnaps-youtube
+Keywords=YouTube;Video;Streaming;Gaming;Entertainment;

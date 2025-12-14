@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Red Dead Redemption 2
+Exec=flatpak run --command=/app/bin/faugus-run io.github.Faugus.faugus-launcher --game red-dead-redemption-2
+Icon=/home/wehttamsnaps/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/icons/red-dead-redemption-2.ico
+Type=Application
+Categories=Game;
+Path=/run/media/wehttamsnaps/Wettam-Snaps-Main/Games/Red Dead Redemption 2

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GitHub
+Comment=WehttamSnaps Webapp: GitHub
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch github
+Icon=github
+Terminal=false
+Categories=development;
+Keywords=web;browser;webapp;
+StartupWMClass=GitHub

@@ -1,13 +1,25 @@
-*.tar
-*.tar.*
-*.jar
-*.exe
-*.msi
-*.zip
-*.tgz
-*.log
-*.log.*
-*.sig
+# Editor/IDE
+.ii-backup.patch
+.amazonq
+AGENTS.md
+.kiro
+.vscode
+*.swp
+*~
+.context
 
-pkg/
-src/
+# Docs (internal)
+docs/OPTIMIZATION.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts
+*.qmlc
+*.jsc
+
+# Debug
+debug_log.txt
+dots/.local/state/Top-5-Bootloader-Themes/

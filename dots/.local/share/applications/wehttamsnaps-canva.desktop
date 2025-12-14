@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Canva
+Comment=WehttamSnaps Webapp: Canva
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch canva
+Icon=canva
+Terminal=false
+Categories=design;
+Keywords=web;browser;webapp;
+StartupWMClass=Canva

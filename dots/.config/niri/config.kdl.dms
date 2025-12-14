@@ -1,0 +1,261 @@
+// WehttamSnaps Niri Configuration
+// Author: Matthew (Crowdrocker)
+// Hardware: Dell XPS 8700 - i7-4790 @ 4.0GHz, RX 580, 16GB RAM
+// Display: DP-3 1920x1080@60Hz
+
+
+
+// Load modular configuration files
+// Files are processed in order, later files override earlier ones
+
+// Add to the end of ~/.config/niri/config.kdl
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+
+// Base configuration (essential settings)
+include "snaps/00-base.kdl"
+
+// Keybindings (all keyboard shortcuts)
+include "snaps/10-dms_keybinds.kdl"
+
+// Window rules (app-specific behavior)
+include "snaps/20-rules.kdl"
+
+// Workspace configuration
+include "snaps/30-workspaces.kdl"
+
+// Gaming-specific settings
+include "snaps/40-gaming.kdl"
+
+// User overrides (your custom tweaks)
+include "snaps/99-overrides.kdl"
+
+// rules.kdl
+include "snaps/05-dms_startup.kdl"
+
+// ╭────────────────────────────── INPUT ──────────────────────────────╮
+input {
+    keyboard {
+        xkb {
+            layout "us"
+        }
+        numlock
+    }
+    touchpad {
+        tap
+        natural-scroll
+    }
+    focus-follows-mouse
+    workspace-auto-back-and-forth
+}
+// ╰──────────────────────────────────────────────────────────────────╯
+
+// ╭───────────────────────────── OUTPUT ─────────────────────────────╮
+output "DP-2" {
+    mode "1920x1080@60.000"
+    scale 1.0
+    position x=0 y=0
+    variable-refresh-rate // on-demand=true
+    focus-at-startup
+    backdrop-color "#001100"
+}
+
+output "HDMI-A-1" {
+    mode "1280x720@60.000"
+    scale 0.0
+    position x=1280 y=0
+    variable-refresh-rate // on-demand=true
+    focus-at-startup
+    backdrop-color "#001100"
+}
+
+
+// ╰──────────────────────────────────────────────────────────────────╯
+
+// ╭───────────────────────────── CURSOR ─────────────────────────────╮
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
+    hide-when-typing
+    hide-after-inactive-ms 5000
+}
+// ╰──────────────────────────────────────────────────────────────────╯
+
+// ╭───────────────────────────── LAYOUT ─────────────────────────────╮
+layout {
+    gaps 12 // Gap between windows
+    center-focused-column "never" // Don’t auto-center focused column
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.96
+        proportion 1.0
+    }
+
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    border {
+        width 2
+        active-gradient from="#F52A65" to="#E0AF68" angle=-45 relative-to="workspace-view"
+        inactive-gradient from="#E9E9ED" to="#15161E" angle=-45 relative-to="workspace-view"
+    }
+
+    focus-ring {
+        width 3
+        active-gradient from="#f38ba8" to="#f5c2e7" angle=45 relative-to="workspace-view"
+        inactive-gradient from="#45475a" to="#585b70" angle=45 relative-to="workspace-view"
+    }
+
+    shadow {
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+
+    background-color "transparent"
+    default-column-width { proportion 0.5; }
+    // Struts for Noctalia bar (adjust if using top bar)
+    struts {
+        top 0
+        bottom 0
+    }
+}
+// ╰──────────────────────────────────────────────────────────────────╯
+
+// ╭───────────────────────────── gestures ───────────────────────────╮
+gestures {
+    dnd-edge-view-scroll {
+        trigger-width 30
+        delay-ms 100
+        max-speed 1500
+    }
+
+    dnd-edge-workspace-switch {
+        trigger-height 50
+        delay-ms 100
+        max-speed 1500
+    }
+
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
+}
+// ╰──────────────────────────────────────────────────────────────────╯
+
+// ╭───────────────────────────── OVERVIEW ───────────────────────────╮
+overview {
+    workspace-shadow {
+        off
+    }
+}
+config-notification {
+    disable-failed
+}
+// ╰──────────────────────────────────────────────────────────────────╯
+
+// ╭─────────────────────────────── ENVIRONMENT VARIABLES ────────────────────────────╮
+environment {
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    GDK_BACKEND "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    RADV_PERFTEST "gpl"
+    mesa_glthread "true"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
+}
+// ╰──────────────────────────────────────────────────────────────────────────────────╯
+
+// ╭─────────────────────────────── GENERAL SETTINGS ─────────────────────────────────╮
+prefer-no-csd
+animations {
+    workspace-switch {
+        spring damping-ratio=0.80 stiffness=523 epsilon=0.0001
+    }
+    window-open {
+        duration-ms 150
+        curve "ease-out-expo"
+    }
+    window-close {
+        duration-ms 150
+        curve "ease-out-quad"
+    }
+    horizontal-view-movement {
+        spring damping-ratio=0.85 stiffness=423 epsilon=0.0001
+    }
+    window-movement {
+        spring damping-ratio=0.75 stiffness=323 epsilon=0.0001
+    }
+    window-resize {
+        spring damping-ratio=0.85 stiffness=423 epsilon=0.0001
+    }
+    config-notification-open-close {
+        spring damping-ratio=0.65 stiffness=923 epsilon=0.001
+    }
+    screenshot-ui-open {
+        duration-ms 200
+        curve "ease-out-quad"
+    }
+    overview-open-close {
+        spring damping-ratio=0.85 stiffness=800 epsilon=0.0001
+    }
+}
+// ╰──────────────────────────────────────────────────────────────────────────────────╯
+
+// ╭─────────────────────────────── SCREENSHOT DIRECTORY ─────────────────────────────╮
+screenshot-path "~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png"
+// ╰──────────────────────────────────────────────────────────────────────────────────╯
+
+// ╭─────────────────────────────── HOTKEY OVERLAY ───────────────────────────────────╮
+hotkey-overlay {
+    skip-at-startup
+    hide-not-bound
+}
+
+// ╰──────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+// ╭─────────────────────────────── DEBUG SETTINGS ───────────────────────────────────╮
+debug {
+    //enable-offload-optimizations true
+    wait-for-frame-completion-before-queueing
+    render-drm-device "/dev/dri/renderD128"
+    honor-xdg-activation-with-invalid-serial
+}
+// ╰──────────────────────────────────────────────────────────────────────────────────╯
+
+// ╭───────────────────────────── CLIPBOARD SETTINGS ─────────────────────────────────╮
+clipboard {
+    disable-primary
+}
+// ╰──────────────────────────────────────────────────────────────────────────────────╯
+
+
+// WehttamSnaps branding comment
+/*
+ * WehttamSnaps Arch Linux Niri Configuration
+ * GitHub: https://github.com/Crowdrocker/wehttamsnaps-dotfiles
+ *
+ * Optimized for:
+ * - Photography workflow (Darktable, GIMP, RawTherapee)
+ * - Gaming performance (RX 580 + i7-4790)
+ * - J.A.R.V.I.S. themed experience
+ * - Productivity and content creation
+ *
+ * "It just works!" - WehttamSnaps
+ */

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Rockstar Launcher
+Exec=flatpak run --command=/app/bin/faugus-run io.github.Faugus.faugus-launcher --game rockstar-launcher
+Icon=/home/wehttamsnaps/.var/app/io.github.Faugus.faugus-launcher/config/faugus-launcher/icons/rockstar-launcher.ico
+Type=Application
+Categories=Game;
+Path=/run/media/wehttamsnaps/LINUXDRIVE-1/Games/Faugus/rockstar-launcher/drive_c/Program Files/Rockstar Games/Launcher

@@ -1,0 +1,172 @@
+02:48:36.268: Platform: Wayland
+02:48:36.268: CPU Name: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+02:48:36.268: CPU Speed: 3696.714MHz
+02:48:36.268: Physical Cores: 4, Logical Cores: 8
+02:48:36.268: Physical Memory: 15935MB Total, 2233MB Free
+02:48:36.268: Kernel Version: Linux 6.17.9-2-cachyos
+02:48:36.268: Distribution: "CachyOS Linux" Unknown
+02:48:36.268: Desktop Environment: niri (niri)
+02:48:36.268: Session Type: wayland
+02:48:36.270: Current Date/Time: 2025-12-03, 02:48:36 AM
+02:48:36.270: Browser Hardware Acceleration: true
+02:48:36.270: Qt Version: 6.10.1 (runtime), 6.10.0 (compiled)
+02:48:36.270: Portable mode: false
+02:48:36.317: OBS 32.0.2 (linux)
+02:48:36.317: ---------------------------------
+02:48:36.318: ---------------------------------
+02:48:36.318: audio settings reset:
+02:48:36.318: 	samples per sec: 48000
+02:48:36.318: 	speakers:        2
+02:48:36.318: 	max buffering:   960 milliseconds
+02:48:36.318: 	buffering type:  dynamically increasing
+02:48:36.319: ---------------------------------
+02:48:36.319: Initializing OpenGL...
+02:48:36.319: Using EGL/Wayland
+02:48:36.361: Initialized EGL 1.5
+02:48:36.380: Loading up OpenGL on adapter AMD AMD Radeon RX 580 Series (radeonsi, polaris10, ACO, DRM 3.64, 6.17.9-2-cachyos)
+02:48:36.380: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.2.7-cachyos1.2, shading language 4.60
+02:48:36.414: ---------------------------------
+02:48:36.414: video settings reset:
+02:48:36.414: 	base resolution:   1920x1080
+02:48:36.414: 	output resolution: 1280x720
+02:48:36.414: 	downscale filter:  Bicubic
+02:48:36.414: 	fps:               30/1
+02:48:36.414: 	format:            NV12
+02:48:36.414: 	YUV mode:          Rec. 709/Partial
+02:48:36.414: NV12 texture support enabled
+02:48:36.414: P010 texture support not available
+02:48:36.416: Audio monitoring device:
+02:48:36.416: 	name: Default
+02:48:36.416: 	id: default
+02:48:36.417: ---------------------------------
+02:48:36.418: Failed to load 'en-US' text for module: 'decklink-captions.so'
+02:48:36.419: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+02:48:36.420: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+02:48:36.420: Failed to initialize module 'decklink.so'
+02:48:36.520: [pipewire] Available capture sources:
+02:48:36.520: [pipewire]     - Monitor source
+02:48:36.520: [pipewire]     - Window source
+02:48:36.528: [linux-vkcapture] plugin loaded successfully (version 1.5.3)
+02:48:36.547: VAAPI: API version 1.22
+02:48:36.547: FFmpeg VAAPI H264 encoding supported
+02:48:36.551: FFmpeg VAAPI AV1 encoding not supported
+02:48:36.556: FFmpeg VAAPI HEVC encoding supported
+02:48:36.558: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+02:48:36.558: 
+02:48:36.559: NVENC not supported
+02:48:36.559: Failed to initialize module 'obs-nvenc.so'
+02:48:36.577: [obs-vaapi] version: 0.4.2, gst-runtime: 1.26.9
+02:48:36.589: [obs-vaapi] found vah265enc
+02:48:36.589: [obs-vaapi] found vah264enc
+02:48:36.589: [obs-vaapi] found vaapih264enc
+02:48:36.589: [obs-vaapi] found vaapih265enc
+02:48:36.603: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+02:48:36.603: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.0 | Qt version (run-time): 6.10.1
+02:48:36.603: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+02:48:36.608: [obs-websocket] [obs_module_load] Module loaded.
+02:48:36.611: ---------------------------------
+02:48:36.611:   Loaded Modules:
+02:48:36.611:     text-freetype2.so
+02:48:36.611:     rtmp-services.so
+02:48:36.611:     obs-x264.so
+02:48:36.611:     obs-websocket.so
+02:48:36.611:     obs-webrtc.so
+02:48:36.611:     obs-vst.so
+02:48:36.611:     obs-vaapi.so
+02:48:36.611:     obs-transitions.so
+02:48:36.611:     obs-qsv11.so
+02:48:36.611:     obs-outputs.so
+02:48:36.611:     obs-libfdk.so
+02:48:36.611:     obs-filters.so
+02:48:36.611:     obs-ffmpeg.so
+02:48:36.611:     linux-vkcapture.so
+02:48:36.611:     linux-v4l2.so
+02:48:36.611:     linux-pulseaudio.so
+02:48:36.611:     linux-pipewire.so
+02:48:36.611:     linux-jack.so
+02:48:36.611:     linux-capture.so
+02:48:36.611:     linux-alsa.so
+02:48:36.611:     image-source.so
+02:48:36.611:     frontend-tools.so
+02:48:36.611:     decklink-output-ui.so
+02:48:36.611:     decklink-captions.so
+02:48:36.611: ---------------------------------
+02:48:36.611: ---------------------------------
+02:48:36.611: Available Encoders:
+02:48:36.611:   Video Encoders:
+02:48:36.611: 	- ffmpeg_svt_av1 (SVT-AV1)
+02:48:36.611: 	- ffmpeg_aom_av1 (AOM AV1)
+02:48:36.611: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+02:48:36.611: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+02:48:36.618: 	- obs-va-vah265enc (VAAPI H.265 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+02:48:36.625: 	- obs-va-vah264enc (VAAPI H.264 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+02:48:36.625: 	- obs-vaapi-vaapih264enc (VAAPI H.264  (Legacy))
+02:48:36.625: 	- obs-vaapi-vaapih265enc (VAAPI H.265  (Legacy))
+02:48:36.625: 	- obs_x264 (x264)
+02:48:36.625:   Audio Encoders:
+02:48:36.625: 	- ffmpeg_aac (FFmpeg AAC)
+02:48:36.625: 	- ffmpeg_opus (FFmpeg Opus)
+02:48:36.625: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+02:48:36.625: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+02:48:36.625: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+02:48:36.625: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+02:48:36.625: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+02:48:36.625: 	- libfdk_aac (libfdk AAC)
+02:48:36.625: ==== Startup complete ===============================================
+02:48:36.661: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+02:48:36.661: All scene data cleared
+02:48:36.661: ------------------------------------------------
+02:48:36.665: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:48:36.665: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:48:36.665: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+02:48:36.666: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:48:36.666: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:48:36.666: pulse-input: Started recording from 'browser_audio_sink.monitor'
+02:48:36.666: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:48:36.666: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:48:36.666: pulse-input: Started recording from 'discord_audio_sink.monitor'
+02:48:36.667: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:48:36.667: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:48:36.667: pulse-input: Started recording from 'game_audio_sink.monitor'
+02:48:36.668: Switched to scene 'Audio'
+02:48:36.668: ------------------------------------------------
+02:48:36.668: Loaded scenes:
+02:48:36.668: - scene 'Audio':
+02:48:36.668:     - source: 'Mic' (pulse_input_capture)
+02:48:36.668:     - source: 'Browser' (pulse_output_capture)
+02:48:36.668:     - source: 'Discord' (pulse_output_capture)
+02:48:36.668:     - source: 'Game' (pulse_output_capture)
+02:48:36.668: ------------------------------------------------
+02:48:37.257: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Mic)
+02:48:37.257: 
+02:48:37.577: adding 64 milliseconds of audio buffering, total audio buffering is now 85 milliseconds (source: Browser)
+02:48:37.577: 
+02:49:03.485: User added scene 'Scene 2'
+02:49:03.486: User switched to scene 'Scene 2'
+02:49:17.084: PipeWire initialized
+02:49:17.086: User added source 'test' (pipewire-screen-capture-source) to scene 'Scene 2'
+02:49:17.105: [pipewire] Screencast session created
+02:49:17.106: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x556bdf5f5580 with focusing surface 0x556bdf442e30
+02:49:17.116: [pipewire] Asking for monitor and window
+02:49:19.529: [pipewire] source selected, setting up screencast
+02:49:19.536: [pipewire] Server version: 1.4.9
+02:49:19.536: [pipewire] Library version: 1.4.9
+02:49:19.536: [pipewire] Header version: 1.4.9
+02:49:19.536: [pipewire] Created stream 0x556bdf5f65c0
+02:49:19.536: [pipewire] Stream 0x556bdf5f65c0 state: "connecting" (error: none)
+02:49:19.536: [pipewire] Playing stream 0x556bdf5f65c0
+02:49:19.546: [pipewire] Stream 0x556bdf5f65c0 state: "paused" (error: none)
+02:49:19.559: [pipewire] Negotiated format:
+02:49:19.559: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+02:49:19.559: [pipewire]     Modifier: 0xffffffffffffff
+02:49:19.559: [pipewire]     Size: 1920x1080
+02:49:19.559: [pipewire]     Framerate: 0/1
+02:49:19.569: [pipewire] Stream 0x556bdf5f65c0 state: "streaming" (error: none)
+02:49:36.730: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x556bdf5f5240 with focusing surface 0x556bdf442e30
+02:49:39.729: User added source 'Audio' (scene) to scene 'Scene 2'
+02:49:51.263: User switched to scene 'Audio'
+02:49:51.716: [pipewire] Stream 0x556bdf5f65c0 state: "paused" (error: none)
+02:50:01.541: User switched to scene 'Scene 2'
+02:50:01.550: [pipewire] Stream 0x556bdf5f65c0 state: "streaming" (error: none)
+02:55:47.750: Settings changed (outputs)
+02:55:47.750: ------------------------------------------------

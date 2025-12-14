@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Obsidian Web
+Comment=WehttamSnaps Webapp: Obsidian Web
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch obsidian
+Icon=obsidian
+Terminal=false
+Categories=productivity;
+Keywords=web;browser;webapp;
+StartupWMClass=ObsidianWeb

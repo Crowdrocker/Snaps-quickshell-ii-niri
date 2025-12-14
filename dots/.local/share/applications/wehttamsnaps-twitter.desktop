@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Twitter/X
+Comment=WehttamSnaps Webapp: Twitter/X
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch twitter
+Icon=twitter
+Terminal=false
+Categories=social;
+Keywords=web;browser;webapp;
+StartupWMClass=Twitter/X

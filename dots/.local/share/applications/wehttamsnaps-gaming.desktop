@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WehttamSnaps Gaming Mode
+Comment=Toggle gaming performance optimizations
+Exec=/scripts/gaming-mode.sh
+Icon=applications-games
+Terminal=true
+Type=Application
+Categories=Game;System;
+Keywords=wehttamsnaps;jarvis;gaming;performance;

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Twitch
+Comment=WehttamSnaps Webapp: Twitch
+Exec=python3 /home/wehttamsnaps/.config/wehttamsnaps/scripts/webapp-launcher.py launch twitch
+Icon=twitch
+Terminal=false
+Categories=media;
+Keywords=web;browser;webapp;
+StartupWMClass=Twitch

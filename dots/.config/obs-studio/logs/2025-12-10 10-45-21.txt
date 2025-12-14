@@ -1,0 +1,1091 @@
+10:45:21.809: Platform: Wayland
+10:45:21.809: CPU Name: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+10:45:21.809: CPU Speed: 3721.038MHz
+10:45:21.809: Physical Cores: 4, Logical Cores: 8
+10:45:21.809: Physical Memory: 15941MB Total, 1171MB Free
+10:45:21.809: Kernel Version: Linux 6.12.61-1-lts
+10:45:21.809: Distribution: "Arch Linux" Unknown
+10:45:21.809: Desktop Environment: niri (niri)
+10:45:21.809: Session Type: wayland
+10:45:21.811: Current Date/Time: 2025-12-10, 10:45:21
+10:45:21.811: Browser Hardware Acceleration: true
+10:45:21.811: Qt Version: 6.10.1 (runtime), 6.10.0 (compiled)
+10:45:21.811: Portable mode: false
+10:45:21.841: OBS 32.0.2 (linux)
+10:45:21.841: ---------------------------------
+10:45:21.842: ---------------------------------
+10:45:21.842: audio settings reset:
+10:45:21.842: 	samples per sec: 48000
+10:45:21.842: 	speakers:        2
+10:45:21.842: 	max buffering:   960 milliseconds
+10:45:21.842: 	buffering type:  dynamically increasing
+10:45:21.843: ---------------------------------
+10:45:21.843: Initializing OpenGL...
+10:45:21.843: Using EGL/Wayland
+10:45:21.889: Initialized EGL 1.5
+10:45:21.907: Loading up OpenGL on adapter AMD AMD Radeon RX 580 Series (radeonsi, polaris10, ACO, DRM 3.61, 6.12.61-1-lts)
+10:45:21.907: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.3.1-arch1.3, shading language 4.60
+10:45:21.937: ---------------------------------
+10:45:21.937: video settings reset:
+10:45:21.937: 	base resolution:   1920x1080
+10:45:21.937: 	output resolution: 1920x1080
+10:45:21.937: 	downscale filter:  Bicubic
+10:45:21.937: 	fps:               30/1
+10:45:21.937: 	format:            NV12
+10:45:21.937: 	YUV mode:          Rec. 709/Partial
+10:45:21.937: NV12 texture support enabled
+10:45:21.937: P010 texture support not available
+10:45:21.939: Audio monitoring device:
+10:45:21.939: 	name: Default
+10:45:21.939: 	id: default
+10:45:21.975: ---------------------------------
+10:45:21.976: Failed to load 'en-US' text for module: 'decklink-captions.so'
+10:45:21.977: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+10:45:21.977: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+10:45:21.977: Failed to initialize module 'decklink.so'
+10:45:22.103: [pipewire] No capture sources available
+10:45:22.108: v4l2loopback not installed, virtual camera not registered
+10:45:22.109: [linux-vkcapture] plugin loaded successfully (version 1.5.3)
+10:45:22.126: VAAPI: API version 1.22
+10:45:22.127: FFmpeg VAAPI H264 encoding supported
+10:45:22.131: FFmpeg VAAPI AV1 encoding not supported
+10:45:22.135: FFmpeg VAAPI HEVC encoding supported
+10:45:22.137: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+10:45:22.137: 
+10:45:22.137: NVENC not supported
+10:45:22.137: Failed to initialize module 'obs-nvenc.so'
+10:45:22.155: [obs-vaapi] version: 0.4.2, gst-runtime: 1.26.9
+10:45:22.166: [obs-vaapi] found vah265enc
+10:45:22.166: [obs-vaapi] found vah264enc
+10:45:22.166: [obs-vaapi] found vaapih264enc
+10:45:22.166: [obs-vaapi] found vaapih265enc
+10:45:22.179: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+10:45:22.179: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.0 | Qt version (run-time): 6.10.1
+10:45:22.179: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+10:45:22.183: [obs-websocket] [obs_module_load] Module loaded.
+10:45:22.186: ---------------------------------
+10:45:22.186:   Loaded Modules:
+10:45:22.186:     text-freetype2.so
+10:45:22.186:     rtmp-services.so
+10:45:22.186:     obs-x264.so
+10:45:22.186:     obs-websocket.so
+10:45:22.186:     obs-webrtc.so
+10:45:22.186:     obs-vst.so
+10:45:22.186:     obs-vaapi.so
+10:45:22.186:     obs-transitions.so
+10:45:22.186:     obs-qsv11.so
+10:45:22.186:     obs-outputs.so
+10:45:22.186:     obs-libfdk.so
+10:45:22.186:     obs-filters.so
+10:45:22.186:     obs-ffmpeg.so
+10:45:22.186:     linux-vkcapture.so
+10:45:22.186:     linux-v4l2.so
+10:45:22.186:     linux-pulseaudio.so
+10:45:22.186:     linux-pipewire.so
+10:45:22.186:     linux-jack.so
+10:45:22.186:     linux-capture.so
+10:45:22.186:     linux-alsa.so
+10:45:22.186:     image-source.so
+10:45:22.186:     frontend-tools.so
+10:45:22.186:     decklink-output-ui.so
+10:45:22.186:     decklink-captions.so
+10:45:22.186: ---------------------------------
+10:45:22.186: ---------------------------------
+10:45:22.186: Available Encoders:
+10:45:22.186:   Video Encoders:
+10:45:22.186: 	- ffmpeg_svt_av1 (SVT-AV1)
+10:45:22.186: 	- ffmpeg_aom_av1 (AOM AV1)
+10:45:22.186: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+10:45:22.186: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+10:45:22.192: 	- obs-va-vah265enc (VAAPI H.265 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+10:45:22.198: 	- obs-va-vah264enc (VAAPI H.264 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+10:45:22.198: 	- obs-vaapi-vaapih264enc (VAAPI H.264  (Legacy))
+10:45:22.198: 	- obs-vaapi-vaapih265enc (VAAPI H.265  (Legacy))
+10:45:22.198: 	- obs_x264 (x264)
+10:45:22.198:   Audio Encoders:
+10:45:22.198: 	- ffmpeg_aac (FFmpeg AAC)
+10:45:22.198: 	- ffmpeg_opus (FFmpeg Opus)
+10:45:22.198: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+10:45:22.198: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+10:45:22.198: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+10:45:22.198: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+10:45:22.198: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+10:45:22.198: 	- libfdk_aac (libfdk AAC)
+10:45:22.198: ==== Startup complete ===============================================
+10:45:22.249: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+10:45:22.249: All scene data cleared
+10:45:22.249: ------------------------------------------------
+10:45:22.251: Source ID 'text_gdiplus_v3' not found
+10:45:22.251: Failed to create source 'Youtube Username'!
+10:45:22.251: Source ID 'text_gdiplus_v3' not found
+10:45:22.251: Failed to create source 'Instagram Username'!
+10:45:22.251: Source ID 'text_gdiplus_v3' not found
+10:45:22.251: Failed to create source 'Twitter Username'!
+10:45:22.346: Source ID 'browser_source' not found
+10:45:22.346: Failed to create source 'AlertBox'!
+10:45:22.392: Source ID 'browser_source' not found
+10:45:22.392: Failed to create source 'Chatbox'!
+10:45:22.434: Source ID 'dshow_input' not found
+10:45:22.434: Failed to create source 'Webcam'!
+10:45:22.434: Source ID 'game_capture' not found
+10:45:22.434: Failed to create source 'Game Capture'!
+10:45:22.479: Source ID 'text_gdiplus_v3' not found
+10:45:22.479: Failed to create source 'Bar Overlay'!
+10:45:22.479: Source ID 'text_gdiplus_v3' not found
+10:45:22.479: Failed to create source 'FaceCam'!
+10:45:22.483: Switched to scene 'Starting Screen'
+10:45:22.483: ------------------------------------------------
+10:45:22.483: Loaded scenes:
+10:45:22.483: - scene 'Livescreen':
+10:45:22.483:     - source: 'Game Capture' (game_capture)
+10:45:22.483:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:45:22.483:     - source: 'FaceCam' (text_gdiplus_v3)
+10:45:22.483:     - source: 'AlertBox' (browser_source)
+10:45:22.483: - scene 'Collab Cam Scene':
+10:45:22.483:     - source: 'Game Capture' (game_capture)
+10:45:22.483:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:45:22.483:     - source: 'FaceCam' (text_gdiplus_v3)
+10:45:22.483:     - source: 'AlertBox' (browser_source)
+10:45:22.483: - scene 'Starting Screen':
+10:45:22.483:     - source: 'Social Media (Change Me)' (scene)
+10:45:22.483:     - source: 'AlertBox' (browser_source)
+10:45:22.483:     - source: 'Starting Sceen' (image_source)
+10:45:22.483: - scene 'Intermission Screen':
+10:45:22.483:     - source: 'Game Capture' (game_capture)
+10:45:22.483:     - source: 'Webcam' (dshow_input)
+10:45:22.483:     - source: 'Intermission Sceen' (image_source)
+10:45:22.483:     - source: 'Chatbox' (browser_source)
+10:45:22.483:     - source: 'Social Media (Change Me)' (scene)
+10:45:22.483:     - source: 'AlertBox' (browser_source)
+10:45:22.483: - scene 'Back Soon Screen':
+10:45:22.483:     - source: 'Backsoon sceen' (image_source)
+10:45:22.483:     - source: 'Social Media (Change Me)' (scene)
+10:45:22.483:     - source: 'AlertBox' (browser_source)
+10:45:22.483: - scene 'Ending Screen':
+10:45:22.483:     - source: 'Ending Sceen' (image_source)
+10:45:22.483:     - source: 'Social Media (Change Me)' (scene)
+10:45:22.483:     - source: 'AlertBox' (browser_source)
+10:45:22.483: - scene 'Offline Screen':
+10:45:22.483:     - source: 'Offline Sceen' (image_source)
+10:45:22.483:     - source: 'Social Media (Change Me)' (scene)
+10:45:22.483: - scene 'Social Media (Change Me)':
+10:45:22.483:     - source: 'Youtube group' (group)
+10:45:22.483:         - source: 'youtube' (image_source)
+10:45:22.483:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:45:22.483:     - source: 'Instagramm' (group)
+10:45:22.483:         - source: 'Instagram' (image_source)
+10:45:22.483:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:45:22.483:     - source: 'Twitter group' (group)
+10:45:22.483:         - source: 'Twitter Username' (text_gdiplus_v3)
+10:45:22.483:         - source: 'Twitter' (image_source)
+10:45:22.483: ------------------------------------------------
+10:45:22.506: [Media Source 'Stinger (Stinger)']: settings:
+10:45:22.506: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:45:22.506: 	input_format:            (null)
+10:45:22.506: 	speed:                   100
+10:45:22.506: 	is_looping:              no
+10:45:22.506: 	is_linear_alpha:         no
+10:45:22.506: 	is_hw_decoding:          yes
+10:45:22.506: 	is_clear_on_media_end:   yes
+10:45:22.506: 	restart_on_activate:     yes
+10:45:22.506: 	close_when_inactive:     no
+10:45:22.506: 	full_decode:             no
+10:45:22.506: 	ffmpeg_options:          
+10:45:27.179: All scene data cleared
+10:45:27.179: ------------------------------------------------
+10:45:27.188: ------------------------------------------------
+10:45:27.188: Loaded scenes:
+10:45:27.188: ------------------------------------------------
+10:45:27.189: Switched to scene collection '10d6a05f-b4c6-4db6-87cc-94e71721bd3f' (10d6a05f-b4c6-4db6-87cc-94e71721bd3f.json)
+10:45:27.189: ------------------------------------------------
+10:45:30.461: All scene data cleared
+10:45:30.461: ------------------------------------------------
+10:45:30.464: ------------------------------------------------
+10:45:30.465: Loaded scenes:
+10:45:30.465: ------------------------------------------------
+10:45:30.465: Switched to scene collection '7162831a-995f-42f3-b702-f72515f734d4' (7162831a-995f-42f3-b702-f72515f734d4.json)
+10:45:30.465: ------------------------------------------------
+10:45:36.221: All scene data cleared
+10:45:36.222: ------------------------------------------------
+10:45:36.224: ------------------------------------------------
+10:45:36.224: Loaded scenes:
+10:45:36.224: ------------------------------------------------
+10:45:36.224: Switched to scene collection 'WehttamSnaps' (WehttamSnaps.json)
+10:45:36.224: ------------------------------------------------
+10:45:40.851: All scene data cleared
+10:45:40.851: ------------------------------------------------
+10:45:40.856: Source ID 'text_gdiplus_v3' not found
+10:45:40.857: Failed to create source 'Youtube Username'!
+10:45:40.857: Source ID 'text_gdiplus_v3' not found
+10:45:40.857: Failed to create source 'Instagram Username'!
+10:45:40.857: Source ID 'text_gdiplus_v3' not found
+10:45:40.857: Failed to create source 'Twitter Username'!
+10:45:40.951: Source ID 'browser_source' not found
+10:45:40.951: Failed to create source 'AlertBox'!
+10:45:40.996: Source ID 'browser_source' not found
+10:45:40.996: Failed to create source 'Chatbox'!
+10:45:41.041: Source ID 'dshow_input' not found
+10:45:41.041: Failed to create source 'Webcam'!
+10:45:41.041: Source ID 'game_capture' not found
+10:45:41.041: Failed to create source 'Game Capture'!
+10:45:41.087: Source ID 'text_gdiplus_v3' not found
+10:45:41.087: Failed to create source 'Bar Overlay'!
+10:45:41.087: Source ID 'text_gdiplus_v3' not found
+10:45:41.088: Failed to create source 'FaceCam'!
+10:45:41.092: Switched to scene 'Starting Screen'
+10:45:41.092: ------------------------------------------------
+10:45:41.092: Loaded scenes:
+10:45:41.092: - scene 'Livescreen':
+10:45:41.092:     - source: 'Game Capture' (game_capture)
+10:45:41.092:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:45:41.092:     - source: 'FaceCam' (text_gdiplus_v3)
+10:45:41.092:     - source: 'AlertBox' (browser_source)
+10:45:41.092: - scene 'Collab Cam Scene':
+10:45:41.092:     - source: 'Game Capture' (game_capture)
+10:45:41.092:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:45:41.092:     - source: 'FaceCam' (text_gdiplus_v3)
+10:45:41.092:     - source: 'AlertBox' (browser_source)
+10:45:41.092: - scene 'Starting Screen':
+10:45:41.092:     - source: 'Social Media (Change Me)' (scene)
+10:45:41.092:     - source: 'AlertBox' (browser_source)
+10:45:41.092:     - source: 'Starting Sceen' (image_source)
+10:45:41.092: - scene 'Intermission Screen':
+10:45:41.092:     - source: 'Game Capture' (game_capture)
+10:45:41.092:     - source: 'Webcam' (dshow_input)
+10:45:41.092:     - source: 'Intermission Sceen' (image_source)
+10:45:41.092:     - source: 'Chatbox' (browser_source)
+10:45:41.092:     - source: 'Social Media (Change Me)' (scene)
+10:45:41.092:     - source: 'AlertBox' (browser_source)
+10:45:41.092: - scene 'Back Soon Screen':
+10:45:41.092:     - source: 'Backsoon sceen' (image_source)
+10:45:41.092:     - source: 'Social Media (Change Me)' (scene)
+10:45:41.092:     - source: 'AlertBox' (browser_source)
+10:45:41.092: - scene 'Ending Screen':
+10:45:41.092:     - source: 'Ending Sceen' (image_source)
+10:45:41.092:     - source: 'Social Media (Change Me)' (scene)
+10:45:41.092:     - source: 'AlertBox' (browser_source)
+10:45:41.092: - scene 'Offline Screen':
+10:45:41.092:     - source: 'Offline Sceen' (image_source)
+10:45:41.092:     - source: 'Social Media (Change Me)' (scene)
+10:45:41.092: - scene 'Social Media (Change Me)':
+10:45:41.092:     - source: 'Youtube group' (group)
+10:45:41.092:         - source: 'youtube' (image_source)
+10:45:41.092:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:45:41.092:     - source: 'Instagramm' (group)
+10:45:41.092:         - source: 'Instagram' (image_source)
+10:45:41.092:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:45:41.092:     - source: 'Twitter group' (group)
+10:45:41.092:         - source: 'Twitter Username' (text_gdiplus_v3)
+10:45:41.092:         - source: 'Twitter' (image_source)
+10:45:41.092: ------------------------------------------------
+10:45:41.097: Switched to scene collection 'Wehttamsnaps' (Wehttamsnaps.json)
+10:45:41.097: ------------------------------------------------
+10:45:41.106: [Media Source 'Stinger (Stinger)']: settings:
+10:45:41.106: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:45:41.106: 	input_format:            (null)
+10:45:41.106: 	speed:                   100
+10:45:41.106: 	is_looping:              no
+10:45:41.106: 	is_linear_alpha:         no
+10:45:41.106: 	is_hw_decoding:          yes
+10:45:41.106: 	is_clear_on_media_end:   yes
+10:45:41.106: 	restart_on_activate:     yes
+10:45:41.106: 	close_when_inactive:     no
+10:45:41.106: 	full_decode:             no
+10:45:41.106: 	ffmpeg_options:          
+10:45:58.675: User switched to scene 'Social Media (Change Me)'
+10:46:16.034: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x58dec37ce8b0 with focusing surface 0x58dec24c13c0
+10:46:18.619: User added source 'Text (FreeType 2)' (text_ft2_source_v2) to scene 'Social Media (Change Me)'
+10:46:18.634: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec38c60e0 with focusing surface 0x58dec24c13c0
+10:46:49.585: User Removed source 'Twitter Username' (text_gdiplus_v3) from scene 'Twitter group'
+10:46:56.468: Source 'Text (FreeType 2)' renamed to 'Twitter Username'
+10:47:10.719: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec401ae60 with focusing surface 0x58dec24c13c0
+10:48:07.008: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec401ae60 with focusing surface 0x58dec4510c10
+10:48:09.028: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec401ae60 with focusing surface 0x58dec4510c10
+10:48:58.939: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec3fe3400 with focusing surface 0x58dec24c13c0
+10:49:05.139: FT2-text: Failed to open  for reading
+10:49:21.501: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec3fe3400 with focusing surface 0x58dec43b5060
+10:51:42.046: User switched to scene 'Offline Screen'
+10:51:49.106: User switched to scene 'Livescreen'
+10:52:07.058: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x58dec408a7f0 with focusing surface 0x58dec24c13c0
+10:52:08.680: ext_screencopy_manager_v1 not available
+10:52:08.685: User added source 'Game Capture 2' (vkcapture-source) to scene 'Livescreen'
+10:52:08.699: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec39eaff0 with focusing surface 0x58dec24c13c0
+10:52:09.909: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec39eaff0 with focusing surface 0x58dec24c13c0
+10:52:42.309: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x58dec39fe520 with focusing surface 0x58dec24c13c0
+10:52:44.438: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+10:52:44.442: User added source 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source) to scene 'Livescreen'
+10:52:44.455: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec4264df0 with focusing surface 0x58dec24c13c0
+10:52:44.459: [camera-portal] Selected format for ''
+10:52:44.459: [camera-portal] selected camera ''
+10:52:45.998: [camera-portal] Successfully accessed cameras
+10:52:46.005: [pipewire] Server version: 1.4.9
+10:52:46.005: [pipewire] Library version: 1.4.9
+10:52:46.005: [pipewire] Header version: 1.4.9
+10:52:46.005: [pipewire] Created registry 0x58dec4056dd0
+10:52:46.005: [camera-portal] Found device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:52:46.005: [camera-portal] Selected format for ''
+10:52:46.005: [camera-portal] selected camera ''
+10:52:48.137: [camera-portal] selected camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:52:48.137: [camera-portal] Updating pixel formats
+10:52:48.138: [camera-portal] Selected format for 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:52:48.138: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+10:52:48.140: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:52:48.142: [camera-portal] Selected format for 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:52:48.142: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:52:48.142: [pipewire] Created stream 0x58dec38ee8b0
+10:52:48.143: [pipewire] Stream 0x58dec38ee8b0 state: "connecting" (error: none)
+10:52:48.147: [pipewire] Playing stream 0x58dec38ee8b0
+10:52:48.148: [pipewire] Stream 0x58dec38ee8b0 state: "paused" (error: none)
+10:52:48.150: [pipewire] Renegotiating stream
+10:52:48.173: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:52:48.323: [pipewire] Negotiated format:
+10:52:48.323: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:52:48.323: [pipewire]     Size: 640x480
+10:52:48.323: [pipewire]     Framerate: 5/1
+10:52:48.351: [pipewire] Stream 0x58dec38ee8b0 state: "streaming" (error: none)
+10:52:52.623: [camera-portal] Selected format for 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:52:52.623: [pipewire] Renegotiating stream
+10:52:52.623: [pipewire] Stream 0x58dec38ee8b0 state: "paused" (error: none)
+10:52:52.640: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:52:52.688: [pipewire] Negotiated format:
+10:52:52.689: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:52:52.689: [pipewire]     Size: 1920x1080
+10:52:52.689: [pipewire]     Framerate: 5/1
+10:52:52.757: [pipewire] Negotiated format:
+10:52:52.757: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:52:52.757: [pipewire]     Size: 1920x1080
+10:52:52.757: [pipewire]     Framerate: 5/1
+10:52:52.759: [pipewire] Stream 0x58dec38ee8b0 state: "streaming" (error: none)
+10:53:08.140: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:53:10.540: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:53:13.506: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:53:14.573: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_4_1.2
+10:53:42.181: User switched to scene 'Starting Screen'
+10:53:44.140: [pipewire] Stream 0x58dec38ee8b0 state: "paused" (error: none)
+10:54:10.064: Attempted to add Scene without specifying a canvas! Using default canvas instead.
+10:54:10.064: Attempted to add Scene without specifying a canvas! Using default canvas instead.
+10:54:10.082: Out of space trying to render glyphs
+10:54:10.094: Out of space trying to render glyphs
+10:54:10.097: [Media Source 'clone (Stinger)']: settings:
+10:54:10.097: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:54:10.097: 	input_format:            (null)
+10:54:10.097: 	speed:                   100
+10:54:10.097: 	is_looping:              no
+10:54:10.097: 	is_linear_alpha:         no
+10:54:10.097: 	is_hw_decoding:          yes
+10:54:10.097: 	is_clear_on_media_end:   yes
+10:54:10.097: 	restart_on_activate:     yes
+10:54:10.097: 	close_when_inactive:     no
+10:54:10.097: 	full_decode:             no
+10:54:10.097: 	ffmpeg_options:          
+10:54:31.206: [Media Source 'Stinger (Stinger)']: settings:
+10:54:31.206: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:54:31.206: 	input_format:            (null)
+10:54:31.206: 	speed:                   100
+10:54:31.206: 	is_looping:              no
+10:54:31.206: 	is_linear_alpha:         no
+10:54:31.206: 	is_hw_decoding:          yes
+10:54:31.206: 	is_clear_on_media_end:   yes
+10:54:31.206: 	restart_on_activate:     yes
+10:54:31.206: 	close_when_inactive:     no
+10:54:31.206: 	full_decode:             no
+10:54:31.206: 	ffmpeg_options:          
+10:55:04.480: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x58dec40531c0 with focusing surface 0x58dec24c13c0
+10:55:06.332: [Media Source 'Media Source']: settings:
+10:55:06.332: 	input:                   
+10:55:06.332: 	input_format:            (null)
+10:55:06.332: 	speed:                   100
+10:55:06.332: 	is_looping:              no
+10:55:06.332: 	is_linear_alpha:         no
+10:55:06.332: 	is_hw_decoding:          no
+10:55:06.332: 	is_clear_on_media_end:   yes
+10:55:06.332: 	restart_on_activate:     yes
+10:55:06.332: 	close_when_inactive:     no
+10:55:06.332: 	full_decode:             no
+10:55:06.332: 	ffmpeg_options:          
+10:55:06.339: User added source 'Media Source' (ffmpeg_source) to scene 'Starting Screen'
+10:55:06.374: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec37ec180 with focusing surface 0x58dec24c13c0
+10:55:13.596: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec3f20ea0 with focusing surface 0x58dec24c13c0
+10:55:14.972: User Removed source 'Media Source' (ffmpeg_source) from scene 'Starting Screen'
+10:55:44.813: [linux-vkcapture] destroy
+10:55:44.814: [pipewire] Stream 0x58dec38ee8b0 state: "unconnected" (error: none)
+10:55:44.843: All scene data cleared
+10:55:44.843: ------------------------------------------------
+10:55:44.851: ------------------------------------------------
+10:55:44.851: Loaded scenes:
+10:55:44.851: ------------------------------------------------
+10:55:44.851: Switched to scene collection 'manifest' (manifest.json)
+10:55:44.851: ------------------------------------------------
+10:55:48.151: All scene data cleared
+10:55:48.151: ------------------------------------------------
+10:55:48.154: ------------------------------------------------
+10:55:48.154: Loaded scenes:
+10:55:48.154: ------------------------------------------------
+10:55:48.154: Switched to scene collection 'fd1ec963-e42f-4803-9a96-305c325d5792' (fd1ec963-e42f-4803-9a96-305c325d5792.json)
+10:55:48.154: ------------------------------------------------
+10:55:52.330: All scene data cleared
+10:55:52.330: ------------------------------------------------
+10:55:52.332: ------------------------------------------------
+10:55:52.332: Loaded scenes:
+10:55:52.332: ------------------------------------------------
+10:55:52.333: Switched to scene collection 'WehttamSnaps' (WehttamSnaps.json)
+10:55:52.333: ------------------------------------------------
+10:55:54.592: All scene data cleared
+10:55:54.592: ------------------------------------------------
+10:55:54.598: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:55:54.598: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+10:55:54.599: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor' (default)
+10:55:54.599: [Loaded global audio device]: 'Desktop Audio'
+10:55:54.599: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:55:54.599: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+10:55:54.599: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo' (default)
+10:55:54.599: [Loaded global audio device]: 'Mic/Aux'
+10:55:54.601: Switched to scene 'Scene'
+10:55:54.601: ------------------------------------------------
+10:55:54.601: Loaded scenes:
+10:55:54.601: - scene 'Scene':
+10:55:54.601: ------------------------------------------------
+10:55:54.601: Switched to scene collection 'Untitled' (Untitled.json)
+10:55:54.601: ------------------------------------------------
+10:55:54.611: Device for 'Audio Output Capture' source is also used for audio monitoring:
+10:55:54.611: Deduplication logic is being applied to all monitored sources.
+10:55:54.611: 
+10:55:55.357: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+10:55:55.357: 
+10:56:00.548: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+10:56:00.548: pulse-input: Got 229 packets with 274800 frames
+10:56:00.548: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+10:56:00.548: pulse-input: Got 228 packets with 273600 frames
+10:56:00.588: All scene data cleared
+10:56:00.588: ------------------------------------------------
+10:56:00.591: Source ID 'text_gdiplus_v3' not found
+10:56:00.591: Failed to create source 'Youtube Username'!
+10:56:00.591: Source ID 'text_gdiplus_v3' not found
+10:56:00.591: Failed to create source 'Instagram Username'!
+10:56:00.688: Source ID 'browser_source' not found
+10:56:00.688: Failed to create source 'AlertBox'!
+10:56:00.734: Source ID 'browser_source' not found
+10:56:00.734: Failed to create source 'Chatbox'!
+10:56:00.778: Source ID 'dshow_input' not found
+10:56:00.778: Failed to create source 'Webcam'!
+10:56:00.778: Source ID 'game_capture' not found
+10:56:00.779: Failed to create source 'Game Capture'!
+10:56:00.825: Source ID 'text_gdiplus_v3' not found
+10:56:00.825: Failed to create source 'Bar Overlay'!
+10:56:00.825: Source ID 'text_gdiplus_v3' not found
+10:56:00.825: Failed to create source 'FaceCam'!
+10:56:00.828: ext_screencopy_manager_v1 not available
+10:56:00.828: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:56:00.828: [pipewire] Created stream 0x58dec4532030
+10:56:00.828: [pipewire] Stream 0x58dec4532030 state: "connecting" (error: none)
+10:56:00.829: [pipewire] Playing stream 0x58dec4532030
+10:56:00.829: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:56:00.831: Switched to scene 'Starting Screen'
+10:56:00.831: ------------------------------------------------
+10:56:00.831: Loaded scenes:
+10:56:00.831: - scene 'Livescreen':
+10:56:00.831:     - source: 'Game Capture' (game_capture)
+10:56:00.831:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:56:00.831:     - source: 'FaceCam' (text_gdiplus_v3)
+10:56:00.831:     - source: 'AlertBox' (browser_source)
+10:56:00.831:     - source: 'Game Capture 2' (vkcapture-source)
+10:56:00.831:     - source: 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source)
+10:56:00.831: - scene 'Collab Cam Scene':
+10:56:00.831:     - source: 'Game Capture' (game_capture)
+10:56:00.831:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:56:00.831:     - source: 'FaceCam' (text_gdiplus_v3)
+10:56:00.831:     - source: 'AlertBox' (browser_source)
+10:56:00.831: - scene 'Starting Screen':
+10:56:00.831:     - source: 'Social Media (Change Me)' (scene)
+10:56:00.831:     - source: 'AlertBox' (browser_source)
+10:56:00.831:     - source: 'Starting Sceen' (image_source)
+10:56:00.831: - scene 'Intermission Screen':
+10:56:00.831:     - source: 'Game Capture' (game_capture)
+10:56:00.831:     - source: 'Webcam' (dshow_input)
+10:56:00.831:     - source: 'Intermission Sceen' (image_source)
+10:56:00.831:     - source: 'Chatbox' (browser_source)
+10:56:00.831:     - source: 'Social Media (Change Me)' (scene)
+10:56:00.831:     - source: 'AlertBox' (browser_source)
+10:56:00.831: - scene 'Back Soon Screen':
+10:56:00.831:     - source: 'Backsoon sceen' (image_source)
+10:56:00.831:     - source: 'Social Media (Change Me)' (scene)
+10:56:00.831:     - source: 'AlertBox' (browser_source)
+10:56:00.831: - scene 'Ending Screen':
+10:56:00.831:     - source: 'Ending Sceen' (image_source)
+10:56:00.831:     - source: 'Social Media (Change Me)' (scene)
+10:56:00.831:     - source: 'AlertBox' (browser_source)
+10:56:00.831: - scene 'Offline Screen':
+10:56:00.831:     - source: 'Offline Sceen' (image_source)
+10:56:00.831:     - source: 'Social Media (Change Me)' (scene)
+10:56:00.831: - scene 'Social Media (Change Me)':
+10:56:00.831:     - source: 'Youtube group' (group)
+10:56:00.831:         - source: 'youtube' (image_source)
+10:56:00.831:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:56:00.831:     - source: 'Instagramm' (group)
+10:56:00.831:         - source: 'Instagram' (image_source)
+10:56:00.831:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:56:00.831:     - source: 'Twitter group' (group)
+10:56:00.831:         - source: 'Twitter' (image_source)
+10:56:00.831:         - source: 'Twitter Username' (text_ft2_source_v2)
+10:56:00.831: ------------------------------------------------
+10:56:00.837: Switched to scene collection 'Wehttamsnaps' (Wehttamsnaps.json)
+10:56:00.837: ------------------------------------------------
+10:56:00.845: [Media Source 'fire Stinger (Stinger)']: settings:
+10:56:00.845: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:56:00.845: 	input_format:            (null)
+10:56:00.845: 	speed:                   100
+10:56:00.845: 	is_looping:              no
+10:56:00.845: 	is_linear_alpha:         no
+10:56:00.845: 	is_hw_decoding:          yes
+10:56:00.845: 	is_clear_on_media_end:   yes
+10:56:00.845: 	restart_on_activate:     yes
+10:56:00.845: 	close_when_inactive:     no
+10:56:00.845: 	full_decode:             no
+10:56:00.845: 	ffmpeg_options:          
+10:56:01.005: [pipewire] Negotiated format:
+10:56:01.005: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:56:01.005: [pipewire]     Size: 1920x1080
+10:56:01.005: [pipewire]     Framerate: 5/1
+10:56:01.008: [pipewire] Stream 0x58dec4532030 state: "streaming" (error: none)
+10:56:20.892: [linux-vkcapture] destroy
+10:56:20.892: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:56:20.893: [pipewire] Stream 0x58dec4532030 state: "unconnected" (error: none)
+10:56:20.919: All scene data cleared
+10:56:20.919: ------------------------------------------------
+10:56:20.929: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:20.929: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+10:56:20.929: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+10:56:20.930: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:20.930: pulse-input: An error occurred while getting the source info!
+10:56:20.930: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:20.930: pulse-input: An error occurred while getting the source info!
+10:56:20.931: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:20.931: pulse-input: An error occurred while getting the source info!
+10:56:20.931: Source ID 'pipewire-screen-capture-source' not found
+10:56:20.931: Failed to create source 'test'!
+10:56:20.931: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:20.932: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+10:56:20.932: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+10:56:20.932: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:56:20.932: [pipewire] Created stream 0x58dec4532030
+10:56:20.932: [pipewire] Stream 0x58dec4532030 state: "connecting" (error: none)
+10:56:20.932: [pipewire] Playing stream 0x58dec4532030
+10:56:20.933: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:56:20.934: Switched to scene 'Scene 2'
+10:56:20.934: ------------------------------------------------
+10:56:20.934: Loaded scenes:
+10:56:20.934: - scene 'Audio':
+10:56:20.934:     - source: 'Mic' (pulse_input_capture)
+10:56:20.934:     - source: 'Browser' (pulse_output_capture)
+10:56:20.934:     - source: 'Discord' (pulse_output_capture)
+10:56:20.934:     - source: 'Game' (pulse_output_capture)
+10:56:20.934:     - source: 'Spotify' (pulse_output_capture)
+10:56:20.934: - scene 'Scene 2':
+10:56:20.934:     - source: 'test' (pipewire-screen-capture-source)
+10:56:20.934:     - source: 'Audio' (scene)
+10:56:20.934:     - source: 'cam' (pipewire-camera-source)
+10:56:20.934: ------------------------------------------------
+10:56:20.940: Switched to scene collection 'obs_scene_templates' (obs_scene_templates.json)
+10:56:20.940: ------------------------------------------------
+10:56:21.219: [pipewire] Negotiated format:
+10:56:21.219: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:56:21.219: [pipewire]     Size: 1920x1080
+10:56:21.219: [pipewire]     Framerate: 5/1
+10:56:21.290: [pipewire] Stream 0x58dec4532030 state: "streaming" (error: none)
+10:56:29.647: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec4472150 with focusing surface 0x58dec24c13c0
+10:56:31.149: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:56:31.150: [pipewire] Stream 0x58dec4532030 state: "unconnected" (error: none)
+10:56:31.151: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+10:56:31.151: pulse-input: Got 407 packets with 488400 frames
+10:56:31.151: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+10:56:31.151: pulse-input: Got 400 packets with 480000 frames
+10:56:31.188: All scene data cleared
+10:56:31.188: ------------------------------------------------
+10:56:31.191: ------------------------------------------------
+10:56:31.191: Loaded scenes:
+10:56:31.191: ------------------------------------------------
+10:56:31.191: Removed scene collection 'obs_scene_templates' (obs_scene_templates.json)
+10:56:31.191: ------------------------------------------------
+10:56:31.191: Switched to scene collection '44ad5fb6-f73c-470e-9b40-ccee81b3e63d' (44ad5fb6-f73c-470e-9b40-ccee81b3e63d.json)
+10:56:31.191: ------------------------------------------------
+10:56:38.622: All scene data cleared
+10:56:38.622: ------------------------------------------------
+10:56:38.638: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:38.639: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+10:56:38.639: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor' (default)
+10:56:38.639: [Loaded global audio device]: 'Desktop Audio'
+10:56:38.639: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:56:38.639: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+10:56:38.639: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo' (default)
+10:56:38.639: [Loaded global audio device]: 'Mic/Aux'
+10:56:38.641: Switched to scene 'Scene'
+10:56:38.641: ------------------------------------------------
+10:56:38.641: Loaded scenes:
+10:56:38.641: - scene 'Scene':
+10:56:38.641: ------------------------------------------------
+10:56:38.641: Removed scene collection '44ad5fb6-f73c-470e-9b40-ccee81b3e63d' (44ad5fb6-f73c-470e-9b40-ccee81b3e63d.json)
+10:56:38.641: ------------------------------------------------
+10:56:38.641: Switched to scene collection 'Untitled' (Untitled.json)
+10:56:38.641: ------------------------------------------------
+10:56:38.643: Device for 'Audio Output Capture' source is also used for audio monitoring:
+10:56:38.643: Deduplication logic is being applied to all monitored sources.
+10:56:38.643: 
+10:56:43.998: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+10:56:43.998: pulse-input: Got 214 packets with 256800 frames
+10:56:43.998: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+10:56:43.998: pulse-input: Got 212 packets with 254400 frames
+10:56:44.028: All scene data cleared
+10:56:44.028: ------------------------------------------------
+10:56:44.032: ------------------------------------------------
+10:56:44.033: Loaded scenes:
+10:56:44.033: ------------------------------------------------
+10:56:44.033: Removed scene collection 'Untitled' (Untitled.json)
+10:56:44.033: ------------------------------------------------
+10:56:44.033: Switched to scene collection 'WehttamSnaps' (WehttamSnaps.json)
+10:56:44.033: ------------------------------------------------
+10:56:48.883: All scene data cleared
+10:56:48.883: ------------------------------------------------
+10:56:48.894: ------------------------------------------------
+10:56:48.894: Loaded scenes:
+10:56:48.894: ------------------------------------------------
+10:56:48.894: Removed scene collection 'WehttamSnaps' (WehttamSnaps.json)
+10:56:48.894: ------------------------------------------------
+10:56:48.894: Switched to scene collection 'manifest' (manifest.json)
+10:56:48.894: ------------------------------------------------
+10:56:54.515: All scene data cleared
+10:56:54.515: ------------------------------------------------
+10:56:54.524: ------------------------------------------------
+10:56:54.524: Loaded scenes:
+10:56:54.524: ------------------------------------------------
+10:56:54.525: Removed scene collection 'manifest' (manifest.json)
+10:56:54.525: ------------------------------------------------
+10:56:54.525: Switched to scene collection '7162831a-995f-42f3-b702-f72515f734d4' (7162831a-995f-42f3-b702-f72515f734d4.json)
+10:56:54.525: ------------------------------------------------
+10:56:59.358: All scene data cleared
+10:56:59.358: ------------------------------------------------
+10:56:59.375: ------------------------------------------------
+10:56:59.375: Loaded scenes:
+10:56:59.375: ------------------------------------------------
+10:56:59.375: Removed scene collection '7162831a-995f-42f3-b702-f72515f734d4' (7162831a-995f-42f3-b702-f72515f734d4.json)
+10:56:59.375: ------------------------------------------------
+10:56:59.375: Switched to scene collection '10d6a05f-b4c6-4db6-87cc-94e71721bd3f' (10d6a05f-b4c6-4db6-87cc-94e71721bd3f.json)
+10:56:59.375: ------------------------------------------------
+10:57:03.774: All scene data cleared
+10:57:03.774: ------------------------------------------------
+10:57:03.784: ------------------------------------------------
+10:57:03.784: Loaded scenes:
+10:57:03.784: ------------------------------------------------
+10:57:03.784: Removed scene collection '10d6a05f-b4c6-4db6-87cc-94e71721bd3f' (10d6a05f-b4c6-4db6-87cc-94e71721bd3f.json)
+10:57:03.784: ------------------------------------------------
+10:57:03.784: Switched to scene collection '7f75e62c-7698-44ee-bfc7-429c5aff859a' (7f75e62c-7698-44ee-bfc7-429c5aff859a.json)
+10:57:03.784: ------------------------------------------------
+10:57:08.552: All scene data cleared
+10:57:08.552: ------------------------------------------------
+10:57:08.562: ------------------------------------------------
+10:57:08.562: Loaded scenes:
+10:57:08.562: ------------------------------------------------
+10:57:08.562: Removed scene collection '7f75e62c-7698-44ee-bfc7-429c5aff859a' (7f75e62c-7698-44ee-bfc7-429c5aff859a.json)
+10:57:08.562: ------------------------------------------------
+10:57:08.562: Switched to scene collection 'Streaming' (Streaming.json)
+10:57:08.562: ------------------------------------------------
+10:57:15.550: All scene data cleared
+10:57:15.550: ------------------------------------------------
+10:57:15.560: ------------------------------------------------
+10:57:15.560: Loaded scenes:
+10:57:15.560: ------------------------------------------------
+10:57:15.561: Removed scene collection 'Streaming' (Streaming.json)
+10:57:15.561: ------------------------------------------------
+10:57:15.561: Switched to scene collection '985c42c9-6fcf-4d95-a83e-7d18b7d2bda7' (985c42c9-6fcf-4d95-a83e-7d18b7d2bda7.json)
+10:57:15.561: ------------------------------------------------
+10:57:20.520: All scene data cleared
+10:57:20.520: ------------------------------------------------
+10:57:20.528: ------------------------------------------------
+10:57:20.528: Loaded scenes:
+10:57:20.528: ------------------------------------------------
+10:57:20.528: Removed scene collection '985c42c9-6fcf-4d95-a83e-7d18b7d2bda7' (985c42c9-6fcf-4d95-a83e-7d18b7d2bda7.json)
+10:57:20.528: ------------------------------------------------
+10:57:20.528: Switched to scene collection 'fd1ec963-e42f-4803-9a96-305c325d5792' (fd1ec963-e42f-4803-9a96-305c325d5792.json)
+10:57:20.528: ------------------------------------------------
+10:57:26.686: All scene data cleared
+10:57:26.686: ------------------------------------------------
+10:57:26.695: Source ID 'text_gdiplus_v3' not found
+10:57:26.695: Failed to create source 'Youtube Username'!
+10:57:26.695: Source ID 'text_gdiplus_v3' not found
+10:57:26.695: Failed to create source 'Instagram Username'!
+10:57:26.793: Source ID 'browser_source' not found
+10:57:26.793: Failed to create source 'AlertBox'!
+10:57:26.839: Source ID 'browser_source' not found
+10:57:26.840: Failed to create source 'Chatbox'!
+10:57:26.883: Source ID 'dshow_input' not found
+10:57:26.883: Failed to create source 'Webcam'!
+10:57:26.883: Source ID 'game_capture' not found
+10:57:26.884: Failed to create source 'Game Capture'!
+10:57:26.932: Source ID 'text_gdiplus_v3' not found
+10:57:26.932: Failed to create source 'Bar Overlay'!
+10:57:26.932: Source ID 'text_gdiplus_v3' not found
+10:57:26.932: Failed to create source 'FaceCam'!
+10:57:26.935: ext_screencopy_manager_v1 not available
+10:57:26.936: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:57:26.936: [pipewire] Created stream 0x58dec4532030
+10:57:26.936: [pipewire] Stream 0x58dec4532030 state: "connecting" (error: none)
+10:57:26.936: [pipewire] Playing stream 0x58dec4532030
+10:57:26.936: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:57:26.939: Switched to scene 'Starting Screen'
+10:57:26.939: ------------------------------------------------
+10:57:26.939: Loaded scenes:
+10:57:26.939: - scene 'Livescreen':
+10:57:26.939:     - source: 'Game Capture' (game_capture)
+10:57:26.939:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:57:26.939:     - source: 'FaceCam' (text_gdiplus_v3)
+10:57:26.939:     - source: 'AlertBox' (browser_source)
+10:57:26.939:     - source: 'Game Capture 2' (vkcapture-source)
+10:57:26.939:     - source: 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source)
+10:57:26.939: - scene 'Collab Cam Scene':
+10:57:26.939:     - source: 'Game Capture' (game_capture)
+10:57:26.939:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:57:26.939:     - source: 'FaceCam' (text_gdiplus_v3)
+10:57:26.939:     - source: 'AlertBox' (browser_source)
+10:57:26.939: - scene 'Starting Screen':
+10:57:26.939:     - source: 'Social Media (Change Me)' (scene)
+10:57:26.939:     - source: 'AlertBox' (browser_source)
+10:57:26.939:     - source: 'Starting Sceen' (image_source)
+10:57:26.939: - scene 'Intermission Screen':
+10:57:26.939:     - source: 'Game Capture' (game_capture)
+10:57:26.939:     - source: 'Webcam' (dshow_input)
+10:57:26.939:     - source: 'Intermission Sceen' (image_source)
+10:57:26.939:     - source: 'Chatbox' (browser_source)
+10:57:26.939:     - source: 'Social Media (Change Me)' (scene)
+10:57:26.939:     - source: 'AlertBox' (browser_source)
+10:57:26.939: - scene 'Back Soon Screen':
+10:57:26.939:     - source: 'Backsoon sceen' (image_source)
+10:57:26.939:     - source: 'Social Media (Change Me)' (scene)
+10:57:26.939:     - source: 'AlertBox' (browser_source)
+10:57:26.939: - scene 'Ending Screen':
+10:57:26.939:     - source: 'Ending Sceen' (image_source)
+10:57:26.939:     - source: 'Social Media (Change Me)' (scene)
+10:57:26.939:     - source: 'AlertBox' (browser_source)
+10:57:26.939: - scene 'Offline Screen':
+10:57:26.939:     - source: 'Offline Sceen' (image_source)
+10:57:26.939:     - source: 'Social Media (Change Me)' (scene)
+10:57:26.939: - scene 'Social Media (Change Me)':
+10:57:26.939:     - source: 'Youtube group' (group)
+10:57:26.939:         - source: 'youtube' (image_source)
+10:57:26.939:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:57:26.939:     - source: 'Instagramm' (group)
+10:57:26.939:         - source: 'Instagram' (image_source)
+10:57:26.939:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:57:26.939:     - source: 'Twitter group' (group)
+10:57:26.939:         - source: 'Twitter' (image_source)
+10:57:26.939:         - source: 'Twitter Username' (text_ft2_source_v2)
+10:57:26.939: ------------------------------------------------
+10:57:26.945: Removed scene collection 'fd1ec963-e42f-4803-9a96-305c325d5792' (fd1ec963-e42f-4803-9a96-305c325d5792.json)
+10:57:26.945: ------------------------------------------------
+10:57:26.945: Switched to scene collection 'Wehttamsnaps' (Wehttamsnaps.json)
+10:57:26.945: ------------------------------------------------
+10:57:26.946: [Media Source 'fire Stinger (Stinger)']: settings:
+10:57:26.946: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:57:26.946: 	input_format:            (null)
+10:57:26.946: 	speed:                   100
+10:57:26.946: 	is_looping:              no
+10:57:26.946: 	is_linear_alpha:         no
+10:57:26.946: 	is_hw_decoding:          yes
+10:57:26.946: 	is_clear_on_media_end:   yes
+10:57:26.946: 	restart_on_activate:     yes
+10:57:26.946: 	close_when_inactive:     no
+10:57:26.946: 	full_decode:             no
+10:57:26.946: 	ffmpeg_options:          
+10:57:27.112: [pipewire] Negotiated format:
+10:57:27.112: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:57:27.112: [pipewire]     Size: 1920x1080
+10:57:27.112: [pipewire]     Framerate: 5/1
+10:57:27.116: [pipewire] Stream 0x58dec4532030 state: "streaming" (error: none)
+10:57:30.623: [linux-vkcapture] destroy
+10:57:30.623: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:57:30.624: [pipewire] Stream 0x58dec4532030 state: "unconnected" (error: none)
+10:57:30.656: All scene data cleared
+10:57:30.656: ------------------------------------------------
+10:57:30.664: ------------------------------------------------
+10:57:30.664: Loaded scenes:
+10:57:30.664: ------------------------------------------------
+10:57:30.664: Switched to scene collection '931300a7-40b2-4ddd-a591-ec94f0ca8037' (931300a7-40b2-4ddd-a591-ec94f0ca8037.json)
+10:57:30.664: ------------------------------------------------
+10:57:34.195: All scene data cleared
+10:57:34.195: ------------------------------------------------
+10:57:34.207: Source ID 'text_gdiplus_v3' not found
+10:57:34.207: Failed to create source 'Youtube Username'!
+10:57:34.207: Source ID 'text_gdiplus_v3' not found
+10:57:34.207: Failed to create source 'Instagram Username'!
+10:57:34.302: Source ID 'browser_source' not found
+10:57:34.303: Failed to create source 'AlertBox'!
+10:57:34.352: Source ID 'browser_source' not found
+10:57:34.352: Failed to create source 'Chatbox'!
+10:57:34.396: Source ID 'dshow_input' not found
+10:57:34.396: Failed to create source 'Webcam'!
+10:57:34.396: Source ID 'game_capture' not found
+10:57:34.396: Failed to create source 'Game Capture'!
+10:57:34.444: Source ID 'text_gdiplus_v3' not found
+10:57:34.444: Failed to create source 'Bar Overlay'!
+10:57:34.444: Source ID 'text_gdiplus_v3' not found
+10:57:34.445: Failed to create source 'FaceCam'!
+10:57:34.447: ext_screencopy_manager_v1 not available
+10:57:34.448: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:57:34.448: [pipewire] Created stream 0x58dec4532030
+10:57:34.448: [pipewire] Stream 0x58dec4532030 state: "connecting" (error: none)
+10:57:34.448: [pipewire] Playing stream 0x58dec4532030
+10:57:34.448: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:57:34.450: Switched to scene 'Starting Screen'
+10:57:34.450: ------------------------------------------------
+10:57:34.450: Loaded scenes:
+10:57:34.450: - scene 'Livescreen':
+10:57:34.450:     - source: 'Game Capture' (game_capture)
+10:57:34.450:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:57:34.450:     - source: 'FaceCam' (text_gdiplus_v3)
+10:57:34.450:     - source: 'AlertBox' (browser_source)
+10:57:34.451:     - source: 'Game Capture 2' (vkcapture-source)
+10:57:34.451:     - source: 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source)
+10:57:34.451: - scene 'Collab Cam Scene':
+10:57:34.451:     - source: 'Game Capture' (game_capture)
+10:57:34.451:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:57:34.451:     - source: 'FaceCam' (text_gdiplus_v3)
+10:57:34.451:     - source: 'AlertBox' (browser_source)
+10:57:34.451: - scene 'Starting Screen':
+10:57:34.451:     - source: 'Social Media (Change Me)' (scene)
+10:57:34.451:     - source: 'AlertBox' (browser_source)
+10:57:34.451:     - source: 'Starting Sceen' (image_source)
+10:57:34.451: - scene 'Intermission Screen':
+10:57:34.451:     - source: 'Game Capture' (game_capture)
+10:57:34.451:     - source: 'Webcam' (dshow_input)
+10:57:34.451:     - source: 'Intermission Sceen' (image_source)
+10:57:34.451:     - source: 'Chatbox' (browser_source)
+10:57:34.451:     - source: 'Social Media (Change Me)' (scene)
+10:57:34.451:     - source: 'AlertBox' (browser_source)
+10:57:34.451: - scene 'Back Soon Screen':
+10:57:34.451:     - source: 'Backsoon sceen' (image_source)
+10:57:34.451:     - source: 'Social Media (Change Me)' (scene)
+10:57:34.451:     - source: 'AlertBox' (browser_source)
+10:57:34.451: - scene 'Ending Screen':
+10:57:34.451:     - source: 'Ending Sceen' (image_source)
+10:57:34.451:     - source: 'Social Media (Change Me)' (scene)
+10:57:34.451:     - source: 'AlertBox' (browser_source)
+10:57:34.451: - scene 'Offline Screen':
+10:57:34.451:     - source: 'Offline Sceen' (image_source)
+10:57:34.451:     - source: 'Social Media (Change Me)' (scene)
+10:57:34.451: - scene 'Social Media (Change Me)':
+10:57:34.451:     - source: 'Youtube group' (group)
+10:57:34.451:         - source: 'youtube' (image_source)
+10:57:34.451:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:57:34.451:     - source: 'Instagramm' (group)
+10:57:34.451:         - source: 'Instagram' (image_source)
+10:57:34.451:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:57:34.451:     - source: 'Twitter group' (group)
+10:57:34.451:         - source: 'Twitter' (image_source)
+10:57:34.451:         - source: 'Twitter Username' (text_ft2_source_v2)
+10:57:34.451: ------------------------------------------------
+10:57:34.457: Removed scene collection '931300a7-40b2-4ddd-a591-ec94f0ca8037' (931300a7-40b2-4ddd-a591-ec94f0ca8037.json)
+10:57:34.457: ------------------------------------------------
+10:57:34.457: Switched to scene collection 'Wehttamsnaps' (Wehttamsnaps.json)
+10:57:34.457: ------------------------------------------------
+10:57:34.478: [Media Source 'fire Stinger (Stinger)']: settings:
+10:57:34.478: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:57:34.478: 	input_format:            (null)
+10:57:34.478: 	speed:                   100
+10:57:34.478: 	is_looping:              no
+10:57:34.478: 	is_linear_alpha:         no
+10:57:34.478: 	is_hw_decoding:          yes
+10:57:34.478: 	is_clear_on_media_end:   yes
+10:57:34.478: 	restart_on_activate:     yes
+10:57:34.478: 	close_when_inactive:     no
+10:57:34.478: 	full_decode:             no
+10:57:34.478: 	ffmpeg_options:          
+10:57:34.625: [pipewire] Negotiated format:
+10:57:34.625: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:57:34.626: [pipewire]     Size: 1920x1080
+10:57:34.626: [pipewire]     Framerate: 5/1
+10:57:34.699: [pipewire] Stream 0x58dec4532030 state: "streaming" (error: none)
+10:57:37.368: [linux-vkcapture] destroy
+10:57:37.369: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:57:37.369: [pipewire] Stream 0x58dec4532030 state: "unconnected" (error: none)
+10:57:37.377: All scene data cleared
+10:57:37.377: ------------------------------------------------
+10:57:37.385: ------------------------------------------------
+10:57:37.385: Loaded scenes:
+10:57:37.385: ------------------------------------------------
+10:57:37.385: Switched to scene collection '946b9d6d-85ef-44a0-95b0-73a838bed29b' (946b9d6d-85ef-44a0-95b0-73a838bed29b.json)
+10:57:37.385: ------------------------------------------------
+10:57:41.512: All scene data cleared
+10:57:41.512: ------------------------------------------------
+10:57:41.525: Source ID 'text_gdiplus_v3' not found
+10:57:41.525: Failed to create source 'Youtube Username'!
+10:57:41.525: Source ID 'text_gdiplus_v3' not found
+10:57:41.525: Failed to create source 'Instagram Username'!
+10:57:41.620: Source ID 'browser_source' not found
+10:57:41.620: Failed to create source 'AlertBox'!
+10:57:41.671: Source ID 'browser_source' not found
+10:57:41.672: Failed to create source 'Chatbox'!
+10:57:41.715: Source ID 'dshow_input' not found
+10:57:41.715: Failed to create source 'Webcam'!
+10:57:41.715: Source ID 'game_capture' not found
+10:57:41.715: Failed to create source 'Game Capture'!
+10:57:41.763: Source ID 'text_gdiplus_v3' not found
+10:57:41.763: Failed to create source 'Bar Overlay'!
+10:57:41.763: Source ID 'text_gdiplus_v3' not found
+10:57:41.763: Failed to create source 'FaceCam'!
+10:57:41.766: ext_screencopy_manager_v1 not available
+10:57:41.766: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_4_1.2'
+10:57:41.766: [pipewire] Created stream 0x58dec4532030
+10:57:41.766: [pipewire] Stream 0x58dec4532030 state: "connecting" (error: none)
+10:57:41.766: [pipewire] Playing stream 0x58dec4532030
+10:57:41.767: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+10:57:41.769: Switched to scene 'Starting Screen'
+10:57:41.769: ------------------------------------------------
+10:57:41.769: Loaded scenes:
+10:57:41.769: - scene 'Livescreen':
+10:57:41.769:     - source: 'Game Capture' (game_capture)
+10:57:41.769:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:57:41.769:     - source: 'FaceCam' (text_gdiplus_v3)
+10:57:41.769:     - source: 'AlertBox' (browser_source)
+10:57:41.769:     - source: 'Game Capture 2' (vkcapture-source)
+10:57:41.769:     - source: 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source)
+10:57:41.769: - scene 'Collab Cam Scene':
+10:57:41.769:     - source: 'Game Capture' (game_capture)
+10:57:41.769:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:57:41.769:     - source: 'FaceCam' (text_gdiplus_v3)
+10:57:41.769:     - source: 'AlertBox' (browser_source)
+10:57:41.769: - scene 'Starting Screen':
+10:57:41.769:     - source: 'Social Media (Change Me)' (scene)
+10:57:41.769:     - source: 'AlertBox' (browser_source)
+10:57:41.769:     - source: 'Starting Sceen' (image_source)
+10:57:41.769: - scene 'Intermission Screen':
+10:57:41.769:     - source: 'Game Capture' (game_capture)
+10:57:41.769:     - source: 'Webcam' (dshow_input)
+10:57:41.769:     - source: 'Intermission Sceen' (image_source)
+10:57:41.769:     - source: 'Chatbox' (browser_source)
+10:57:41.769:     - source: 'Social Media (Change Me)' (scene)
+10:57:41.769:     - source: 'AlertBox' (browser_source)
+10:57:41.769: - scene 'Back Soon Screen':
+10:57:41.769:     - source: 'Backsoon sceen' (image_source)
+10:57:41.769:     - source: 'Social Media (Change Me)' (scene)
+10:57:41.769:     - source: 'AlertBox' (browser_source)
+10:57:41.769: - scene 'Ending Screen':
+10:57:41.769:     - source: 'Ending Sceen' (image_source)
+10:57:41.769:     - source: 'Social Media (Change Me)' (scene)
+10:57:41.769:     - source: 'AlertBox' (browser_source)
+10:57:41.769: - scene 'Offline Screen':
+10:57:41.769:     - source: 'Offline Sceen' (image_source)
+10:57:41.769:     - source: 'Social Media (Change Me)' (scene)
+10:57:41.769: - scene 'Social Media (Change Me)':
+10:57:41.769:     - source: 'Youtube group' (group)
+10:57:41.769:         - source: 'youtube' (image_source)
+10:57:41.769:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:57:41.769:     - source: 'Instagramm' (group)
+10:57:41.769:         - source: 'Instagram' (image_source)
+10:57:41.769:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:57:41.769:     - source: 'Twitter group' (group)
+10:57:41.769:         - source: 'Twitter' (image_source)
+10:57:41.769:         - source: 'Twitter Username' (text_ft2_source_v2)
+10:57:41.769: ------------------------------------------------
+10:57:41.775: Removed scene collection '946b9d6d-85ef-44a0-95b0-73a838bed29b' (946b9d6d-85ef-44a0-95b0-73a838bed29b.json)
+10:57:41.775: ------------------------------------------------
+10:57:41.775: Switched to scene collection 'Wehttamsnaps' (Wehttamsnaps.json)
+10:57:41.775: ------------------------------------------------
+10:57:41.778: [Media Source 'fire Stinger (Stinger)']: settings:
+10:57:41.778: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:57:41.778: 	input_format:            (null)
+10:57:41.778: 	speed:                   100
+10:57:41.778: 	is_looping:              no
+10:57:41.778: 	is_linear_alpha:         no
+10:57:41.778: 	is_hw_decoding:          yes
+10:57:41.778: 	is_clear_on_media_end:   yes
+10:57:41.778: 	restart_on_activate:     yes
+10:57:41.778: 	close_when_inactive:     no
+10:57:41.778: 	full_decode:             no
+10:57:41.778: 	ffmpeg_options:          
+10:57:41.942: [pipewire] Negotiated format:
+10:57:41.942: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+10:57:41.942: [pipewire]     Size: 1920x1080
+10:57:41.942: [pipewire]     Framerate: 5/1
+10:57:42.015: [pipewire] Stream 0x58dec4532030 state: "streaming" (error: none)
+10:58:28.346: Settings changed (appearance)
+10:58:28.346: ------------------------------------------------
+10:59:02.808: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x58dec24c13c0 with focusing surface 0x58dec3f5d190
+10:59:29.695: Settings changed (outputs)
+10:59:29.695: ------------------------------------------------
+11:00:15.745: Settings changed (outputs)
+11:00:15.745: ------------------------------------------------
+11:00:57.075: ==== Shutting down ==================================================
+11:00:57.086: [linux-vkcapture] destroy
+11:00:57.086: [pipewire] Stream 0x58dec4532030 state: "paused" (error: none)
+11:00:57.086: [pipewire] Stream 0x58dec4532030 state: "unconnected" (error: none)
+11:00:57.121: All scene data cleared
+11:00:57.121: ------------------------------------------------
+11:00:57.225: [obs-websocket] [obs_module_unload] Shutting down...
+11:00:57.225: Tried to call obs_frontend_remove_event_callback with no callbacks!
+11:00:57.225: [obs-websocket] [obs_module_unload] Finished shutting down.
+11:00:57.226: [linux-vkcapture] plugin unloaded
+11:00:57.233: [Scripting] Total detached callbacks: 0
+11:00:57.234: Freeing OBS context data
+11:00:57.249: == Profiler Results =============================
+11:00:57.249: run_program_init: 799.67 ms
+11:00:57.249:  ┣OBSApp::AppInit: 15.517 ms
+11:00:57.249:  ┃ ┗OBSApp::InitLocale: 0.67 ms
+11:00:57.249:  ┗OBSApp::OBSInit: 727.64 ms
+11:00:57.249:    ┣obs_startup: 1.553 ms
+11:00:57.249:    ┗OBSBasic::OBSInit: 695.085 ms
+11:00:57.249:      ┣OBSBasic::InitBasicConfig: 0.807 ms
+11:00:57.249:      ┣OBSBasic::ResetAudio: 0.177 ms
+11:00:57.249:      ┣OBSBasic::ResetVideo: 97.002 ms
+11:00:57.249:      ┃ ┗obs_init_graphics: 94.651 ms
+11:00:57.249:      ┃   ┗shader compilation: 28.663 ms
+11:00:57.249:      ┣OBSBasic::InitOBSCallbacks: 0.004 ms
+11:00:57.249:      ┣OBSBasic::InitHotkeys: 0.023 ms
+11:00:57.249:      ┣obs_load_all_modules2: 211.331 ms
+11:00:57.249:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+11:00:57.249:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+11:00:57.249:      ┃ ┣obs_init_module(decklink.so): 0.054 ms
+11:00:57.249:      ┃ ┣obs_init_module(frontend-tools.so): 98.268 ms
+11:00:57.249:      ┃ ┣obs_init_module(image-source.so): 0.006 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-pipewire.so): 18.308 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.001 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-v4l2.so): 2.763 ms
+11:00:57.249:      ┃ ┣obs_init_module(linux-vkcapture.so): 0.062 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-ffmpeg.so): 12.706 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-filters.so): 0.013 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-nvenc.so): 0.056 ms
+11:00:57.249:      ┃ ┃ ┗nvenc_check: 0.049 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-outputs.so): 0.003 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-qsv11.so): 8.781 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-transitions.so): 0.005 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-vaapi.so): 10.467 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-vst.so): 0.002 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-webrtc.so): 0.002 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-websocket.so): 4.139 ms
+11:00:57.249:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+11:00:57.249:      ┃ ┣obs_init_module(rtmp-services.so): 0.238 ms
+11:00:57.249:      ┃ ┗obs_init_module(text-freetype2.so): 0.007 ms
+11:00:57.249:      ┣OBSBasic::InitService: 1.326 ms
+11:00:57.249:      ┣OBSBasic::ResetOutputs: 0.158 ms
+11:00:57.249:      ┣OBSBasic::CreateHotkeys: 0.023 ms
+11:00:57.249:      ┣OBSBasic::InitPrimitives: 0.432 ms
+11:00:57.249:      ┗OBSBasic::Load: 286.89 ms
+11:00:57.249: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.058 ms, 99th percentile=0.001 ms, 100% below 25 ms
+11:00:57.249: audio_thread(Audio): min=0.009 ms, median=0.029 ms, max=6.819 ms, 99th percentile=0.389 ms
+11:00:57.249: obs_graphics_thread(33.3333 ms): min=0.153 ms, median=0.925 ms, max=25.023 ms, 99th percentile=2.716 ms, 100% below 33.333 ms
+11:00:57.249:  ┣tick_sources: min=0 ms, median=0.025 ms, max=24.032 ms, 99th percentile=1.097 ms
+11:00:57.249:  ┣output_frame: min=0.091 ms, median=0.41 ms, max=7.903 ms, 99th percentile=1.125 ms
+11:00:57.249:  ┃ ┗gs_context(video->graphics): min=0.09 ms, median=0.408 ms, max=7.902 ms, 99th percentile=1.12 ms
+11:00:57.249:  ┃   ┣render_video: min=0.016 ms, median=0.117 ms, max=5.08 ms, 99th percentile=0.769 ms
+11:00:57.249:  ┃   ┃ ┗render_main_texture: min=0.012 ms, median=0.113 ms, max=5.074 ms, 99th percentile=0.764 ms
+11:00:57.249:  ┃   ┗gs_flush: min=0.003 ms, median=0.009 ms, max=0.078 ms, 99th percentile=0.028 ms
+11:00:57.249:  ┗render_displays: min=0.005 ms, median=0.383 ms, max=6.256 ms, 99th percentile=1.56 ms
+11:00:57.249: OBSBasicSettings::LoadThemeList: min=0.002 ms, median=0.002 ms, max=0.037 ms, 99th percentile=0.037 ms
+11:00:57.250: OBSBasic::ResetOutputs: min=6.414 ms, median=0 ms, max=7.71 ms, 99th percentile=7.71 ms
+11:00:57.250: =================================================
+11:00:57.250: == Profiler Time Between Calls ==================
+11:00:57.250: obs_hotkey_thread(25 ms): min=25.013 ms, median=25.106 ms, max=29.832 ms, 99.9866% within ±2% of 25 ms (0% lower, 0.0134232% higher)
+11:00:57.250: obs_graphics_thread(33.3333 ms): min=28.595 ms, median=33.333 ms, max=38.071 ms, 99.9644% within ±2% of 33.333 ms (0.0178209% lower, 0.0178209% higher)
+11:00:57.250: =================================================
+11:00:57.257: Number of memory leaks: 0

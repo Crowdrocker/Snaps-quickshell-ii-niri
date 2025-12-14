@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 4,
+  "nodeType": "RootNode",
+  "sources": {
+    "schemaVersion": 4,
+    "nodeType": "SourcesNode",
+    "items": [
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "wasapi_output_capture_e124b5b3-a05b-402b-aa0a-fbdd3c2e3fee",
+        "name": "Desktop Audio",
+        "type": "wasapi_output_capture",
+        "settings": {},
+        "volume": 1,
+        "channel": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 0,
+        "mixerHidden": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "wasapi_input_capture_730f1c91-82a9-433f-9131-2e85dd5fcdcc",
+        "name": "Mic/Aux",
+        "type": "wasapi_input_capture",
+        "settings": {
+          "device_id": "default"
+        },
+        "volume": 1,
+        "channel": 3,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 0,
+        "mixerHidden": false
+      }
+    ]
+  },
+  "scenes": {
+    "schemaVersion": 1,
+    "nodeType": "ScenesNode",
+    "items": [
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": []
+        },
+        "id": "scene_a2c41d00-696b-49d4-881d-0a88465a6735",
+        "name": "Scene",
+        "active": true
+      }
+    ]
+  },
+  "transitions": {
+    "schemaVersion": 2,
+    "nodeType": "TransitionsNode",
+    "transitions": [
+      {
+        "id": "40ab94ad-c7a0-40ec-9fe3-a5ade8ffcfa2",
+        "name": "Global Transition",
+        "type": "cut_transition",
+        "duration": 300,
+        "settings": {},
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      }
+    ],
+    "connections": [],
+    "defaultTransitionId": "40ab94ad-c7a0-40ec-9fe3-a5ade8ffcfa2"
+  },
+  "hotkeys": {
+    "schemaVersion": 2,
+    "nodeType": "HotkeysNode",
+    "items": []
+  },
+  "guestCam": {
+    "schemaVersion": 1,
+    "nodeType": "GuestCamNode",
+    "audioSourceId": "wasapi_input_capture_730f1c91-82a9-433f-9131-2e85dd5fcdcc",
+    "videoSourceId": ""
+  },
+  "nodeMap": {
+    "schemaVersion": 1,
+    "nodeType": "NodeMapNode"
+  },
+  "baseResolution": {
+    "baseWidth": 1920,
+    "baseHeight": 1080
+  },
+  "baseResolutions": {
+    "horizontal": {
+      "baseWidth": 1920,
+      "baseHeight": 1080
+    },
+    "vertical": {
+      "baseWidth": 720,
+      "baseHeight": 1280
+    }
+  },
+  "selectiveRecording": false,
+  "dualOutputMode": false,
+  "operatingSystem": "win32"
+}

@@ -1,0 +1,418 @@
+02:32:45.649: Platform: Wayland
+02:32:45.649: CPU Name: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+02:32:45.649: CPU Speed: 3591.708MHz
+02:32:45.649: Physical Cores: 4, Logical Cores: 8
+02:32:45.649: Physical Memory: 15935MB Total, 2048MB Free
+02:32:45.649: Kernel Version: Linux 6.17.9-2-cachyos
+02:32:45.649: Distribution: "CachyOS Linux" Unknown
+02:32:45.649: Desktop Environment: niri (niri)
+02:32:45.649: Session Type: wayland
+02:32:45.650: Current Date/Time: 2025-12-03, 02:32:45 AM
+02:32:45.650: Browser Hardware Acceleration: true
+02:32:45.650: Qt Version: 6.10.1 (runtime), 6.10.0 (compiled)
+02:32:45.650: Portable mode: false
+02:32:45.696: OBS 32.0.2 (linux)
+02:32:45.696: ---------------------------------
+02:32:45.697: ---------------------------------
+02:32:45.697: audio settings reset:
+02:32:45.697: 	samples per sec: 48000
+02:32:45.697: 	speakers:        2
+02:32:45.697: 	max buffering:   960 milliseconds
+02:32:45.697: 	buffering type:  dynamically increasing
+02:32:45.699: ---------------------------------
+02:32:45.699: Initializing OpenGL...
+02:32:45.699: Using EGL/Wayland
+02:32:45.743: Initialized EGL 1.5
+02:32:45.772: Loading up OpenGL on adapter AMD AMD Radeon RX 580 Series (radeonsi, polaris10, ACO, DRM 3.64, 6.17.9-2-cachyos)
+02:32:45.772: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.2.7-cachyos1.2, shading language 4.60
+02:32:45.815: ---------------------------------
+02:32:45.815: video settings reset:
+02:32:45.815: 	base resolution:   1920x1080
+02:32:45.815: 	output resolution: 1920x1080
+02:32:45.815: 	downscale filter:  Bicubic
+02:32:45.815: 	fps:               30/1
+02:32:45.815: 	format:            NV12
+02:32:45.815: 	YUV mode:          Rec. 709/Partial
+02:32:45.815: NV12 texture support enabled
+02:32:45.815: P010 texture support not available
+02:32:45.817: Audio monitoring device:
+02:32:45.817: 	name: Default
+02:32:45.817: 	id: default
+02:32:45.818: ---------------------------------
+02:32:45.819: Failed to load 'en-US' text for module: 'decklink-captions.so'
+02:32:45.820: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+02:32:45.821: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+02:32:45.821: Failed to initialize module 'decklink.so'
+02:32:45.969: [pipewire] Available capture sources:
+02:32:45.969: [pipewire]     - Monitor source
+02:32:45.969: [pipewire]     - Window source
+02:32:45.977: [linux-vkcapture] plugin loaded successfully (version 1.5.3)
+02:32:45.998: VAAPI: API version 1.22
+02:32:45.998: FFmpeg VAAPI H264 encoding supported
+02:32:46.003: FFmpeg VAAPI AV1 encoding not supported
+02:32:46.006: FFmpeg VAAPI HEVC encoding supported
+02:32:46.018: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+02:32:46.018: 
+02:32:46.018: NVENC not supported
+02:32:46.018: Failed to initialize module 'obs-nvenc.so'
+02:32:46.041: [obs-vaapi] version: 0.4.2, gst-runtime: 1.26.9
+02:32:46.186: [obs-vaapi] found vah264enc
+02:32:46.186: [obs-vaapi] found vah265enc
+02:32:46.186: [obs-vaapi] found vaapih265enc
+02:32:46.186: [obs-vaapi] found vaapih264enc
+02:32:46.207: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+02:32:46.207: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.0 | Qt version (run-time): 6.10.1
+02:32:46.207: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+02:32:46.212: [obs-websocket] [obs_module_load] Module loaded.
+02:32:46.216: ---------------------------------
+02:32:46.216:   Loaded Modules:
+02:32:46.216:     text-freetype2.so
+02:32:46.216:     rtmp-services.so
+02:32:46.216:     obs-x264.so
+02:32:46.216:     obs-websocket.so
+02:32:46.216:     obs-webrtc.so
+02:32:46.216:     obs-vst.so
+02:32:46.216:     obs-vaapi.so
+02:32:46.216:     obs-transitions.so
+02:32:46.216:     obs-qsv11.so
+02:32:46.216:     obs-outputs.so
+02:32:46.216:     obs-libfdk.so
+02:32:46.216:     obs-filters.so
+02:32:46.216:     obs-ffmpeg.so
+02:32:46.216:     linux-vkcapture.so
+02:32:46.216:     linux-v4l2.so
+02:32:46.216:     linux-pulseaudio.so
+02:32:46.216:     linux-pipewire.so
+02:32:46.216:     linux-jack.so
+02:32:46.216:     linux-capture.so
+02:32:46.216:     linux-alsa.so
+02:32:46.216:     image-source.so
+02:32:46.216:     frontend-tools.so
+02:32:46.216:     decklink-output-ui.so
+02:32:46.216:     decklink-captions.so
+02:32:46.216: ---------------------------------
+02:32:46.216: ---------------------------------
+02:32:46.216: Available Encoders:
+02:32:46.216:   Video Encoders:
+02:32:46.216: 	- ffmpeg_svt_av1 (SVT-AV1)
+02:32:46.216: 	- ffmpeg_aom_av1 (AOM AV1)
+02:32:46.216: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+02:32:46.216: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+02:32:46.225: 	- obs-va-vah264enc (VAAPI H.264 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+02:32:46.231: 	- obs-va-vah265enc (VAAPI H.265 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+02:32:46.232: 	- obs-vaapi-vaapih265enc (VAAPI H.265  (Legacy))
+02:32:46.232: 	- obs-vaapi-vaapih264enc (VAAPI H.264  (Legacy))
+02:32:46.232: 	- obs_x264 (x264)
+02:32:46.232:   Audio Encoders:
+02:32:46.232: 	- ffmpeg_aac (FFmpeg AAC)
+02:32:46.232: 	- ffmpeg_opus (FFmpeg Opus)
+02:32:46.232: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+02:32:46.232: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+02:32:46.232: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+02:32:46.232: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+02:32:46.232: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+02:32:46.232: 	- libfdk_aac (libfdk AAC)
+02:32:46.232: ==== Startup complete ===============================================
+02:32:46.253: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+02:32:46.253: All scene data cleared
+02:32:46.253: ------------------------------------------------
+02:32:46.257: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:32:46.258: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:32:46.258: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+02:32:46.258: [Loaded global audio device]: 'Desktop Audio'
+02:32:46.258: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:32:46.258: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:32:46.258: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo' (default)
+02:32:46.258: [Loaded global audio device]: 'Mic/Aux'
+02:32:46.259: PipeWire initialized
+02:32:46.260: Switched to scene 'Scene'
+02:32:46.260: ------------------------------------------------
+02:32:46.260: Loaded scenes:
+02:32:46.260: - scene 'Scene':
+02:32:46.260:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+02:32:46.260: ------------------------------------------------
+02:32:46.273: Device for 'Audio Output Capture' source is also used for audio monitoring:
+02:32:46.273: Deduplication logic is being applied to all monitored sources.
+02:32:46.273: 
+02:32:46.336: [pipewire] Screencast session created
+02:32:46.357: [pipewire] Asking for monitor and window
+02:32:46.373: [pipewire] source selected, setting up screencast
+02:32:46.379: [pipewire] Server version: 1.4.9
+02:32:46.379: [pipewire] Library version: 1.4.9
+02:32:46.379: [pipewire] Header version: 1.4.9
+02:32:46.380: [pipewire] Created stream 0x55aa1f2bf1d0
+02:32:46.380: [pipewire] Stream 0x55aa1f2bf1d0 state: "connecting" (error: none)
+02:32:46.380: [pipewire] Playing stream 0x55aa1f2bf1d0
+02:32:46.380: [pipewire] Stream 0x55aa1f2bf1d0 state: "paused" (error: none)
+02:32:46.393: [pipewire] Negotiated format:
+02:32:46.393: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+02:32:46.393: [pipewire]     Modifier: 0xffffffffffffff
+02:32:46.393: [pipewire]     Size: 1920x1080
+02:32:46.393: [pipewire]     Framerate: 0/1
+02:32:46.401: [pipewire] Stream 0x55aa1f2bf1d0 state: "streaming" (error: none)
+02:32:46.828: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+02:32:46.828: 
+02:32:46.871: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+02:32:46.871: 
+02:33:03.247: pulse-input: Stopped recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor'
+02:33:03.247: pulse-input: Got 679 packets with 814800 frames
+02:33:03.247: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+02:33:03.247: pulse-input: Got 677 packets with 812400 frames
+02:33:03.248: [pipewire] Stream 0x55aa1f2bf1d0 state: "paused" (error: none)
+02:33:03.248: [pipewire] Stream 0x55aa1f2bf1d0 state: "unconnected" (error: none)
+02:33:03.302: All scene data cleared
+02:33:03.302: ------------------------------------------------
+02:33:03.310: ------------------------------------------------
+02:33:03.310: Loaded scenes:
+02:33:03.310: ------------------------------------------------
+02:33:03.310: Switched to scene collection 'obs_scene_templates' (obs_scene_templates.json)
+02:33:03.310: ------------------------------------------------
+02:33:12.366: All scene data cleared
+02:33:12.366: ------------------------------------------------
+02:33:12.367: PipeWire initialized
+02:33:12.367: Source ID 'pipewire-audio-capture' not found
+02:33:12.367: Failed to create source 'Desktop Audio'!
+02:33:12.367: Source ID 'pipewire-audio-capture' not found
+02:33:12.368: Failed to create source 'Game Audio'!
+02:33:12.368: Source ID 'pipewire-audio-capture' not found
+02:33:12.368: Failed to create source 'Microphone'!
+02:33:12.368: [portals] Request cancelled
+02:33:12.369: ------------------------------------------------
+02:33:12.369: Loaded scenes:
+02:33:12.369: ------------------------------------------------
+02:33:12.369: Switched to scene collection 'WehttamSnaps' (WehttamSnaps.json)
+02:33:12.369: ------------------------------------------------
+02:33:17.123: All scene data cleared
+02:33:17.123: ------------------------------------------------
+02:33:17.125: ------------------------------------------------
+02:33:17.125: Loaded scenes:
+02:33:17.125: ------------------------------------------------
+02:33:17.125: Switched to scene collection 'obs_scene_templates' (obs_scene_templates.json)
+02:33:17.125: ------------------------------------------------
+02:33:56.782: ------------------------------------------------
+02:33:56.782: Removed profile 'Untitled' (Untitled)
+02:33:56.782: ------------------------------------------------
+02:33:56.782: Renamed profile 'Untitled' to 'WehttamSnaps' (WehttamSnaps)
+02:33:56.782: ------------------------------------------------
+02:33:56.784: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f8c7d90 with focusing surface 0x55aa1f77f830
+02:34:12.397: User added scene 'Audio'
+02:34:12.398: User switched to scene 'Audio'
+02:34:12.408: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f8c7d90 with focusing surface 0x55aa1f698900
+02:34:34.066: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:34:34.066: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:34:34.066: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo' (default)
+02:34:34.068: User added source 'Mic' (pulse_input_capture) to scene 'Audio'
+02:34:34.095: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f703790 with focusing surface 0x55aa1f8c7d90
+02:34:37.909: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f703790 with focusing surface 0x55aa1f8c7d90
+02:34:41.338: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f0a07d0 with focusing surface 0x55aa1f8c7d90
+02:34:47.669: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f8c7d90 with focusing surface 0x55aa1f0a07d0
+02:34:47.925: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f0a07d0 with focusing surface 0x55aa1f8c7d90
+02:34:48.054: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f8c7d90 with focusing surface 0x55aa1f0a07d0
+02:34:48.374: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f0a07d0 with focusing surface 0x55aa1f8c7d90
+02:34:48.836: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:34:48.836: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:34:48.836: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+02:34:48.839: User added source 'Browser' (pulse_output_capture) to scene 'Audio'
+02:34:48.855: Device for 'Audio Output Capture' source is also used for audio monitoring:
+02:34:48.855: Deduplication logic is being applied to all monitored sources.
+02:34:48.855: 
+02:34:48.869: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f325d40 with focusing surface 0x55aa1f8c7d90
+02:34:49.638: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f325d40 with focusing surface 0x55aa1f8c7d90
+02:34:51.522: pulse-input: Stopped recording from 'browser_audio_sink.monitor'
+02:34:51.522: pulse-input: Got 107 packets with 128400 frames
+02:34:51.523: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:34:51.523: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:34:51.523: pulse-input: Started recording from 'browser_audio_sink.monitor'
+02:34:55.437: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f6b51a0 with focusing surface 0x55aa1f8c7d90
+02:34:55.738: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f8c7d90 with focusing surface 0x55aa1f6b51a0
+02:34:56.009: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f6b51a0 with focusing surface 0x55aa1f8c7d90
+02:35:03.929: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:35:03.929: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:35:03.929: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+02:35:03.932: User added source 'Discord' (pulse_output_capture) to scene 'Audio'
+02:35:03.937: Device for 'Audio Output Capture' source is also used for audio monitoring:
+02:35:03.937: Deduplication logic is being applied to all monitored sources.
+02:35:03.937: 
+02:35:03.961: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f3c96f0 with focusing surface 0x55aa1f8c7d90
+02:35:06.349: pulse-input: Stopped recording from 'discord_audio_sink.monitor'
+02:35:06.349: pulse-input: Got 96 packets with 115200 frames
+02:35:06.349: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:35:06.350: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:35:06.350: pulse-input: Started recording from 'discord_audio_sink.monitor'
+02:35:11.922: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f3a7bc0 with focusing surface 0x55aa1f8c7d90
+02:35:19.895: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:35:19.895: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:35:19.895: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor' (default)
+02:35:19.898: User added source 'Game' (pulse_output_capture) to scene 'Audio'
+02:35:19.916: Device for 'Audio Output Capture' source is also used for audio monitoring:
+02:35:19.916: Deduplication logic is being applied to all monitored sources.
+02:35:19.916: 
+02:35:19.925: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f4633b0 with focusing surface 0x55aa1f8c7d90
+02:35:22.035: pulse-input: Stopped recording from 'game_audio_sink.monitor'
+02:35:22.035: pulse-input: Got 85 packets with 102000 frames
+02:35:22.035: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:35:22.035: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:35:22.036: pulse-input: Started recording from 'game_audio_sink.monitor'
+02:35:23.537: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f4633b0 with focusing surface 0x55aa1f8c7d90
+02:35:28.039: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f445c90 with focusing surface 0x55aa1f8c7d90
+02:35:43.130: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f445c90 with focusing surface 0x55aa1f8c7d90
+02:35:43.955: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f445c90 with focusing surface 0x55aa1f8c7d90
+02:36:13.384: ---------------------------------
+02:36:13.384: video settings reset:
+02:36:13.384: 	base resolution:   1920x1080
+02:36:13.384: 	output resolution: 1280x720
+02:36:13.384: 	downscale filter:  Bicubic
+02:36:13.384: 	fps:               30/1
+02:36:13.384: 	format:            NV12
+02:36:13.384: 	YUV mode:          Rec. 709/Partial
+02:36:13.384: NV12 texture support enabled
+02:36:13.384: P010 texture support not available
+02:36:13.386: Settings changed (video)
+02:36:13.386: ------------------------------------------------
+02:36:40.257: adding 64 milliseconds of audio buffering, total audio buffering is now 106 milliseconds (source: Game)
+02:36:40.257: 
+02:38:07.049: Settings changed (outputs)
+02:38:07.049: ------------------------------------------------
+02:38:43.828: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa205b5750 with focusing surface 0x55aa1f0a2290
+02:39:06.491: dataChanged() called with an invalid index range:
+02:39:06.491:     topleft: QModelIndex(0,0,0x0,ImporterModel(0x55aa1f66db80))
+02:39:06.491:     bottomRight:QModelIndex(-1,-1,0x0,QObject(0x0))
+02:39:06.493: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa1f0a2290 with focusing surface 0x55aa205b5750
+02:39:08.643: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f8c7d90 with focusing surface 0x55aa1f0a2290
+02:40:32.887: virtual void QtWaylandClient::QWaylandTextInputv3::enableSurface(wl_surface*) Try to enable surface 0x55aa20923d90 with focusing surface 0x55aa1f1dd760
+02:40:44.469: dataChanged() called with an invalid index range:
+02:40:44.469:     topleft: QModelIndex(0,0,0x0,ImporterModel(0x55aa1f1b1310))
+02:40:44.469:     bottomRight:QModelIndex(-1,-1,0x0,QObject(0x0))
+02:40:49.647: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+02:40:49.647: pulse-input: Got 15021 packets with 18025200 frames
+02:40:49.647: pulse-input: Stopped recording from 'browser_audio_sink.monitor'
+02:40:49.647: pulse-input: Got 14319 packets with 17182800 frames
+02:40:49.647: pulse-input: Stopped recording from 'discord_audio_sink.monitor'
+02:40:49.647: pulse-input: Got 13700 packets with 16440000 frames
+02:40:49.647: pulse-input: Stopped recording from 'game_audio_sink.monitor'
+02:40:49.647: pulse-input: Got 13101 packets with 15721200 frames
+02:40:49.691: All scene data cleared
+02:40:49.691: ------------------------------------------------
+02:40:49.695: ------------------------------------------------
+02:40:49.695: Loaded scenes:
+02:40:49.695: ------------------------------------------------
+02:40:49.695: Switched to scene collection 'Streaming' (Streaming.json)
+02:40:49.695: ------------------------------------------------
+02:41:02.723: All scene data cleared
+02:41:02.723: ------------------------------------------------
+02:41:02.729: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:41:02.729: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+02:41:02.729: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+02:41:02.730: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:41:02.730: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:41:02.730: pulse-input: Started recording from 'browser_audio_sink.monitor'
+02:41:02.730: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:41:02.731: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:41:02.731: pulse-input: Started recording from 'discord_audio_sink.monitor'
+02:41:02.731: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+02:41:02.731: pulse-input: Audio format: float32le, 48000 Hz, 2 channels
+02:41:02.731: pulse-input: Started recording from 'game_audio_sink.monitor'
+02:41:02.733: Switched to scene 'Audio'
+02:41:02.733: ------------------------------------------------
+02:41:02.733: Loaded scenes:
+02:41:02.733: - scene 'Audio':
+02:41:02.733:     - source: 'Mic' (pulse_input_capture)
+02:41:02.733:     - source: 'Browser' (pulse_output_capture)
+02:41:02.733:     - source: 'Discord' (pulse_output_capture)
+02:41:02.733:     - source: 'Game' (pulse_output_capture)
+02:41:02.733: ------------------------------------------------
+02:41:02.741: Switched to scene collection 'obs_scene_templates' (obs_scene_templates.json)
+02:41:02.741: ------------------------------------------------
+02:41:17.782: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55aa1f2c35c0 with focusing surface 0x55aa1f8c7d90
+02:41:24.789: ==== Shutting down ==================================================
+02:41:24.799: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+02:41:24.799: pulse-input: Got 881 packets with 1057200 frames
+02:41:24.799: pulse-input: Stopped recording from 'browser_audio_sink.monitor'
+02:41:24.799: pulse-input: Got 878 packets with 1053600 frames
+02:41:24.799: pulse-input: Stopped recording from 'discord_audio_sink.monitor'
+02:41:24.799: pulse-input: Got 865 packets with 1038000 frames
+02:41:24.799: pulse-input: Stopped recording from 'game_audio_sink.monitor'
+02:41:24.799: pulse-input: Got 880 packets with 1056000 frames
+02:41:24.827: All scene data cleared
+02:41:24.827: ------------------------------------------------
+02:41:24.888: [obs-websocket] [obs_module_unload] Shutting down...
+02:41:24.888: Tried to call obs_frontend_remove_event_callback with no callbacks!
+02:41:24.888: [obs-websocket] [obs_module_unload] Finished shutting down.
+02:41:24.889: [linux-vkcapture] plugin unloaded
+02:41:24.897: [Scripting] Total detached callbacks: 0
+02:41:24.897: Freeing OBS context data
+02:41:24.912: == Profiler Results =============================
+02:41:24.912: run_program_init: 724.195 ms
+02:41:24.912:  ┣OBSApp::AppInit: 17.133 ms
+02:41:24.912:  ┃ ┗OBSApp::InitLocale: 0.778 ms
+02:41:24.912:  ┗OBSApp::OBSInit: 678.242 ms
+02:41:24.912:    ┣obs_startup: 1.569 ms
+02:41:24.912:    ┗OBSBasic::OBSInit: 630.751 ms
+02:41:24.912:      ┣OBSBasic::InitBasicConfig: 0.697 ms
+02:41:24.912:      ┣OBSBasic::ResetAudio: 0.241 ms
+02:41:24.912:      ┣OBSBasic::ResetVideo: 119.762 ms
+02:41:24.912:      ┃ ┗obs_init_graphics: 117.508 ms
+02:41:24.912:      ┃   ┗shader compilation: 40.562 ms
+02:41:24.912:      ┣OBSBasic::InitOBSCallbacks: 0.004 ms
+02:41:24.912:      ┣OBSBasic::InitHotkeys: 0.027 ms
+02:41:24.912:      ┣obs_load_all_modules2: 397.704 ms
+02:41:24.912:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+02:41:24.912:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+02:41:24.912:      ┃ ┣obs_init_module(decklink.so): 0.062 ms
+02:41:24.912:      ┃ ┣obs_init_module(frontend-tools.so): 108.304 ms
+02:41:24.912:      ┃ ┣obs_init_module(image-source.so): 0.021 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-alsa.so): 0.002 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-jack.so): 0.002 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-pipewire.so): 17.099 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.002 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-v4l2.so): 3.405 ms
+02:41:24.912:      ┃ ┣obs_init_module(linux-vkcapture.so): 0.084 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-ffmpeg.so): 12.635 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-filters.so): 0.015 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-nvenc.so): 0.085 ms
+02:41:24.912:      ┃ ┃ ┗nvenc_check: 0.075 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-outputs.so): 0.004 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-qsv11.so): 8.344 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-transitions.so): 0.006 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-vaapi.so): 144.873 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-vst.so): 0.004 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-webrtc.so): 0.004 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-websocket.so): 5.258 ms
+02:41:24.912:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+02:41:24.912:      ┃ ┣obs_init_module(rtmp-services.so): 1.34 ms
+02:41:24.912:      ┃ ┗obs_init_module(text-freetype2.so): 0.008 ms
+02:41:24.912:      ┣OBSBasic::InitService: 1.859 ms
+02:41:24.912:      ┣OBSBasic::ResetOutputs: 0.186 ms
+02:41:24.912:      ┣OBSBasic::CreateHotkeys: 0.023 ms
+02:41:24.912:      ┣OBSBasic::InitPrimitives: 0.498 ms
+02:41:24.912:      ┗OBSBasic::Load: 25.869 ms
+02:41:24.912: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.064 ms, 99th percentile=0.001 ms, 100% below 25 ms
+02:41:24.912: audio_thread(Audio): min=0.009 ms, median=0.06 ms, max=4.82 ms, 99th percentile=0.218 ms
+02:41:24.912: obs_graphics_thread(33.3333 ms): min=0.154 ms, median=0.415 ms, max=5.228 ms, 99th percentile=1.212 ms, 100% below 33.333 ms
+02:41:24.912:  ┣tick_sources: min=0 ms, median=0.007 ms, max=0.038 ms, 99th percentile=0.019 ms
+02:41:24.912:  ┣output_frame: min=0.093 ms, median=0.172 ms, max=5.054 ms, 99th percentile=0.503 ms
+02:41:24.912:  ┃ ┗gs_context(video->graphics): min=0.093 ms, median=0.171 ms, max=5.04 ms, 99th percentile=0.499 ms
+02:41:24.912:  ┃   ┣render_video: min=0.017 ms, median=0.032 ms, max=4.05 ms, 99th percentile=0.106 ms
+02:41:24.912:  ┃   ┃ ┗render_main_texture: min=0.014 ms, median=0.027 ms, max=4.046 ms, 99th percentile=0.1 ms
+02:41:24.912:  ┃   ┗gs_flush: min=0.004 ms, median=0.127 ms, max=0.965 ms, 99th percentile=0.387 ms
+02:41:24.912:  ┗render_displays: min=0.003 ms, median=0.211 ms, max=4.537 ms, 99th percentile=0.671 ms
+02:41:24.912: OBSBasicSettings::LoadThemeList: min=0.032 ms, median=0 ms, max=0.033 ms, 99th percentile=0.033 ms
+02:41:24.913: obs_graphics_thread(33.3333 ms): min=0.113 ms, median=0.389 ms, max=1.324 ms, 99th percentile=1.13 ms, 100% below 33.333 ms
+02:41:24.913:  ┣tick_sources: min=0.001 ms, median=0.008 ms, max=0.063 ms, 99th percentile=0.021 ms
+02:41:24.913:  ┣output_frame: min=0.083 ms, median=0.157 ms, max=0.538 ms, 99th percentile=0.47 ms
+02:41:24.913:  ┃ ┗gs_context(video->graphics): min=0.083 ms, median=0.157 ms, max=0.537 ms, 99th percentile=0.469 ms
+02:41:24.913:  ┃   ┣render_video: min=0.016 ms, median=0.03 ms, max=0.125 ms, 99th percentile=0.081 ms
+02:41:24.913:  ┃   ┃ ┗render_main_texture: min=0.012 ms, median=0.026 ms, max=0.121 ms, 99th percentile=0.071 ms
+02:41:24.913:  ┃   ┗gs_flush: min=0.054 ms, median=0.12 ms, max=0.414 ms, 99th percentile=0.357 ms
+02:41:24.913:  ┗render_displays: min=0.003 ms, median=0.199 ms, max=0.808 ms, 99th percentile=0.623 ms
+02:41:24.913: OBSBasic::ResetVideo: 31.979 ms
+02:41:24.913: OBSBasic::ResetOutputs: 0.13 ms
+02:41:24.913: =================================================
+02:41:24.913: == Profiler Time Between Calls ==================
+02:41:24.913: obs_hotkey_thread(25 ms): min=25.013 ms, median=25.094 ms, max=52.84 ms, 99.9517% within ±2% of 25 ms (0% lower, 0.0483489% higher)
+02:41:24.913: obs_graphics_thread(33.3333 ms): min=13.222 ms, median=33.334 ms, max=53.402 ms, 99.8876% within ±2% of 33.333 ms (0.0642467% lower, 0.048185% higher)
+02:41:24.913: obs_graphics_thread(33.3333 ms): min=29.635 ms, median=33.333 ms, max=37.024 ms, 99.9572% within ±2% of 33.333 ms (0.0214041% lower, 0.0214041% higher)
+02:41:24.913: =================================================
+02:41:24.918: Number of memory leaks: 0

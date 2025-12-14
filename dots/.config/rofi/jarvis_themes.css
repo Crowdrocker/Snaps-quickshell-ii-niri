@@ -1,0 +1,237 @@
+/* ═══════════════════════════════════════════════════════════
+   J.A.R.V.I.S. ROFI THEME - Iron Man Style
+   Save as: ~/.config/rofi/jarvis.rasi
+   ═══════════════════════════════════════════════════════════ */
+
+* {
+    /* Iron Man Color Palette */
+    bg-main:         #0a0e14;
+    bg-alt:          #1a1f26;
+    bg-selected:     #7fbbb3;
+    fg-main:         #d3c6aa;
+    fg-selected:     #1a1a1a;
+    border-color:    #d4af37;
+    arc-blue:        #61afef;
+    jarvis-cyan:     #7fbbb3;
+    
+    background-color: transparent;
+    text-color:       @fg-main;
+    font:            "JetBrains Mono Nerd Font 11";
+}
+
+window {
+    location:         center;
+    width:            700px;
+    background-color: @bg-main;
+    border:           3px solid;
+    border-color:     @border-color;
+    border-radius:    12px;
+    padding:          20px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MAIN BOX
+   ═══════════════════════════════════════════════════════════ */
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, message, listview ];
+    spacing:          15px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   INPUT BAR (Command Entry)
+   ═══════════════════════════════════════════════════════════ */
+
+inputbar {
+    background-color: @bg-alt;
+    text-color:       @jarvis-cyan;
+    border:           2px solid;
+    border-color:     @jarvis-cyan;
+    border-radius:    8px;
+    padding:          12px 15px;
+    children:         [ prompt, entry ];
+    spacing:          10px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @border-color;
+    font:            "JetBrains Mono Nerd Font Bold 12";
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @fg-main;
+    placeholder:      "Type command...";
+    placeholder-color: #555555;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LIST VIEW (Menu Options)
+   ═══════════════════════════════════════════════════════════ */
+
+listview {
+    background-color: transparent;
+    lines:            10;
+    columns:          1;
+    spacing:          5px;
+    scrollbar:        true;
+    border:           0px;
+}
+
+scrollbar {
+    width:        4px;
+    border:       0;
+    handle-color: @jarvis-cyan;
+    handle-width: 4px;
+    padding:      0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ELEMENTS (Menu Items)
+   ═══════════════════════════════════════════════════════════ */
+
+element {
+    background-color: transparent;
+    text-color:       @fg-main;
+    padding:          10px 15px;
+    border-radius:    6px;
+    border:           1px solid transparent;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg-main;
+}
+
+element alternate.normal {
+    background-color: rgba(26, 31, 38, 0.3);
+    text-color:       @fg-main;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+    text-color:       @fg-selected;
+    border:           1px solid @border-color;
+    font:            "JetBrains Mono Nerd Font Bold 11";
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size:            1.2em;
+    padding:         0 5px 0 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   MESSAGE BOX (Status Messages)
+   ═══════════════════════════════════════════════════════════ */
+
+message {
+    background-color: @bg-alt;
+    border:           2px solid @jarvis-cyan;
+    border-radius:    8px;
+    padding:          10px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @jarvis-cyan;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ERROR BOX
+   ═══════════════════════════════════════════════════════════ */
+
+error-message {
+    background-color: @bg-main;
+    border:           2px solid #e06c75;
+    border-radius:    8px;
+    padding:          15px;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   J.A.R.V.I.S. WOFI THEME - Iron Man Style
+   Save as: ~/.config/wofi/jarvis.css
+   ═══════════════════════════════════════════════════════════ */
+
+/* Paste this in a separate file: ~/.config/wofi/jarvis.css */
+
+/*
+window {
+    margin: 0px;
+    border: 3px solid #d4af37;
+    background-color: #0a0e14;
+    border-radius: 12px;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 11pt;
+}
+
+#input {
+    margin: 15px;
+    padding: 12px 15px;
+    border: 2px solid #7fbbb3;
+    background-color: #1a1f26;
+    color: #d3c6aa;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#input:focus {
+    border: 2px solid #d4af37;
+    outline: none;
+}
+
+#inner-box {
+    margin: 0px 15px 15px 15px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 0px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    background-color: transparent;
+}
+
+#text {
+    margin: 5px;
+    color: #d3c6aa;
+    font-size: 11pt;
+}
+
+#entry {
+    padding: 10px 15px;
+    margin: 3px 0px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+#entry:nth-child(even) {
+    background-color: rgba(26, 31, 38, 0.3);
+}
+
+#entry:selected {
+    background-color: #7fbbb3;
+    border: 1px solid #d4af37;
+}
+
+#entry:selected #text {
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+#entry:hover {
+    background-color: rgba(127, 187, 179, 0.5);
+}
+*/

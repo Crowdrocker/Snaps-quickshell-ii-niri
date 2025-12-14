@@ -1,0 +1,36 @@
+* {
+    background-color: #1a1a1a;
+    text-color: #d3c6aa;
+    border-color: #7fbbb3;
+    selected-normal-background: #7fbbb3;
+    selected-normal-foreground: #1a1a1a;
+}
+
+window {
+    width: 600px;
+    border: 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+listview {
+    lines: 10;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: #7fbbb3;
+    text-color: #1a1a1a;
+}
+
+inputbar {
+    padding: 10px;
+    margin: 0 0 10px 0;
+    background-color: #2d353b;
+    border-radius: 5px;
+}

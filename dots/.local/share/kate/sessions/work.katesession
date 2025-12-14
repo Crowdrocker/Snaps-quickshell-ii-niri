@@ -1,0 +1,267 @@
+[Document 0]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/Games/Fling trainers on Steam games and Proton.md
+
+[Document 1]
+URL=file:///run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/store passwords, notes.txt
+
+[Document 10]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/niri-backup-2/main_packages.list
+
+[Document 2]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/To remove cache and orphans on Arch Linux.txt
+
+[Document 3]
+URL=
+stashedFile=/home/wehttamsnaps/.local/share/kate/stash/work.katesession/Document 3
+
+[Document 4]
+URL=
+stashedFile=/home/wehttamsnaps/.local/share/kate/stash/work.katesession/Document 4
+
+[Document 5]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/niri-backup-2/main_packages.list
+
+[Document 6]
+URL=
+stashedFile=/home/wehttamsnaps/.local/share/kate/stash/work.katesession/Document 6
+
+[Document 7]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/niri-backup-2/main_packages.list
+
+[Document 8]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/niri-backup-2/main_packages.list
+
+[Document 9]
+URL=file:///run/media/wehttamsnaps/LINUXDRIVE-1/niri-backup-2/main_packages.list
+
+[Kate Plugins]
+bookmarksplugin=false
+cmaketoolsplugin=false
+compilerexplorer=false
+eslintplugin=false
+externaltoolsplugin=true
+formatplugin=false
+katebacktracebrowserplugin=false
+katebuildplugin=false
+katecloseexceptplugin=false
+katecolorpickerplugin=false
+katectagsplugin=false
+katefilebrowserplugin=false
+katefiletreeplugin=true
+kategdbplugin=false
+kategitblameplugin=false
+katekonsoleplugin=true
+kateprojectplugin=true
+katereplicodeplugin=false
+katesearchplugin=true
+katesnippetsplugin=false
+katesqlplugin=false
+katesymbolviewerplugin=false
+katexmlcheckplugin=false
+katexmltoolsplugin=false
+keyboardmacrosplugin=false
+ktexteditorpreviewplugin=false
+latexcompletionplugin=false
+lspclientplugin=true
+openlinkplugin=false
+rainbowparens=false
+rbqlplugin=false
+tabswitcherplugin=true
+templateplugin=false
+textfilterplugin=true
+
+[MainWindow0]
+Active ViewSpace=1
+Kate-MDI-H-Splitter=200,1646,0
+Kate-MDI-Sidebar-0-Bar-0-TvList=kate_private_plugin_katefiletreeplugin,kateproject,kateprojectgit,lspclient_symbol_outline
+Kate-MDI-Sidebar-0-LastSize=200
+Kate-MDI-Sidebar-0-SectSizes=0
+Kate-MDI-Sidebar-0-Splitter=897
+Kate-MDI-Sidebar-1-Bar-0-TvList=
+Kate-MDI-Sidebar-1-LastSize=200
+Kate-MDI-Sidebar-1-SectSizes=0
+Kate-MDI-Sidebar-1-Splitter=897
+Kate-MDI-Sidebar-2-Bar-0-TvList=
+Kate-MDI-Sidebar-2-LastSize=200
+Kate-MDI-Sidebar-2-SectSizes=0
+Kate-MDI-Sidebar-2-Splitter=1646
+Kate-MDI-Sidebar-3-Bar-0-TvList=output,diagnostics,kate_plugin_katesearch,kateprojectinfo,kate_private_plugin_katekonsoleplugin
+Kate-MDI-Sidebar-3-LastSize=216
+Kate-MDI-Sidebar-3-SectSizes=0
+Kate-MDI-Sidebar-3-Splitter=1591
+Kate-MDI-Sidebar-Style=2
+Kate-MDI-Sidebar-Visible=true
+Kate-MDI-ToolView-diagnostics-Position=3
+Kate-MDI-ToolView-diagnostics-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-diagnostics-Visible=false
+Kate-MDI-ToolView-kate_plugin_katesearch-Position=3
+Kate-MDI-ToolView-kate_plugin_katesearch-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-kate_plugin_katesearch-Visible=false
+Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Position=0
+Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-kate_private_plugin_katefiletreeplugin-Visible=true
+Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Position=3
+Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-kate_private_plugin_katekonsoleplugin-Visible=true
+Kate-MDI-ToolView-kateproject-Position=0
+Kate-MDI-ToolView-kateproject-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-kateproject-Visible=false
+Kate-MDI-ToolView-kateprojectgit-Position=0
+Kate-MDI-ToolView-kateprojectgit-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-kateprojectgit-Visible=false
+Kate-MDI-ToolView-kateprojectinfo-Position=3
+Kate-MDI-ToolView-kateprojectinfo-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-kateprojectinfo-Visible=false
+Kate-MDI-ToolView-lspclient_symbol_outline-Position=0
+Kate-MDI-ToolView-lspclient_symbol_outline-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-lspclient_symbol_outline-Visible=false
+Kate-MDI-ToolView-output-Position=3
+Kate-MDI-ToolView-output-Show-Button-In-Sidebar=true
+Kate-MDI-ToolView-output-Visible=false
+Kate-MDI-V-Splitter=0,680,216
+
+[MainWindow0 Settings]
+WindowState=8
+
+[MainWindow0-Splitter 0]
+Children=MainWindow0-ViewSpace 0,MainWindow0-ViewSpace 1
+Orientation=1
+Sizes=823,822
+
+[MainWindow0-ViewSpace 0]
+Active View=2
+Count=3
+Documents=0,1,2
+View 0=0
+View 1=1
+View 2=2
+View 3=4
+View 4=5
+View 5=6
+View 6=7
+View 7=8
+
+[MainWindow0-ViewSpace 0 0]
+CursorColumn=0
+CursorLine=40
+ScrollLine=20
+
+[MainWindow0-ViewSpace 0 1]
+CursorColumn=0
+CursorLine=229
+ScrollLine=205
+
+[MainWindow0-ViewSpace 0 2]
+CursorColumn=88
+CursorLine=12
+
+[MainWindow0-ViewSpace 0 6]
+ScrollLine=93
+
+[MainWindow0-ViewSpace 0 file:///run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/INSTALL.md]
+ScrollLine=100
+
+[MainWindow0-ViewSpace 0 file:///run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/IPC.md]
+ScrollLine=270
+
+[MainWindow0-ViewSpace 0 file:///run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/PACKAGES.md]
+CursorColumn=33
+CursorLine=183
+ScrollLine=48
+
+[MainWindow0-ViewSpace 0 file:///run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/SETUP.md]
+CursorColumn=21
+CursorLine=28
+ScrollLine=186
+
+[MainWindow0-ViewSpace 0 file:///run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/VESKTOP.md]
+CursorColumn=55
+CursorLine=19
+ScrollLine=17
+
+[MainWindow0-ViewSpace 1]
+Active View=5
+Count=3
+Documents=3,4,5
+View 0=3
+View 1=4
+View 2=5
+
+[MainWindow0-ViewSpace 1 10]
+ScrollLine=102
+
+[MainWindow0-ViewSpace 1 3]
+CursorColumn=0
+CursorLine=1
+
+[MainWindow0-ViewSpace 1 5]
+CursorColumn=7
+CursorLine=332
+ScrollLine=259
+
+[MainWindow0-ViewSpace 1 7]
+CursorColumn=7
+CursorLine=332
+ScrollLine=310
+
+[MainWindow0-ViewSpace 1 8]
+CursorColumn=11
+CursorLine=169
+
+[MainWindow0-ViewSpace 1 9]
+ScrollLine=213
+
+[Open Documents]
+Count=6
+
+[Open MainWindows]
+Count=1
+
+[Plugin:kateprojectplugin:]
+projects=
+
+[Plugin:katesearchplugin:MainWindow:0]
+BinaryFiles=false
+CurrentExcludeFilter=0
+CurrentFilter=0
+ExcludeFilters=\\0
+ExpandSearchResults=false
+Filters=\\0
+FollowSymLink=false
+HiddenFiles=false
+MatchCase=false
+Place=0
+Recursive=true
+Replaces=include,yay --needed --noconfirm -S\s
+Search=viv,place-within-backdrop true,firefox,conf.d,rofi,jarvis-rofi-mode,Settings,Kool_Quick_Settings.sh,obs,Super+Alt+L,oh-my-zsh,/usr/share/oh-my-zsh,   \s
+SearchAsYouTypeAllProjects=true
+SearchAsYouTypeCurrentFile=true
+SearchAsYouTypeFolder=true
+SearchAsYouTypeOpenFiles=true
+SearchAsYouTypeProject=true
+SearchDiskFiles=
+SearchDiskFiless=\\0
+SizeLimit=128
+UseRegExp=false
+
+[Recent Files]
+File1[$e]=$HOME/.config/niri/snaps/10-wiri_keybinds.kdl
+File10[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/SETUP.md
+File2[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/Games/flingtrainer/RageMenu/Readme.txt
+File3[$e]=$HOME/quickshell-ii-niri/defaults/niri/config.kdl
+File4[$e]=$HOME/.local/share/nautilus/tags/meta.db
+File5[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/PACKAGES.md
+File6[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/IPC.md
+File7[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/niri-backup-2/main_packages.list
+File8[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/VESKTOP.md
+File9[$e]=/run/media/wehttamsnaps/LINUXDRIVE-1/GitHub/Snaps-quickshell-ii-niri-main/docs/INSTALL.md
+Name1[$e]=10-wiri_keybinds.kdl
+Name10[$e]=SETUP.md
+Name2[$e]=Readme.txt
+Name3[$e]=config.kdl
+Name4[$e]=meta.db
+Name5[$e]=PACKAGES.md
+Name6[$e]=IPC.md
+Name7[$e]=main_packages.list
+Name8[$e]=VESKTOP.md
+Name9[$e]=INSTALL.md

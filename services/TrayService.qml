@@ -1,0 +1,182 @@
+pragma Singleton
+
+import qs.modules.common
+import qs.services
+import QtQuick
+import Quickshell
+import Quickshell.Services.SystemTray
+import Quickshell.Wayland
+
+Singleton {
+    id: root
+
+    property bool smartTray: Config.options?.tray?.filterPassive ?? true
+    
+    // Apps that don't implement DBus Activate properly (libappindicator issue)
+    // These apps need workarounds: gtk-launch or window focus
+    // matches: array of substrings to match in tray id/title OR window app_id/title
+    // focusOnly: true = only focus, don't minimize (for apps that crash when minimized)
+    readonly property var problematicApps: [
+        { matches: ["spotify"], launch: "spotify-launcher" },
+        { matches: ["discord", "Discord"], launch: "discord", focusOnly: true },
+        { matches: ["vesktop", "Vesktop"], launch: "vesktop" },
+        { matches: ["armcord", "ArmCord"], launch: "armcord" },
+        { matches: ["slack", "Slack"], launch: "slack" },
+        { matches: ["teams", "Teams"], launch: "teams-for-linux" },
+        { matches: ["telegram", "Telegram", "org.telegram"], launch: "org.telegram.desktop" },
+        { matches: ["signal", "Signal"], launch: "signal-desktop" },
+        { matches: ["element", "Element"], launch: "element-desktop" },
+        { matches: ["steam", "Steam"], launch: "steam" },
+        { matches: ["skype", "Skype"], launch: "skypeforlinux" },
+        { matches: ["viber", "Viber"], launch: "viber" },
+        { matches: ["zoom", "Zoom"], launch: "zoom" },
+    ]
+    
+    // Check if an item is a problematic app
+    function getProblematicAppInfo(item): var {
+        if (!item) return null;
+        const id = (item.id ?? "").toLowerCase();
+        const title = (item.title ?? "").toLowerCase();
+        const tooltipTitle = (item.tooltipTitle ?? "").toLowerCase();
+        const iconName = (item.icon ?? "").toLowerCase();
+        
+        for (const app of problematicApps) {
+            for (const pattern of app.matches) {
+                const p = pattern.toLowerCase();
+                if (id.includes(p) || title.includes(p) || tooltipTitle.includes(p) || iconName.includes(p)) {
+                    return app;
+                }
+            }
+        }
+        return null;
+    }
+    
+    // Check if a string matches any pattern from an app's matches array
+    function matchesApp(str, app): bool {
+        if (!str || !app?.matches) return false;
+        const s = str.toLowerCase();
+        for (const pattern of app.matches) {
+            if (s.includes(pattern.toLowerCase())) return true;
+        }
+        return false;
+    }
+    
+    // Smart activate: tries to focus existing window or launch app
+    // Returns true if handled, false if should fall back to item.activate()
+    function smartActivate(item): bool {
+        if (!item) return false;
+        
+        const appInfo = getProblematicAppInfo(item);
+        if (!appInfo) return false;  // Not a problematic app, use normal activate
+        
+        // Try to find and focus existing window using ToplevelManager
+        let toplevel = null;
+        for (const tl of ToplevelManager.toplevels.values) {
+            const appId = (tl.appId ?? "").toLowerCase();
+            const tlTitle = (tl.title ?? "").toLowerCase();
+            if (matchesApp(appId, appInfo) || matchesApp(tlTitle, appInfo)) {
+                toplevel = tl;
+                break;
+            }
+        }
+        
+        if (toplevel) {
+            toplevel.activate();
+            return true;
+        }
+        
+        // No window found - launch app (use login shell for proper PATH including ~/.local/bin)
+        Quickshell.execDetached(["bash", "-lc", appInfo.launch]);
+        return true;
+    }
+    
+    // Smart toggle: click to focus existing window or launch app
+    // Always focuses/activates, never closes (user expectation for tray click)
+    function smartToggle(item): bool {
+        if (!item) return false;
+        
+        const id = (item.id ?? "").toLowerCase();
+        const appInfo = getProblematicAppInfo(item);
+        
+        // Find window using ToplevelManager
+        let toplevel = null;
+        for (const tl of ToplevelManager.toplevels.values) {
+            const appId = (tl.appId ?? "").toLowerCase();
+            const tlTitle = (tl.title ?? "").toLowerCase();
+            
+            let isMatch = false;
+            if (appInfo) {
+                isMatch = matchesApp(appId, appInfo) || matchesApp(tlTitle, appInfo);
+            } else {
+                isMatch = appId.includes(id) || id.includes(appId) || 
+                          tlTitle.includes(id) || appId === id;
+            }
+            
+            if (isMatch) {
+                toplevel = tl;
+                break;
+            }
+        }
+        
+        if (toplevel) {
+            toplevel.activate();
+            return true;
+        }
+        
+        // No window found - launch app
+        if (appInfo) {
+            Quickshell.execDetached(["bash", "-lc", appInfo.launch]);
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Filter out invalid items (null or missing id)
+    function isValidItem(item) {
+        return item && item.id;
+    }
+    
+    property var _pinnedItems: Config.options?.tray?.pinnedItems ?? []
+    property list<var> itemsInUserList: SystemTray.items.values.filter(i => (isValidItem(i) && _pinnedItems.includes(i.id) && (!smartTray || i.status !== Status.Passive)))
+    property list<var> itemsNotInUserList: SystemTray.items.values.filter(i => (isValidItem(i) && !_pinnedItems.includes(i.id) && (!smartTray || i.status !== Status.Passive)))
+
+    property bool invertPins: Config.options?.tray?.invertPinnedItems ?? false
+    property list<var> pinnedItems: invertPins ? itemsNotInUserList : itemsInUserList
+    property list<var> unpinnedItems: invertPins ? itemsInUserList : itemsNotInUserList
+
+    function getTooltipForItem(item) {
+        if (!item) return "";
+        const tooltipTitle = item.tooltipTitle ?? "";
+        const title = item.title ?? "";
+        const id = item.id ?? "";
+        const tooltipDescription = item.tooltipDescription ?? "";
+        
+        var result = tooltipTitle.length > 0 ? tooltipTitle
+                : (title.length > 0 ? title : id);
+        if (tooltipDescription.length > 0) result += " • " + tooltipDescription;
+        if (Config.options?.tray?.showItemId) result += "\n[" + id + "]";
+        return result;
+    }
+
+    // Pinning
+    function pin(itemId) {
+        var pins = Config.options?.tray?.pinnedItems ?? [];
+        if (pins.includes(itemId)) return;
+        pins.push(itemId);
+        Config.setNestedValue("tray.pinnedItems", pins);
+    }
+    function unpin(itemId) {
+        var pins = Config.options?.tray?.pinnedItems ?? [];
+        Config.setNestedValue("tray.pinnedItems", pins.filter(id => id !== itemId));
+    }
+    function togglePin(itemId) {
+        var pins = Config.options?.tray?.pinnedItems ?? [];
+        if (pins.includes(itemId)) {
+            unpin(itemId)
+        } else {
+            pin(itemId)
+        }
+    }
+
+}

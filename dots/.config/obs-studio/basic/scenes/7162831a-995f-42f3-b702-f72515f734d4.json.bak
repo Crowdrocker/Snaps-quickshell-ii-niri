@@ -1,0 +1,4686 @@
+{
+  "schemaVersion": 4,
+  "nodeType": "RootNode",
+  "sources": {
+    "schemaVersion": 4,
+    "nodeType": "SourcesNode",
+    "items": [
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "game_capture_c2b9138d-3325-4129-af8a-c6979712f4c8",
+        "name": "Game Capture",
+        "type": "game_capture",
+        "settings": {
+          "auto_capture_rules_path": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\game_capture_list.json",
+          "auto_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "auto_placeholder_message": "Looking for a game to capture",
+          "window_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "window_placeholder_waiting_message": "Looking for a game to capture",
+          "window_placeholder_missing_message": "Specified window is not a game",
+          "user_placeholder_image": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\25.jpg",
+          "user_placeholder_use": true,
+          "capture_overlays": true
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "41a4a942-eeea-40e9-9c94-31a002140658",
+            "serverId": 1015895991,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\25.jpg"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "dshow_input_3d63d20b-a9a3-40dd-8a68-ec32c7b3228d",
+        "name": "Video Capture Device",
+        "type": "dshow_input",
+        "settings": {
+          "video_device_id": "Logi C615 HD WebCam:\\\\?\\usb#vid_046d&pid_082c&mi_02#6&249bc51d&0&0002#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+          "last_video_device_id": "Logi C615 HD WebCam:\\\\?\\usb#vid_046d&pid_082c&mi_02#6&249bc51d&0&0002#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+          "res_type": 1,
+          "resolution": "800x448"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 0,
+        "mixerHidden": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_39c6906f-c3f2-4e96-b83a-066dcc81c5d7",
+        "name": "webcam-full",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\26.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "7324f55d-4350-4bc9-b05a-7c504ecb5974",
+            "serverId": 1015895968,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\26.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_bd91141f-6ce5-4feb-b86c-9f5ec14b7576",
+        "name": "Webcam Subscriber",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "right",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents": true,
+          "extents_cx": 200,
+          "extents_cy": 37,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_subscriber",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_d5d7a5dd-7847-4962-9103-841435526072",
+        "name": "Webcam Donation",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents": true,
+          "extents_cx": 200,
+          "extents_cy": 37,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_donator",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_1def698e-273b-4ad0-967b-56a2ba397138",
+        "name": "overlay",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\27.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "2f2253e6-c7b2-4172-bb70-deca9a8cca23",
+            "serverId": 1015895983,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\27.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_414d167d-e5f5-42b4-88f3-3f2a6d3dc9c8",
+        "name": "Cheerer",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_cheerer",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_093bb973-a18c-4fb9-915a-6fa9aa8e03dc",
+        "name": "Follower",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_follower",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_b8c449d8-476c-4df7-9409-9c51472ce286",
+        "name": "Subscriber",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_subscriber",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_bfa95435-8db6-4a79-8aaf-a4ef55cc6a5c",
+        "name": "Donation",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_donator",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "browser_source_4a8d7b13-c0a5-40d8-842d-c151a71436ea",
+        "name": "Alert-Box",
+        "type": "browser_source",
+        "settings": {
+          "shutdown": true,
+          "url": "https://streamlabs.com/alert-box/v3/1C21A3D45662E23E4EEDDFFC4B80914A50BAB6CD92A63F7B19BB7801CF5BFE271F2FBD567A57A63AFCCD5C0A42B8A341C74EB73DAB5E050C161713559DD279087C1675B43CC0E67B7A0063E6A25FC1DD8BF164DFB2F46EAB0FA39712BF71CBCF7865C2CA65E4A3E34D98649B02D4786D4C119724EBBD8F593FC2D213E7",
+          "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+          "fps": 30,
+          "fps_custom": false,
+          "height": 450,
+          "is_media_flag": false,
+          "reroute_audio": false,
+          "restart_when_active": false,
+          "webpage_control_level": 1,
+          "width": 800
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "widget",
+        "propertiesManagerSettings": {
+          "widgetType": 0
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 1,
+        "mixerHidden": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "game_capture_6d7d63ab-2dc2-4282-a7a2-99b0f23e8fc0",
+        "name": "Game Capture",
+        "type": "game_capture",
+        "settings": {
+          "auto_capture_rules_path": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\game_capture_list.json",
+          "auto_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "auto_placeholder_message": "Looking for a game to capture",
+          "window_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "window_placeholder_waiting_message": "Looking for a game to capture",
+          "window_placeholder_missing_message": "Specified window is not a game",
+          "user_placeholder_image": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\28.jpg",
+          "user_placeholder_use": true,
+          "capture_overlays": true
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "1f5152da-1e75-49af-a958-2f8c14fb9761",
+            "serverId": 1015895990,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\28.jpg"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_f5f2c5b7-a45b-47cc-a23c-6602c6c9b6ee",
+        "name": "webcam-full",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\26.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "8b6b9824-9bd3-471c-94b9-7328ae1bcbf2",
+            "serverId": 1015895969,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\26.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_8f1d15d2-71bb-4dbd-866c-8fec9ba52556",
+        "name": "Webcam Subscriber",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "right",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents": true,
+          "extents_cx": 200,
+          "extents_cy": 37,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_subscriber",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_93f23bfd-b397-4acf-bca0-6f8ce403b875",
+        "name": "Webcam Donation",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents": true,
+          "extents_cx": 200,
+          "extents_cy": 37,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_donator",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_3debc709-0b07-411b-9c8c-6d67b8dfa93d",
+        "name": "overlay",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\27.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "7596abcd-65a7-4668-8bad-e77063a93d13",
+            "serverId": 1015895984,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\27.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_a42eafc2-9c9f-4990-aaf6-74e42674d7ee",
+        "name": "Cheerer",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_cheerer",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_7f925c3b-f2c3-4788-ae73-3b2381bf82ec",
+        "name": "Follower",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_follower",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_0347179e-ec00-489e-a461-b71d19051914",
+        "name": "Subscriber",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_subscriber",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_84d508c5-4fa1-4bb0-8584-df12c599985c",
+        "name": "Donation",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_donator",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_e4d7b159-b661-4804-ad37-d5175be208f6",
+        "name": "Collab Cam Guest Placeholder",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\31.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "0a28a0c3-f5ea-4a07-98cb-978397958e74",
+            "serverId": 1015895971,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\31.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_6e8faeff-3164-492d-813b-436a959fdbdb",
+        "name": "Webcam Frame",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\32.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "fde4bfae-e7c9-40a8-a661-16e78442e649",
+            "serverId": 1015895975,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\32.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_abe1788b-2e39-4ced-813b-e65bedd8574b",
+        "name": "Guest Name",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "font": {
+            "face": "Montserrat",
+            "flags": 1,
+            "size": 288
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "Guest Name",
+          "transform": 1,
+          "valign": "top",
+          "file": "",
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Montserrat-Bold.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_b8acc36d-5bc6-40a6-bc46-bb4a32508320",
+        "name": "starting-screen",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\33.jpg"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "e89914fc-4e3a-4cfc-903c-30dc38329161",
+            "serverId": 1015895994,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\33.jpg"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_8ae9f570-d846-428b-9cb9-a4ac3c5393b1",
+        "name": "pause-screen",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\34.jpg"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "ef2e98c3-921b-42e2-b5ef-1cf2109846a8",
+            "serverId": 1015895993,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\34.jpg"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "game_capture_3e32f1c6-74ff-47f5-9884-6918771ad303",
+        "name": "Game Capture",
+        "type": "game_capture",
+        "settings": {
+          "auto_capture_rules_path": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\game_capture_list.json",
+          "auto_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "auto_placeholder_message": "Looking for a game to capture",
+          "window_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "window_placeholder_waiting_message": "Looking for a game to capture",
+          "window_placeholder_missing_message": "Specified window is not a game",
+          "capture_overlays": true
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "92188f57-0841-46b1-a993-4e029472ee82"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_0b072e7c-bd06-40a6-b4bc-5fbe9934ec46",
+        "name": "just-chatting-screen",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\35.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "f859a1a2-bbaa-4181-a2b2-46926e7f0fed",
+            "serverId": 1015895996,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\35.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "browser_source_55de62c5-2622-46a5-bf93-8e2cf4bb2dd2",
+        "name": "Chatbox",
+        "type": "browser_source",
+        "settings": {
+          "shutdown": true,
+          "url": "https://streamlabs.com/widgets/chat-box/v1/1C21A3D45662E23E4EEDDFFC4B80914A50BAB6CD92A63F7B19BB7801CF5BFE271F2FBD567A57A63AFCCD5C0A42B8A341C74EB73DAB5E050C161713559DD279087C1675B43CC0E67B7A0063E6A25FC1DD8BF164DFB2F46EAB0FA39712BF71CBCF7865C2CA65E4A3E34D98649B02D4786D4C119724EBBD8F593FC2D213E7",
+          "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+          "fps": 30,
+          "fps_custom": false,
+          "height": 630,
+          "is_media_flag": false,
+          "reroute_audio": false,
+          "restart_when_active": false,
+          "webpage_control_level": 1,
+          "width": 400
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "widget",
+        "propertiesManagerSettings": {
+          "widgetType": 6
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 1,
+        "mixerHidden": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_c501fda0-1654-415b-b8cd-d49675acd2d5",
+        "name": "just-chatting",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\36.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "d3c45e8a-aaf5-44c2-80f5-8e7b50a3cf4f",
+            "serverId": 1015895985,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\36.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "game_capture_0d9913cc-6291-4899-bd44-3fa1c88a2e34",
+        "name": "Game Capture",
+        "type": "game_capture",
+        "settings": {
+          "auto_capture_rules_path": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\game_capture_list.json",
+          "auto_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "auto_placeholder_message": "Looking for a game to capture",
+          "window_placeholder_image": "C:\\Program Files\\Streamlabs OBS\\shared-resources\\capture-placeholder.png",
+          "window_placeholder_waiting_message": "Looking for a game to capture",
+          "window_placeholder_missing_message": "Specified window is not a game",
+          "capture_overlays": true
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "901777b7-b40d-493a-8c8c-5546d513aeed"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_64214791-0003-435d-8360-fe06e62cba5d",
+        "name": "intermission-screen",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\37.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "4a244073-adf2-401a-aede-6489e3106980",
+            "serverId": 1015895997,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\37.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_541dd7d5-576e-40d7-8865-d3286193134a",
+        "name": "ending-screen",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\38.jpg"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "748cb391-3d1d-4cdd-b36a-cf88bbbfc6d1",
+            "serverId": 1015895995,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\38.jpg"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_03682a75-15a4-41a6-9953-af57f9d6e34c",
+        "name": "YouTube",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents": false,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Montserrat",
+            "flags": 3,
+            "size": 24
+          },
+          "gradient": false,
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "YourUsername",
+          "transform": 1,
+          "valign": "top",
+          "vertical": false,
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Montserrat-BoldItalic.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_a648c05d-1248-43fa-809c-1edc923f7237",
+        "name": "instagram-brand_120.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\39.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "5d5df8eb-6c49-4f33-9d22-5a3e6a84f9b0",
+            "serverId": 1015895970,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\39.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_cb4bebaf-b86f-4c01-a78a-90ca949f0581",
+        "name": "Folllow Me",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 24
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "Follow Me",
+          "transform": 1,
+          "valign": "top",
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Teko-Regular.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_a836f351-e04e-4760-a2d1-9f80eb44cbc8",
+        "name": "YouTube",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents": false,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Montserrat",
+            "flags": 3,
+            "size": 24
+          },
+          "gradient": false,
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "YourUsername",
+          "transform": 1,
+          "valign": "top",
+          "vertical": false,
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Montserrat-BoldItalic.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_2fb43bc9-c696-47be-b1f4-8c1594f9c1b2",
+        "name": "youtube-brand_120.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\40.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "195ead34-1e31-42d4-8fa4-6b5f10b8e9cf",
+            "serverId": 1015895967,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\40.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_cf3b794c-e673-46de-a4d0-e2049fcba858",
+        "name": "Folllow Me",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 24
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "Follow Me",
+          "transform": 1,
+          "valign": "top",
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Teko-Regular.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_2f43523b-a72d-4598-af8e-59abcfb8a64b",
+        "name": "YouTube",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents": false,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Montserrat",
+            "flags": 1,
+            "size": 24
+          },
+          "gradient": false,
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "YourUsername",
+          "transform": 1,
+          "valign": "top",
+          "vertical": false,
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Montserrat-Bold.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_e8028ac7-a777-4034-be9a-3ef61ed26411",
+        "name": "Folllow Me",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 24
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "text": "Follow Me",
+          "transform": 1,
+          "valign": "top",
+          "custom_font": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Fonts\\Teko-Regular.ttf"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_88d1a117-8a47-42da-8c1c-2e8f2e06c1a5",
+        "name": "twitter-brand_120.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\41.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "5aaba406-75c3-4135-bb07-d0721234ea8a",
+            "serverId": 1015895972,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\41.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_4382861c-cca6-4600-b116-26012a3515a1",
+        "name": "webcam-greenscreen",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\42.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "f66b38e3-cda5-4b8a-8cdd-e7ed37886ad8",
+            "serverId": 1015895979,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\42.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_47c595e5-a886-4bdf-988d-c007136f27fb",
+        "name": "Webcam Subscriber",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "right",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents": true,
+          "extents_cx": 200,
+          "extents_cy": 37,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_subscriber",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_c7129950-87f8-470a-b17f-1804a23de607",
+        "name": "Webcam Donation",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents": true,
+          "extents_cx": 200,
+          "extents_cy": 37,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_donator",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_f508cca3-b806-4f21-a767-bbce64c07fbd",
+        "name": "twitch-brand_120.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\43.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "babb535e-bf2a-4aa5-96a2-5de557622a12",
+            "serverId": 1015895973,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\43.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_54afff30-db45-4010-8543-bc4af8e2e598",
+        "name": "facebook-brand_120.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\44.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "fa46c14a-4c98-44e1-9fbf-0d7c45e26e0c",
+            "serverId": 1015895978,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\44.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_413ed683-6ccd-4b74-8380-d05d51336632",
+        "name": "discrod-brand_120.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\45.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "e20adbc6-717a-4100-834c-1457a0ee7a63",
+            "serverId": 1015895974,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\45.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_c0b07194-ca91-4d77-9704-fd45acc2e1ea",
+        "name": "6.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\46.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "345e2e44-a4d5-4559-8496-591ede72a2b5",
+            "serverId": 1015895977,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\46.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_38335425-de41-4738-943c-3420e62bb9a3",
+        "name": "5.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\47.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "9c04fefe-5070-49fa-8b60-34754991ed82",
+            "serverId": 1015895976,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\47.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_9d1497af-d4f1-484f-909e-01ac75be9e90",
+        "name": "4.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\48.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "c552622a-c124-4684-b5fc-b9b45ee88bb7",
+            "serverId": 1015895981,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\48.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_735b54d6-ccb2-4afc-92dd-06c6a4a6a18c",
+        "name": "7.png",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\49.png"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "38fbc202-495a-4d82-a426-1835864cce8c",
+            "serverId": 1015895980,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\49.png"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_0446cec5-4707-4eb1-8010-feffe918b978",
+        "name": "Cheerer",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_cheerer",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_86d18453-4933-4c47-a631-c51ba6ee3c4b",
+        "name": "Follower",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_follower",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_dfbd35e5-b3e9-456d-a432-d155e1947a28",
+        "name": "Subscriber",
+        "type": "text_gdiplus",
+        "settings": {
+          "text": "",
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36,
+            "style": "Regular"
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_subscriber",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "text_gdiplus_a5bf48b3-8d18-49e4-8e28-015e11c6e65b",
+        "name": "Donation",
+        "type": "text_gdiplus",
+        "settings": {
+          "align": "left",
+          "antialiasing": true,
+          "bk_color": 0,
+          "bk_opacity": 0,
+          "chatlog_lines": 6,
+          "color": 16777215,
+          "custom_font": "",
+          "extents_cx": 100,
+          "extents_cy": 100,
+          "extents_wrap": true,
+          "file": "",
+          "font": {
+            "face": "Teko",
+            "flags": 0,
+            "size": 36
+          },
+          "gradient_color": 16777215,
+          "gradient_dir": 90,
+          "gradient_opacity": 100,
+          "opacity": 100,
+          "outline_color": 16777215,
+          "outline_opacity": 100,
+          "outline_size": 2,
+          "read_from_file": false,
+          "text": "",
+          "transform": 0,
+          "valign": "center"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "streamlabels",
+        "propertiesManagerSettings": {
+          "statname": "most_recent_donator",
+          "mediaBackup": {}
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "image_source_c4a8d431-0d3a-47f5-a4bf-cf27d634808f",
+        "name": "Quantum-Offline-Screen.jpg",
+        "type": "image_source",
+        "settings": {
+          "file": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\50.jpg"
+        },
+        "volume": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {
+            "localId": "7879bcbb-2194-446b-9429-d6383d2ce6a3",
+            "serverId": 1015895992,
+            "originalPath": "C:\\Users\\Forza\\AppData\\Roaming\\slobs-client\\Overlays\\63e70f61-d520-4c23-a28b-eabd88d90ddc\\50.jpg"
+          }
+        }
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "wasapi_output_capture_0f5534dc-0459-4822-982b-eef0ac793201",
+        "name": "Desktop Audio",
+        "type": "wasapi_output_capture",
+        "settings": {},
+        "volume": 1,
+        "channel": 1,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 0,
+        "mixerHidden": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "id": "wasapi_input_capture_c7f6b624-88e0-48e6-a955-6d549806628a",
+        "name": "Mic/Aux",
+        "type": "wasapi_input_capture",
+        "settings": {
+          "device_id": "default"
+        },
+        "volume": 1,
+        "channel": 3,
+        "muted": false,
+        "deinterlaceMode": 0,
+        "deinterlaceFieldOrder": 0,
+        "filters": {
+          "items": []
+        },
+        "propertiesManager": "default",
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        },
+        "forceMono": false,
+        "syncOffset": {
+          "sec": 0,
+          "nsec": 0
+        },
+        "audioMixers": 255,
+        "monitoringType": 0,
+        "mixerHidden": false
+      }
+    ]
+  },
+  "scenes": {
+    "schemaVersion": 1,
+    "nodeType": "ScenesNode",
+    "items": [
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "c11b17f5-db0c-4b5b-bd60-dc49b315ff35",
+              "sourceId": "game_capture_c2b9138d-3325-4129-af8a-c6979712f4c8",
+              "x": 0,
+              "y": -1,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "a8f16996-a92c-45b7-a861-3115c58e0bd4",
+              "sourceId": "dshow_input_3d63d20b-a9a3-40dd-8a68-ec32c7b3228d",
+              "x": 1328.1363493304837,
+              "y": 700.6048913808027,
+              "scaleX": 0.6669040728523657,
+              "scaleY": 0.6669040728523657,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 1,
+                "right": 1
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "d868593e-f55c-44ca-bfe3-95aa94172152",
+              "sourceId": "image_source_39c6906f-c3f2-4e96-b83a-066dcc81c5d7",
+              "x": 1268.9142857142865,
+              "y": 673.0714285714286,
+              "scaleX": 1.0851428571428567,
+              "scaleY": 1.0851428571428567,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "cdd8f71e-4467-4a64-b7c2-3062a2700528",
+              "sourceId": "text_gdiplus_bd91141f-6ce5-4feb-b86c-9f5ec14b7576",
+              "x": 1612.977779721809,
+              "y": 1017.9999999999999,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "f806c652-4032-4b22-9c71-7094fb2b453f",
+              "sourceId": "text_gdiplus_d5d7a5dd-7847-4962-9103-841435526072",
+              "x": 1384.393928790132,
+              "y": 1017.8092613009924,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "6369d069-5f7e-4f55-89b4-590f9d407851",
+              "name": "Webcam",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_6789544a-83b2-4021-a8b8-55d58a693dff",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "f806c652-4032-4b22-9c71-7094fb2b453f",
+                "cdd8f71e-4467-4a64-b7c2-3062a2700528",
+                "d868593e-f55c-44ca-bfe3-95aa94172152",
+                "a8f16996-a92c-45b7-a861-3115c58e0bd4"
+              ]
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "04794f3b-e604-4481-896f-2a878e2c21af",
+              "sourceId": "image_source_1def698e-273b-4ad0-967b-56a2ba397138",
+              "x": 262.62235649546824,
+              "y": 0,
+              "scaleX": 1.0096602410797435,
+              "scaleY": 1.0096602410797435,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "fc6885ce-23fc-426e-bf8b-2ec702083ab7",
+              "sourceId": "text_gdiplus_414d167d-e5f5-42b4-88f3-3f2a6d3dc9c8",
+              "x": 1350.9094567404427,
+              "y": 59.14285714285713,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "666c88ff-7e55-4d98-9b97-74004264c64b",
+              "sourceId": "text_gdiplus_093bb973-a18c-4fb9-915a-6fa9aa8e03dc",
+              "x": 1096.0482897384306,
+              "y": 59.71428571428576,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "3d8dbc64-2b0f-4bfd-9408-803f2bfaa42e",
+              "sourceId": "text_gdiplus_b8c449d8-476c-4df7-9409-9c51472ce286",
+              "x": 641.3158953722334,
+              "y": 60.00000000000003,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "870c8949-d00c-495b-a35d-b4065b88e70d",
+              "sourceId": "text_gdiplus_bfa95435-8db6-4a79-8aaf-a4ef55cc6a5c",
+              "x": 387.19517102615697,
+              "y": 59.85714285714286,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "fab8dae7-c767-4899-9c1b-a8651a3813a0",
+              "name": "Top Overlay",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_6789544a-83b2-4021-a8b8-55d58a693dff",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "870c8949-d00c-495b-a35d-b4065b88e70d",
+                "3d8dbc64-2b0f-4bfd-9408-803f2bfaa42e",
+                "666c88ff-7e55-4d98-9b97-74004264c64b",
+                "fc6885ce-23fc-426e-bf8b-2ec702083ab7",
+                "04794f3b-e604-4481-896f-2a878e2c21af"
+              ]
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "38986dec-b871-4915-9ba8-22cbf76994ff",
+              "sourceId": "browser_source_4a8d7b13-c0a5-40d8-842d-c151a71436ea",
+              "x": 630.6651108518085,
+              "y": 260.74912485414234,
+              "scaleX": 0.8233372228704785,
+              "scaleY": 0.8233372228704785,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_6789544a-83b2-4021-a8b8-55d58a693dff",
+        "name": "Live Scene",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "c6368596-9cc0-44d1-b355-cda9dc8c76fc",
+              "sourceId": "game_capture_6d7d63ab-2dc2-4282-a7a2-99b0f23e8fc0",
+              "x": 0,
+              "y": -1,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "99c35ff2-1612-4d54-95c0-229c10ecf766",
+              "sourceId": "dshow_input_3d63d20b-a9a3-40dd-8a68-ec32c7b3228d",
+              "x": 1328.1363493304837,
+              "y": 700.6048913808027,
+              "scaleX": 0.6669040728523657,
+              "scaleY": 0.6669040728523657,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 1,
+                "right": 1
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "58281c2c-c820-4cc2-b2b3-db4b110d7692",
+              "sourceId": "image_source_f5f2c5b7-a45b-47cc-a23c-6602c6c9b6ee",
+              "x": 1268.9142857142865,
+              "y": 673.0714285714286,
+              "scaleX": 1.0851428571428567,
+              "scaleY": 1.0851428571428567,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "81d750d5-13ac-48af-9fc5-354af55f8ce4",
+              "sourceId": "text_gdiplus_8f1d15d2-71bb-4dbd-866c-8fec9ba52556",
+              "x": 1612.977779721809,
+              "y": 1017.9999999999999,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "e3e69d46-8920-4afc-904c-05d5aa078604",
+              "sourceId": "text_gdiplus_93f23bfd-b397-4acf-bca0-6f8ce403b875",
+              "x": 1384.393928790132,
+              "y": 1017.8092613009924,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "2beefbb6-dcda-4854-867c-97004696bc87",
+              "name": "Webcam",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_d239a74d-8f30-4f3b-b9f4-175a43e08533",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "e3e69d46-8920-4afc-904c-05d5aa078604",
+                "81d750d5-13ac-48af-9fc5-354af55f8ce4",
+                "58281c2c-c820-4cc2-b2b3-db4b110d7692",
+                "99c35ff2-1612-4d54-95c0-229c10ecf766"
+              ]
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "92d4ea05-c759-4a27-bf55-a4809685b54b",
+              "sourceId": "image_source_3debc709-0b07-411b-9c8c-6d67b8dfa93d",
+              "x": 262.62235649546824,
+              "y": 0,
+              "scaleX": 1.0096602410797435,
+              "scaleY": 1.0096602410797435,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "a256b314-2a6c-4607-b325-98e72097ea23",
+              "sourceId": "text_gdiplus_a42eafc2-9c9f-4990-aaf6-74e42674d7ee",
+              "x": 1350.9094567404427,
+              "y": 59.14285714285713,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "7a5dd531-be9d-477f-8e4d-fbf43e872266",
+              "sourceId": "text_gdiplus_7f925c3b-f2c3-4788-ae73-3b2381bf82ec",
+              "x": 1096.0482897384306,
+              "y": 59.71428571428576,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "6aa38e8a-3f88-4db6-a9e1-71a5b106f1cf",
+              "sourceId": "text_gdiplus_0347179e-ec00-489e-a461-b71d19051914",
+              "x": 641.3158953722334,
+              "y": 60.00000000000003,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "d95e0143-6a83-43af-9691-a2dc90ca03e2",
+              "sourceId": "text_gdiplus_84d508c5-4fa1-4bb0-8584-df12c599985c",
+              "x": 387.19517102615697,
+              "y": 59.85714285714286,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "05c1d5ec-f0e3-42fb-9aa4-d86f9ef60fc7",
+              "name": "Top Overlay",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_d239a74d-8f30-4f3b-b9f4-175a43e08533",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "d95e0143-6a83-43af-9691-a2dc90ca03e2",
+                "6aa38e8a-3f88-4db6-a9e1-71a5b106f1cf",
+                "7a5dd531-be9d-477f-8e4d-fbf43e872266",
+                "a256b314-2a6c-4607-b325-98e72097ea23",
+                "92d4ea05-c759-4a27-bf55-a4809685b54b"
+              ]
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "e0abdf1d-c5ef-4b40-b2c2-51bc824b1dfd",
+              "sourceId": "browser_source_4a8d7b13-c0a5-40d8-842d-c151a71436ea",
+              "x": 630.6651108518085,
+              "y": 260.74912485414234,
+              "scaleX": 0.8233372228704785,
+              "scaleY": 0.8233372228704785,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "50cb58c7-d712-499a-8184-a8e3098f22e9",
+              "sourceId": "image_source_e4d7b159-b661-4804-ad37-d5175be208f6",
+              "x": 54.998686548164414,
+              "y": 211.3648615427781,
+              "scaleX": 0.3025101462198345,
+              "scaleY": 0.3025101462198345,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "9f0f267a-8f40-42e0-ba02-03f4cc1f8bce",
+              "sourceId": "image_source_6e8faeff-3164-492d-813b-436a959fdbdb",
+              "x": 12.138795062334822,
+              "y": 193.15707620528775,
+              "scaleX": 0.7850077760497667,
+              "scaleY": 0.7850077760497667,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "3ad821bd-9fec-4633-9722-c61299aec46e",
+              "sourceId": "text_gdiplus_abe1788b-2e39-4ced-813b-e65bedd8574b",
+              "x": 189.8807328770505,
+              "y": 402.96084679410893,
+              "scaleX": 0.059117258535526074,
+              "scaleY": 0.059117258535526074,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "0f92e245-680e-4218-af1c-3cad999556a4",
+              "name": "Collab Cam Guest",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_d239a74d-8f30-4f3b-b9f4-175a43e08533",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "3ad821bd-9fec-4633-9722-c61299aec46e",
+                "9f0f267a-8f40-42e0-ba02-03f4cc1f8bce",
+                "50cb58c7-d712-499a-8184-a8e3098f22e9"
+              ]
+            }
+          ]
+        },
+        "id": "scene_d239a74d-8f30-4f3b-b9f4-175a43e08533",
+        "name": "Collab Cam Scene",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "d1d77d04-26c2-4165-a662-84bef249ff3a",
+              "sourceId": "image_source_b8acc36d-5bc6-40a6-bc46-bb4a32508320",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "ee6af223-65e1-4b73-a781-e09e4a13c788",
+              "sourceId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_319f2aca-caa3-4946-b123-c814102bff9e",
+        "name": "Starting Screen",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "b175d66c-d221-4eb1-b233-417eb38436e3",
+              "sourceId": "image_source_8ae9f570-d846-428b-9cb9-a4ac3c5393b1",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "bd9d5626-27ed-44dc-8b35-24aa5347ad8d",
+              "sourceId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "x": 0,
+              "y": -1.1368683772161603e-13,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_75d01c72-f9f6-4d27-ad2b-be728a5cb51c",
+        "name": "Pause Screen",
+        "active": true
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "4e76fa66-b7de-4163-83e7-6f54b532e0ff",
+              "sourceId": "game_capture_3e32f1c6-74ff-47f5-9884-6918771ad303",
+              "x": 71.13116752381416,
+              "y": 163.13120176405732,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "2d098d99-64c7-4cb5-a2bf-01ac83555857",
+              "sourceId": "dshow_input_3d63d20b-a9a3-40dd-8a68-ec32c7b3228d",
+              "x": 1424.0404542835931,
+              "y": 160.442868339004,
+              "scaleX": 1.6,
+              "scaleY": 1.6,
+              "visible": true,
+              "crop": {
+                "top": 224,
+                "bottom": 224,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "9356191e-c9c4-4551-a4d7-1884de7a1220",
+              "sourceId": "image_source_0b072e7c-bd06-40a6-b4bc-5fbe9934ec46",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "62590fc1-cb5f-495d-8442-7e7ed430fe71",
+              "sourceId": "browser_source_55de62c5-2622-46a5-bf93-8e2cf4bb2dd2",
+              "x": 1420.6176975401788,
+              "y": 172.8426163308137,
+              "scaleX": 1.0719051441461005,
+              "scaleY": 1.0719051441461005,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "70ddae07-627d-45cf-a001-43334e7fb7b0",
+              "sourceId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "x": -435.2795031055899,
+              "y": 272.67916207276744,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "cef0ad32-9f3a-4179-8afa-d4008393d1c4",
+              "sourceId": "browser_source_4a8d7b13-c0a5-40d8-842d-c151a71436ea",
+              "x": 664.2200263469326,
+              "y": 134.55347298787206,
+              "scaleX": 0.8233372228704785,
+              "scaleY": 0.8233372228704785,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "41867643-75a4-4b3b-95f1-cb68029fa514",
+              "sourceId": "image_source_c501fda0-1654-415b-b8cd-d49675acd2d5",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_c2ad5cbe-0bbd-4cd4-a9ab-6b7d1c264a72",
+        "name": "Just Chatting",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "b09f7c59-bfb0-4b3f-8055-30f661abc3d2",
+              "sourceId": "dshow_input_3d63d20b-a9a3-40dd-8a68-ec32c7b3228d",
+              "x": 1421.7152966989047,
+              "y": 158.0465710075523,
+              "scaleX": 0.5470175198641408,
+              "scaleY": 0.5470175198641408,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 1,
+                "right": 1
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "227e922b-2111-4847-a48a-c98ddf59bedc",
+              "sourceId": "game_capture_0d9913cc-6291-4899-bd44-3fa1c88a2e34",
+              "x": 71.13116752381416,
+              "y": 163.13120176405732,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "892763ac-cfd3-4804-936e-8dffffa63786",
+              "sourceId": "image_source_64214791-0003-435d-8360-fe06e62cba5d",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "31581e9b-f08e-4aa0-a18c-b2e19f10ef12",
+              "sourceId": "browser_source_55de62c5-2622-46a5-bf93-8e2cf4bb2dd2",
+              "x": 1441.8865797154056,
+              "y": 458.6997591879566,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "1e743e21-8c1d-4e04-907d-1b73ee7379b1",
+              "sourceId": "browser_source_4a8d7b13-c0a5-40d8-842d-c151a71436ea",
+              "x": 664.2200263469326,
+              "y": 134.55347298787206,
+              "scaleX": 0.8233372228704785,
+              "scaleY": 0.8233372228704785,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "15bb9d99-e9fa-4fd5-a9be-94cf7166ff36",
+              "sourceId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "x": -435.2795031055899,
+              "y": 272.67916207276744,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_96ce7b53-649e-4929-acb8-2ae6301550e7",
+        "name": "Intermission Screen",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "dd84277c-b24d-4158-af1b-0fc611725dc7",
+              "sourceId": "image_source_541dd7d5-576e-40d7-8865-d3286193134a",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "2ffc4683-c4be-4baf-a101-82d408a4d242",
+              "sourceId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_843b0749-9c1e-47d8-87ff-28442f44c215",
+        "name": "Ending Screen",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "4201ffdd-74ad-4621-be9d-86ec07383644",
+              "sourceId": "text_gdiplus_03682a75-15a4-41a6-9953-af57f9d6e34c",
+              "x": 1342.9238036917152,
+              "y": 714.2777921893909,
+              "scaleX": 1.1546493514505616,
+              "scaleY": 1.1546493514505616,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "00f80384-ce50-4c3d-b3f0-3fc8f6b9b823",
+              "sourceId": "image_source_a648c05d-1248-43fa-809c-1edc923f7237",
+              "x": 1265.4012854373245,
+              "y": 692.0099228224916,
+              "scaleX": 0.49614112458654835,
+              "scaleY": 0.49614112458654835,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "e62cc49f-4647-4011-bf42-33db6aee27d3",
+              "sourceId": "text_gdiplus_cb4bebaf-b86f-4c01-a78a-90ca949f0581",
+              "x": 1344.9238036917152,
+              "y": 695.9190540685074,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "be891394-0f9b-47a5-9a4f-69d625904ec2",
+              "name": "Instagram",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "e62cc49f-4647-4011-bf42-33db6aee27d3",
+                "00f80384-ce50-4c3d-b3f0-3fc8f6b9b823",
+                "4201ffdd-74ad-4621-be9d-86ec07383644"
+              ]
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "1592229e-ae4e-480f-b27c-12363a9c9a7a",
+              "sourceId": "text_gdiplus_a836f351-e04e-4760-a2d1-9f80eb44cbc8",
+              "x": 970.4814975736928,
+              "y": 714.8573169422508,
+              "scaleX": 1.1546493514505616,
+              "scaleY": 1.1546493514505616,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "bd74925c-5fdf-4941-8b02-99e492df3232",
+              "sourceId": "image_source_2fb43bc9-c696-47be-b1f4-8c1594f9c1b2",
+              "x": 894.5288334414465,
+              "y": 692.819184123484,
+              "scaleX": 0.4961411245865486,
+              "scaleY": 0.4961411245865486,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "99a27ae5-9b0e-4f4b-b75e-2e1b8d74af22",
+              "sourceId": "text_gdiplus_cf3b794c-e673-46de-a4d0-e2049fcba858",
+              "x": 972.9068322981366,
+              "y": 694.5375766704922,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "e2bec117-ddd1-439b-9be2-3aa8d3c65817",
+              "name": "YouTube",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "99a27ae5-9b0e-4f4b-b75e-2e1b8d74af22",
+                "bd74925c-5fdf-4941-8b02-99e492df3232",
+                "1592229e-ae4e-480f-b27c-12363a9c9a7a"
+              ]
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "dd2d253d-e370-4f43-8311-76fa229fd777",
+              "sourceId": "text_gdiplus_2f43523b-a72d-4598-af8e-59abcfb8a64b",
+              "x": 599.8015921616657,
+              "y": 715.8573169422507,
+              "scaleX": 1.1546493514505616,
+              "scaleY": 1.1546493514505616,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "bbfc0ca9-147a-4193-b38f-c69835abe52a",
+              "sourceId": "text_gdiplus_e8028ac7-a777-4034-be9a-3ef61ed26411",
+              "x": 601.583850931677,
+              "y": 694.5375766704921,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "c9444ba2-9c5a-474b-91ca-e4cf72d8159b",
+              "sourceId": "image_source_88d1a117-8a47-42da-8c1c-2e8f2e06c1a5",
+              "x": 524.2646572112798,
+              "y": 691.8191841234842,
+              "scaleX": 0.496141124586549,
+              "scaleY": 0.496141124586549,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "f315df1f-be75-44c6-a24e-d8f475223562",
+              "name": "Twitter",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "c9444ba2-9c5a-474b-91ca-e4cf72d8159b",
+                "bbfc0ca9-147a-4193-b38f-c69835abe52a",
+                "dd2d253d-e370-4f43-8311-76fa229fd777"
+              ]
+            }
+          ]
+        },
+        "id": "scene_8af8a1cb-f781-4c62-b9f8-1e231e83264e",
+        "name": "Edit Social Channels",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "2b1720a6-b429-4f9b-ab91-454457831a74",
+              "sourceId": "image_source_4382861c-cca6-4600-b116-26012a3515a1",
+              "x": 645.7341389728098,
+              "y": 332.78571428571433,
+              "scaleX": 1.0924471299093654,
+              "scaleY": 1.0924471299093654,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "7baa3ee4-1441-47fa-b762-39702457df13",
+              "sourceId": "text_gdiplus_47c595e5-a886-4bdf-988d-c007136f27fb",
+              "x": 990.8535561193244,
+              "y": 680.0209481808159,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "269a1310-3a35-4e81-9c27-8f794a60df0d",
+              "sourceId": "text_gdiplus_c7129950-87f8-470a-b17f-1804a23de607",
+              "x": 762.2697051876473,
+              "y": 679.8302094818083,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "d1d2543b-5f5c-4b05-a475-c61111634efe",
+              "name": "Webcam Greenscreen",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_20db0491-8b2b-44ac-8e51-3c8378a36944",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "269a1310-3a35-4e81-9c27-8f794a60df0d",
+                "7baa3ee4-1441-47fa-b762-39702457df13",
+                "2b1720a6-b429-4f9b-ab91-454457831a74"
+              ]
+            }
+          ]
+        },
+        "id": "scene_20db0491-8b2b-44ac-8e51-3c8378a36944",
+        "name": "Extra - Webcams",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "448e6b87-a78e-49d6-bacb-bcca078818a2",
+              "sourceId": "image_source_f508cca3-b806-4f21-a767-bbce64c07fbd",
+              "x": 338.68322981366464,
+              "y": 385.70894423633894,
+              "scaleX": 0.49689440993788825,
+              "scaleY": 0.4968944099378882,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "135eb55b-91b5-4483-bffd-6905e9eb0380",
+              "sourceId": "image_source_54afff30-db45-4010-8543-bc4af8e2e598",
+              "x": 419.77639751552783,
+              "y": 378.5645120422925,
+              "scaleX": 0.49689440993788825,
+              "scaleY": 0.4968944099378882,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "6515f4b2-cb7a-4575-bc7d-24225a01de30",
+              "sourceId": "image_source_413ed683-6ccd-4b74-8380-d05d51336632",
+              "x": 246.85714285714295,
+              "y": 388.18081587651596,
+              "scaleX": 0.4961411245865487,
+              "scaleY": 0.4961411245865487,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "3d3b9cb1-32a4-4b66-b6dd-ad2cf587d332",
+              "sourceId": "image_source_c0b07194-ca91-4d77-9704-fd45acc2e1ea",
+              "x": 90.07552870090637,
+              "y": 829.8909509423106,
+              "scaleX": 1.695065458207452,
+              "scaleY": 1.695065458207452,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "453d1fb2-e1b4-4314-993f-43651c74b604",
+              "sourceId": "image_source_38335425-de41-4738-943c-3420e62bb9a3",
+              "x": 1107.9154078549846,
+              "y": 694.2857142857144,
+              "scaleX": 1.695065458207452,
+              "scaleY": 1.695065458207452,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "68d43e3e-bfd3-4c6e-b65c-33879020bd96",
+              "sourceId": "image_source_9d1497af-d4f1-484f-909e-01ac75be9e90",
+              "x": 599.3957703927489,
+              "y": 694.2142857142859,
+              "scaleX": 1.695065458207452,
+              "scaleY": 1.695065458207452,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "4d1fccf9-b46b-4258-80c8-5df8995e12e4",
+              "sourceId": "image_source_735b54d6-ccb2-4afc-92dd-06c6a4a6a18c",
+              "x": 90.87613293051368,
+              "y": 694.2857142857144,
+              "scaleX": 1.695065458207452,
+              "scaleY": 1.695065458207452,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "54cb3419-2a67-4ed2-a2bc-df5fa9093a38",
+              "sourceId": "text_gdiplus_0446cec5-4707-4eb1-8010-feffe918b978",
+              "x": 698.9094567404427,
+              "y": 746.1428571428571,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "07588bfb-e5a5-41e7-8af7-91895eb18fc0",
+              "sourceId": "text_gdiplus_86d18453-4933-4c47-a631-c51ba6ee3c4b",
+              "x": 1212.0603743305758,
+              "y": 743.2857142857143,
+              "scaleX": 1.3547405567052138,
+              "scaleY": 1.3547405567052138,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "442918f8-4bfd-49e0-8220-bd55e46bca3a",
+              "sourceId": "text_gdiplus_dfbd35e5-b3e9-456d-a432-d155e1947a28",
+              "x": 196.6029044356775,
+              "y": 875.7142857142858,
+              "scaleX": 1.3869047619047605,
+              "scaleY": 1.3869047619047605,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "2f7501f2-b1e5-4c3d-9f20-c2dd60e7c006",
+              "sourceId": "text_gdiplus_a5bf48b3-8d18-49e4-8e28-015e11c6e65b",
+              "x": 191.90816196271282,
+              "y": 742.6428571428571,
+              "scaleX": 1.3373015873015894,
+              "scaleY": 1.3373015873015894,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            },
+            {
+              "id": "47827e72-52fa-4958-9d15-4c09d2769480",
+              "name": "Labels",
+              "sceneNodeType": "folder",
+              "sceneId": "scene_97548261-4501-4361-a3a6-61f1351cb290",
+              "parentId": "",
+              "display": "horizontal",
+              "childrenIds": [
+                "2f7501f2-b1e5-4c3d-9f20-c2dd60e7c006",
+                "442918f8-4bfd-49e0-8220-bd55e46bca3a",
+                "07588bfb-e5a5-41e7-8af7-91895eb18fc0",
+                "54cb3419-2a67-4ed2-a2bc-df5fa9093a38",
+                "4d1fccf9-b46b-4258-80c8-5df8995e12e4",
+                "68d43e3e-bfd3-4c6e-b65c-33879020bd96",
+                "453d1fb2-e1b4-4314-993f-43651c74b604",
+                "3d3b9cb1-32a4-4b66-b6dd-ad2cf587d332"
+              ]
+            }
+          ]
+        },
+        "id": "scene_97548261-4501-4361-a3a6-61f1351cb290",
+        "name": "Extra - Social Icons",
+        "active": false
+      },
+      {
+        "hotkeys": {
+          "schemaVersion": 2,
+          "nodeType": "HotkeysNode",
+          "items": []
+        },
+        "filters": {
+          "schemaVersion": 1,
+          "nodeType": "SceneFiltersNode",
+          "items": []
+        },
+        "sceneItems": {
+          "schemaVersion": 1,
+          "nodeType": "SceneItemsNode",
+          "items": [
+            {
+              "hotkeys": {
+                "schemaVersion": 2,
+                "nodeType": "HotkeysNode",
+                "items": []
+              },
+              "id": "c5244353-4579-4d24-a920-23193cad08f1",
+              "sourceId": "image_source_c4a8d431-0d3a-47f5-a4bf-cf27d634808f",
+              "x": 0,
+              "y": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "visible": true,
+              "crop": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+              },
+              "locked": false,
+              "rotation": 0,
+              "streamVisible": true,
+              "recordingVisible": true,
+              "scaleFilter": 0,
+              "blendingMode": 0,
+              "blendingMethod": 0,
+              "sceneNodeType": "item",
+              "display": "horizontal"
+            }
+          ]
+        },
+        "id": "scene_8b34c6eb-bd01-439c-a49a-2d37dfe0d048",
+        "name": "Extra - Offline Screen",
+        "active": false
+      }
+    ]
+  },
+  "transitions": {
+    "schemaVersion": 2,
+    "nodeType": "TransitionsNode",
+    "transitions": [
+      {
+        "id": "8b8413a7-493d-4cd6-a2e3-b4bd412bfe32",
+        "name": "Global Transition",
+        "type": "cut_transition",
+        "duration": 2000,
+        "settings": {},
+        "propertiesManagerSettings": {
+          "mediaBackup": {}
+        }
+      }
+    ],
+    "connections": [],
+    "defaultTransitionId": "8b8413a7-493d-4cd6-a2e3-b4bd412bfe32"
+  },
+  "hotkeys": {
+    "schemaVersion": 2,
+    "nodeType": "HotkeysNode",
+    "items": []
+  },
+  "guestCam": {
+    "schemaVersion": 1,
+    "nodeType": "GuestCamNode",
+    "audioSourceId": "wasapi_input_capture_c7f6b624-88e0-48e6-a955-6d549806628a",
+    "videoSourceId": "dshow_input_3d63d20b-a9a3-40dd-8a68-ec32c7b3228d"
+  },
+  "nodeMap": {
+    "schemaVersion": 1,
+    "nodeType": "NodeMapNode"
+  },
+  "baseResolution": {
+    "baseWidth": 1920,
+    "baseHeight": 1080
+  },
+  "baseResolutions": {
+    "horizontal": {
+      "baseWidth": 1920,
+      "baseHeight": 1080
+    },
+    "vertical": {
+      "baseWidth": 720,
+      "baseHeight": 1280
+    }
+  },
+  "selectiveRecording": false,
+  "dualOutputMode": false,
+  "operatingSystem": "win32"
+}

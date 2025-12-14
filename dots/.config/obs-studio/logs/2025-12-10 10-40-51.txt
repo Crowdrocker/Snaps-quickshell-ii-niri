@@ -1,0 +1,334 @@
+10:40:51.598: Platform: Wayland
+10:40:51.598: CPU Name: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+10:40:51.598: CPU Speed: 3973.509MHz
+10:40:51.598: Physical Cores: 4, Logical Cores: 8
+10:40:51.598: Physical Memory: 15941MB Total, 1157MB Free
+10:40:51.598: Kernel Version: Linux 6.12.61-1-lts
+10:40:51.598: Distribution: "Arch Linux" Unknown
+10:40:51.598: Desktop Environment: niri (niri)
+10:40:51.598: Session Type: wayland
+10:40:51.599: Current Date/Time: 2025-12-10, 10:40:51
+10:40:51.599: Browser Hardware Acceleration: true
+10:40:51.599: Qt Version: 6.10.1 (runtime), 6.10.0 (compiled)
+10:40:51.599: Portable mode: false
+10:40:51.631: OBS 32.0.2 (linux)
+10:40:51.631: ---------------------------------
+10:40:51.633: ---------------------------------
+10:40:51.633: audio settings reset:
+10:40:51.633: 	samples per sec: 48000
+10:40:51.633: 	speakers:        2
+10:40:51.633: 	max buffering:   960 milliseconds
+10:40:51.633: 	buffering type:  dynamically increasing
+10:40:51.634: ---------------------------------
+10:40:51.634: Initializing OpenGL...
+10:40:51.634: Using EGL/Wayland
+10:40:51.671: Initialized EGL 1.5
+10:40:51.689: Loading up OpenGL on adapter AMD AMD Radeon RX 580 Series (radeonsi, polaris10, ACO, DRM 3.61, 6.12.61-1-lts)
+10:40:51.689: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.3.1-arch1.3, shading language 4.60
+10:40:51.723: ---------------------------------
+10:40:51.723: video settings reset:
+10:40:51.723: 	base resolution:   1920x1080
+10:40:51.723: 	output resolution: 1920x1080
+10:40:51.723: 	downscale filter:  Bicubic
+10:40:51.723: 	fps:               30/1
+10:40:51.723: 	format:            NV12
+10:40:51.723: 	YUV mode:          Rec. 709/Partial
+10:40:51.723: NV12 texture support enabled
+10:40:51.723: P010 texture support not available
+10:40:51.725: Audio monitoring device:
+10:40:51.725: 	name: Default
+10:40:51.725: 	id: default
+10:40:51.729: ---------------------------------
+10:40:51.730: Failed to load 'en-US' text for module: 'decklink-captions.so'
+10:40:51.731: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+10:40:51.732: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+10:40:51.732: Failed to initialize module 'decklink.so'
+10:40:51.827: [pipewire] No capture sources available
+10:40:51.831: v4l2loopback not installed, virtual camera not registered
+10:40:51.832: [linux-vkcapture] plugin loaded successfully (version 1.5.3)
+10:40:51.849: VAAPI: API version 1.22
+10:40:51.850: FFmpeg VAAPI H264 encoding supported
+10:40:51.854: FFmpeg VAAPI AV1 encoding not supported
+10:40:51.858: FFmpeg VAAPI HEVC encoding supported
+10:40:51.861: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+10:40:51.861: 
+10:40:51.861: NVENC not supported
+10:40:51.861: Failed to initialize module 'obs-nvenc.so'
+10:40:51.878: [obs-vaapi] version: 0.4.2, gst-runtime: 1.26.9
+10:40:51.891: [obs-vaapi] found vah265enc
+10:40:51.891: [obs-vaapi] found vah264enc
+10:40:51.891: [obs-vaapi] found vaapih264enc
+10:40:51.891: [obs-vaapi] found vaapih265enc
+10:40:51.904: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+10:40:51.904: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.0 | Qt version (run-time): 6.10.1
+10:40:51.904: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+10:40:51.908: [obs-websocket] [obs_module_load] Module loaded.
+10:40:51.911: ---------------------------------
+10:40:51.911:   Loaded Modules:
+10:40:51.911:     text-freetype2.so
+10:40:51.911:     rtmp-services.so
+10:40:51.911:     obs-x264.so
+10:40:51.911:     obs-websocket.so
+10:40:51.911:     obs-webrtc.so
+10:40:51.911:     obs-vst.so
+10:40:51.911:     obs-vaapi.so
+10:40:51.911:     obs-transitions.so
+10:40:51.911:     obs-qsv11.so
+10:40:51.911:     obs-outputs.so
+10:40:51.911:     obs-libfdk.so
+10:40:51.911:     obs-filters.so
+10:40:51.911:     obs-ffmpeg.so
+10:40:51.911:     linux-vkcapture.so
+10:40:51.911:     linux-v4l2.so
+10:40:51.911:     linux-pulseaudio.so
+10:40:51.911:     linux-pipewire.so
+10:40:51.911:     linux-jack.so
+10:40:51.911:     linux-capture.so
+10:40:51.911:     linux-alsa.so
+10:40:51.911:     image-source.so
+10:40:51.911:     frontend-tools.so
+10:40:51.911:     decklink-output-ui.so
+10:40:51.911:     decklink-captions.so
+10:40:51.911: ---------------------------------
+10:40:51.911: ---------------------------------
+10:40:51.911: Available Encoders:
+10:40:51.912:   Video Encoders:
+10:40:51.912: 	- ffmpeg_svt_av1 (SVT-AV1)
+10:40:51.912: 	- ffmpeg_aom_av1 (AOM AV1)
+10:40:51.912: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+10:40:51.912: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+10:40:51.919: 	- obs-va-vah265enc (VAAPI H.265 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+10:40:51.925: 	- obs-va-vah264enc (VAAPI H.264 on Ellesmere [Radeon RX 470/480/570/570X/580/580X/590])
+10:40:51.925: 	- obs-vaapi-vaapih264enc (VAAPI H.264  (Legacy))
+10:40:51.925: 	- obs-vaapi-vaapih265enc (VAAPI H.265  (Legacy))
+10:40:51.925: 	- obs_x264 (x264)
+10:40:51.925:   Audio Encoders:
+10:40:51.925: 	- ffmpeg_aac (FFmpeg AAC)
+10:40:51.925: 	- ffmpeg_opus (FFmpeg Opus)
+10:40:51.925: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+10:40:51.925: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+10:40:51.925: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+10:40:51.925: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+10:40:51.925: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+10:40:51.925: 	- libfdk_aac (libfdk AAC)
+10:40:51.925: ==== Startup complete ===============================================
+10:40:51.976: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+10:40:51.976: All scene data cleared
+10:40:51.976: ------------------------------------------------
+10:40:51.985: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:40:51.986: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+10:40:51.986: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor' (default)
+10:40:51.986: [Loaded global audio device]: 'Desktop Audio'
+10:40:51.986: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+10:40:51.986: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+10:40:51.986: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo' (default)
+10:40:51.986: [Loaded global audio device]: 'Mic/Aux'
+10:40:51.988: Switched to scene 'Scene'
+10:40:51.988: ------------------------------------------------
+10:40:51.988: Loaded scenes:
+10:40:51.988: - scene 'Scene':
+10:40:51.988: ------------------------------------------------
+10:40:51.996: Device for 'Audio Output Capture' source is also used for audio monitoring:
+10:40:51.996: Deduplication logic is being applied to all monitored sources.
+10:40:51.996: 
+10:40:52.550: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+10:40:52.550: 
+10:41:03.071: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+10:41:03.071: pulse-input: Got 443 packets with 531600 frames
+10:41:03.071: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+10:41:03.071: pulse-input: Got 441 packets with 529200 frames
+10:41:03.115: All scene data cleared
+10:41:03.115: ------------------------------------------------
+10:41:03.117: Source ID 'text_gdiplus_v3' not found
+10:41:03.117: Failed to create source 'Youtube Username'!
+10:41:03.118: Source ID 'text_gdiplus_v3' not found
+10:41:03.118: Failed to create source 'Instagram Username'!
+10:41:03.118: Source ID 'text_gdiplus_v3' not found
+10:41:03.118: Failed to create source 'Twitter Username'!
+10:41:03.118: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/79.png': Protocol not found
+10:41:03.118: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/79.png'
+10:41:03.118: [image_source: 'Offline Sceen'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/79.png'
+10:41:03.118: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/78.png': Protocol not found
+10:41:03.118: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/78.png'
+10:41:03.118: [image_source: 'Ending Sceen'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/78.png'
+10:41:03.118: Source ID 'browser_source' not found
+10:41:03.118: Failed to create source 'AlertBox'!
+10:41:03.118: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/77.png': Protocol not found
+10:41:03.118: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/77.png'
+10:41:03.118: [image_source: 'Backsoon sceen'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/77.png'
+10:41:03.118: Source ID 'browser_source' not found
+10:41:03.118: Failed to create source 'Chatbox'!
+10:41:03.118: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/76.png': Protocol not found
+10:41:03.118: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/76.png'
+10:41:03.118: [image_source: 'Intermission Sceen'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/76.png'
+10:41:03.118: Source ID 'dshow_input' not found
+10:41:03.118: Failed to create source 'Webcam'!
+10:41:03.119: Source ID 'game_capture' not found
+10:41:03.119: Failed to create source 'Game Capture'!
+10:41:03.119: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/74.png': Protocol not found
+10:41:03.119: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/74.png'
+10:41:03.119: [image_source: 'Starting Sceen'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/74.png'
+10:41:03.119: Source ID 'text_gdiplus_v3' not found
+10:41:03.119: Failed to create source 'Bar Overlay'!
+10:41:03.119: Source ID 'text_gdiplus_v3' not found
+10:41:03.119: Failed to create source 'FaceCam'!
+10:41:03.119: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/82.png': Protocol not found
+10:41:03.119: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/82.png'
+10:41:03.119: [image_source: 'Instagram'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/82.png'
+10:41:03.119: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/81.png': Protocol not found
+10:41:03.119: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/81.png'
+10:41:03.119: [image_source: 'youtube'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/81.png'
+10:41:03.119: Failed to open file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/80.png': Protocol not found
+10:41:03.119: gs_image_file_init_internal: Failed to load file 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/80.png'
+10:41:03.119: [image_source: 'Twitter'] failed to load texture 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/80.png'
+10:41:03.126: Switched to scene 'Social Media (Change Me)'
+10:41:03.126: ------------------------------------------------
+10:41:03.126: Loaded scenes:
+10:41:03.126: - scene 'Livescreen':
+10:41:03.126:     - source: 'Game Capture' (game_capture)
+10:41:03.126:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:41:03.126:     - source: 'FaceCam' (text_gdiplus_v3)
+10:41:03.126:     - source: 'AlertBox' (browser_source)
+10:41:03.126: - scene 'Collab Cam Scene':
+10:41:03.126:     - source: 'Game Capture' (game_capture)
+10:41:03.126:     - source: 'Bar Overlay' (text_gdiplus_v3)
+10:41:03.126:     - source: 'FaceCam' (text_gdiplus_v3)
+10:41:03.126:     - source: 'AlertBox' (browser_source)
+10:41:03.126: - scene 'Starting Screen':
+10:41:03.126:     - source: 'Social Media (Change Me)' (scene)
+10:41:03.126:     - source: 'AlertBox' (browser_source)
+10:41:03.126:     - source: 'Starting Sceen' (image_source)
+10:41:03.126: - scene 'Intermission Screen':
+10:41:03.126:     - source: 'Game Capture' (game_capture)
+10:41:03.126:     - source: 'Webcam' (dshow_input)
+10:41:03.126:     - source: 'Intermission Sceen' (image_source)
+10:41:03.126:     - source: 'Chatbox' (browser_source)
+10:41:03.126:     - source: 'Social Media (Change Me)' (scene)
+10:41:03.126:     - source: 'AlertBox' (browser_source)
+10:41:03.126: - scene 'Back Soon Screen':
+10:41:03.126: [Media Source 'Stinger (Stinger)']: settings:
+10:41:03.126: 	input:                   C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:41:03.126:     - source: 'Backsoon sceen' (image_source)
+10:41:03.126: 	input_format:            (null)
+10:41:03.126:     - source: 'Social Media (Change Me)' (scene)
+10:41:03.126: 	speed:                   100
+10:41:03.126: 	is_looping:              no
+10:41:03.126:     - source: 'AlertBox' (browser_source)
+10:41:03.126: 	is_linear_alpha:         no
+10:41:03.126: 	is_hw_decoding:          yes
+10:41:03.126: - scene 'Ending Screen':
+10:41:03.126: 	is_clear_on_media_end:   yes
+10:41:03.126: 	restart_on_activate:     yes
+10:41:03.126:     - source: 'Ending Sceen' (image_source)
+10:41:03.126: 	close_when_inactive:     no
+10:41:03.126: 	full_decode:             no
+10:41:03.126:     - source: 'Social Media (Change Me)' (scene)
+10:41:03.126: 	ffmpeg_options:          
+10:41:03.126: MP: Failed to open media: 'C:/Users/Forza/AppData/Roaming/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm'
+10:41:03.126:     - source: 'AlertBox' (browser_source)
+10:41:03.126: - scene 'Offline Screen':
+10:41:03.126:     - source: 'Offline Sceen' (image_source)
+10:41:03.126:     - source: 'Social Media (Change Me)' (scene)
+10:41:03.126: - scene 'Social Media (Change Me)':
+10:41:03.126:     - source: 'Youtube group' (group)
+10:41:03.126:         - source: 'youtube' (image_source)
+10:41:03.126:         - source: 'Youtube Username' (text_gdiplus_v3)
+10:41:03.126:     - source: 'Instagramm' (group)
+10:41:03.126:         - source: 'Instagram' (image_source)
+10:41:03.126:         - source: 'Instagram Username' (text_gdiplus_v3)
+10:41:03.126:     - source: 'Twitter group' (group)
+10:41:03.126:         - source: 'Twitter Username' (text_gdiplus_v3)
+10:41:03.126:         - source: 'Twitter' (image_source)
+10:41:03.126: ------------------------------------------------
+10:41:03.137: Switched to scene collection 'Wehttamsnaps' (Wehttamsnaps.json)
+10:41:03.137: ------------------------------------------------
+10:43:55.729: [Media Source 'Stinger (Stinger)']: settings:
+10:43:55.729: 	input:                   /run/media/wehttamsnaps/GAMEDRIVE/linux-20240108T071141Z-001/streamlabs overlays/slobs-client/Overlays/bd4e7d1f-3180-4f7d-b4e9-9bdea85ea8bc/83.webm
+10:43:55.729: 	input_format:            (null)
+10:43:55.729: 	speed:                   100
+10:43:55.729: 	is_looping:              no
+10:43:55.729: 	is_linear_alpha:         no
+10:43:55.729: 	is_hw_decoding:          yes
+10:43:55.729: 	is_clear_on_media_end:   yes
+10:43:55.729: 	restart_on_activate:     yes
+10:43:55.729: 	close_when_inactive:     no
+10:43:55.729: 	full_decode:             no
+10:43:55.729: 	ffmpeg_options:          
+10:44:01.752: User switched to scene 'Offline Screen'
+10:44:06.104: User switched to scene 'Ending Screen'
+10:44:10.791: User switched to scene 'Back Soon Screen'
+10:44:13.992: User switched to scene 'Starting Screen'
+10:44:17.287: User switched to scene 'Collab Cam Scene'
+10:44:19.998: User switched to scene 'Starting Screen'
+10:45:17.737: ==== Shutting down ==================================================
+10:45:17.772: All scene data cleared
+10:45:17.772: ------------------------------------------------
+10:45:17.875: [obs-websocket] [obs_module_unload] Shutting down...
+10:45:17.875: Tried to call obs_frontend_remove_event_callback with no callbacks!
+10:45:17.875: [obs-websocket] [obs_module_unload] Finished shutting down.
+10:45:17.875: [linux-vkcapture] plugin unloaded
+10:45:17.882: [Scripting] Total detached callbacks: 0
+10:45:17.883: Freeing OBS context data
+10:45:17.893: == Profiler Results =============================
+10:45:17.893: run_program_init: 507.8 ms
+10:45:17.893:  ┣OBSApp::AppInit: 18.118 ms
+10:45:17.893:  ┃ ┗OBSApp::InitLocale: 1.859 ms
+10:45:17.893:  ┗OBSApp::OBSInit: 434.359 ms
+10:45:17.893:    ┣obs_startup: 1.482 ms
+10:45:17.893:    ┗OBSBasic::OBSInit: 400.659 ms
+10:45:17.893:      ┣OBSBasic::InitBasicConfig: 1.465 ms
+10:45:17.893:      ┣OBSBasic::ResetAudio: 0.201 ms
+10:45:17.893:      ┣OBSBasic::ResetVideo: 92.581 ms
+10:45:17.893:      ┃ ┗obs_init_graphics: 90.311 ms
+10:45:17.893:      ┃   ┗shader compilation: 32.645 ms
+10:45:17.893:      ┣OBSBasic::InitOBSCallbacks: 0.004 ms
+10:45:17.893:      ┣OBSBasic::InitHotkeys: 0.04 ms
+10:45:17.893:      ┣obs_load_all_modules2: 182.085 ms
+10:45:17.893:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+10:45:17.893:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+10:45:17.893:      ┃ ┣obs_init_module(decklink.so): 0.062 ms
+10:45:17.893:      ┃ ┣obs_init_module(frontend-tools.so): 71.272 ms
+10:45:17.893:      ┃ ┣obs_init_module(image-source.so): 0.005 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-alsa.so): 0 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-jack.so): 0.001 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-pipewire.so): 15.562 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.001 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-v4l2.so): 2.631 ms
+10:45:17.893:      ┃ ┣obs_init_module(linux-vkcapture.so): 0.066 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-ffmpeg.so): 12.614 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-filters.so): 0.013 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-libfdk.so): 0 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-nvenc.so): 0.051 ms
+10:45:17.893:      ┃ ┃ ┗nvenc_check: 0.044 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-outputs.so): 0.003 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-qsv11.so): 8.257 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-transitions.so): 0.005 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-vaapi.so): 13.441 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-vst.so): 0.002 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-webrtc.so): 0.002 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-websocket.so): 4.174 ms
+10:45:17.893:      ┃ ┣obs_init_module(obs-x264.so): 0.001 ms
+10:45:17.893:      ┃ ┣obs_init_module(rtmp-services.so): 0.325 ms
+10:45:17.893:      ┃ ┗obs_init_module(text-freetype2.so): 0.008 ms
+10:45:17.893:      ┣OBSBasic::InitService: 1.63 ms
+10:45:17.893:      ┣OBSBasic::ResetOutputs: 0.204 ms
+10:45:17.893:      ┣OBSBasic::CreateHotkeys: 0.027 ms
+10:45:17.893:      ┣OBSBasic::InitPrimitives: 0.813 ms
+10:45:17.893:      ┗OBSBasic::Load: 58.318 ms
+10:45:17.893: obs_hotkey_thread(25 ms): min=0 ms, median=0 ms, max=0.016 ms, 99th percentile=0.001 ms, 100% below 25 ms
+10:45:17.893: audio_thread(Audio): min=0.008 ms, median=0.027 ms, max=1.657 ms, 99th percentile=0.106 ms
+10:45:17.893: obs_graphics_thread(33.3333 ms): min=0.152 ms, median=0.744 ms, max=236.977 ms, 99th percentile=2.32 ms, 99.9875% below 33.333 ms
+10:45:17.893:  ┣tick_sources: min=0 ms, median=0.022 ms, max=236.602 ms, 99th percentile=0.453 ms
+10:45:17.893:  ┣output_frame: min=0.101 ms, median=0.338 ms, max=9.73 ms, 99th percentile=1.795 ms
+10:45:17.893:  ┃ ┗gs_context(video->graphics): min=0.1 ms, median=0.337 ms, max=9.729 ms, 99th percentile=1.794 ms
+10:45:17.893:  ┃   ┣render_video: min=0.015 ms, median=0.059 ms, max=8.856 ms, 99th percentile=1.352 ms
+10:45:17.893:  ┃   ┃ ┗render_main_texture: min=0.012 ms, median=0.053 ms, max=8.85 ms, 99th percentile=1.345 ms
+10:45:17.893:  ┃   ┗gs_flush: min=0.003 ms, median=0.009 ms, max=0.058 ms, 99th percentile=0.027 ms
+10:45:17.893:  ┗render_displays: min=0.005 ms, median=0.323 ms, max=4.356 ms, 99th percentile=0.681 ms
+10:45:17.893: =================================================
+10:45:17.893: == Profiler Time Between Calls ==================
+10:45:17.893: obs_hotkey_thread(25 ms): min=25.023 ms, median=25.105 ms, max=29.319 ms, 99.9528% within ±2% of 25 ms (0% lower, 0.0471609% higher)
+10:45:17.893: obs_graphics_thread(33.3333 ms): min=28.967 ms, median=33.333 ms, max=236.98 ms, 99.8746% within ±2% of 33.333 ms (0.0626802% lower, 0.0626802% higher)
+10:45:17.893: =================================================
+10:45:17.898: Number of memory leaks: 0

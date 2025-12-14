@@ -1,0 +1,559 @@
+{
+  "obs_scene_collection": {
+    "name": "WehttamSnaps Streaming",
+    "scenes": [
+      {
+        "name": "🎮 GAMING",
+        "description": "Main gameplay scene",
+        "sources": [
+          {
+            "name": "Game Capture",
+            "type": "pipewire-desktop-capture-source",
+            "settings": {
+              "restore_token": ""
+            },
+            "transform": {
+              "position": {"x": 0, "y": 0},
+              "scale": {"x": 1.0, "y": 1.0},
+              "bounds": {"x": 1920, "y": 1080}
+            },
+            "visible": true
+          },
+          {
+            "name": "Webcam",
+            "type": "v4l2_input",
+            "settings": {
+              "device_id": "/dev/video0",
+              "resolution": "1280x720"
+            },
+            "transform": {
+              "position": {"x": 1490, "y": 750},
+              "scale": {"x": 0.33, "y": 0.33},
+              "bounds": {"x": 420, "y": 240}
+            },
+            "filters": [
+              {"name": "Chroma Key", "type": "chroma_key_filter_v2"},
+              {"name": "Color Correction", "type": "color_filter"}
+            ],
+            "visible": true
+          },
+          {
+            "name": "Stream Overlay",
+            "type": "image_source",
+            "settings": {
+              "file": "~/.config/wehttamsnaps/overlays/gaming-overlay.png"
+            },
+            "visible": true
+          },
+          {
+            "name": "Alerts Widget",
+            "type": "browser_source",
+            "settings": {
+              "url": "https://streamlabs.com/widgets/...",
+              "width": 1920,
+              "height": 1080
+            },
+            "visible": true
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Game Audio",
+            "type": "pipewire-audio-capture",
+            "settings": {
+              "target": "game_audio_source"
+            }
+          },
+          {
+            "name": "Microphone",
+            "type": "pipewire-audio-capture",
+            "settings": {
+              "target": "HD Webcam C615"
+            },
+            "filters": [
+              {"name": "Noise Suppression", "type": "noise_suppress_filter_v2"},
+              {"name": "Noise Gate", "type": "noise_gate_filter"},
+              {"name": "Compressor", "type": "compressor_filter"}
+            ]
+          },
+          {
+            "name": "Discord Audio (Optional)",
+            "type": "pipewire-audio-capture",
+            "settings": {
+              "target": "discord_audio_source"
+            },
+            "muted": true
+          }
+        ]
+      },
+      {
+        "name": "🎥 STARTING SOON",
+        "description": "Pre-stream countdown",
+        "sources": [
+          {
+            "name": "Background Video",
+            "type": "ffmpeg_source",
+            "settings": {
+              "local_file": "~/.config/wehttamsnaps/media/backgrounds/starting-soon-loop.mp4",
+              "looping": true
+            },
+            "transform": {
+              "position": {"x": 0, "y": 0},
+              "scale": {"x": 1.0, "y": 1.0}
+            }
+          },
+          {
+            "name": "Starting Soon Text",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "STARTING SOON",
+              "font": {
+                "face": "Fira Code",
+                "size": 120,
+                "flags": "Bold"
+              },
+              "color": "#89b4fa",
+              "outline": true,
+              "outline_size": 4,
+              "outline_color": "#1e1e2e"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 400},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Countdown Timer",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "5:00",
+              "font": {
+                "face": "Fira Code",
+                "size": 80,
+                "flags": "Bold"
+              },
+              "color": "#f38ba8"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 600},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Social Media",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "📺 twitch.tv/WehttamSnaps\n🎬 youtube.com/@WehttamSnaps\n💻 github.com/Crowdrocker",
+              "font": {
+                "face": "Fira Code",
+                "size": 36
+              },
+              "color": "#cdd6f4"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 850},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Music Player",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "🎵 Now Playing: [Song Name]",
+              "font": {
+                "face": "Fira Code",
+                "size": 28
+              },
+              "color": "#a6e3a1"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 1000},
+              "alignment": "center"
+            }
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Music (Pre-Stream)",
+            "type": "pipewire-audio-capture",
+            "settings": {
+              "target": "browser_audio_source"
+            }
+          }
+        ]
+      },
+      {
+        "name": "💬 JUST CHATTING",
+        "description": "Webcam focus scene",
+        "sources": [
+          {
+            "name": "Background",
+            "type": "image_source",
+            "settings": {
+              "file": "~/.config/wehttamsnaps/media/backgrounds/chat-bg.png"
+            }
+          },
+          {
+            "name": "Webcam (Large)",
+            "type": "v4l2_input",
+            "settings": {
+              "device_id": "/dev/video0",
+              "resolution": "1280x720"
+            },
+            "transform": {
+              "position": {"x": 320, "y": 180},
+              "scale": {"x": 1.0, "y": 1.0},
+              "bounds": {"x": 1280, "y": 720}
+            }
+          },
+          {
+            "name": "Chat Widget",
+            "type": "browser_source",
+            "settings": {
+              "url": "https://streamlabs.com/widgets/chat-box/...",
+              "width": 400,
+              "height": 800
+            },
+            "transform": {
+              "position": {"x": 1500, "y": 140}
+            }
+          },
+          {
+            "name": "Stream Info",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "WehttamSnaps\nPhotography • Gaming • Content",
+              "font": {
+                "face": "Fira Code",
+                "size": 48,
+                "flags": "Bold"
+              },
+              "color": "#89b4fa"
+            },
+            "transform": {
+              "position": {"x": 100, "y": 50}
+            }
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Microphone",
+            "type": "pipewire-audio-capture"
+          },
+          {
+            "name": "Desktop Audio",
+            "type": "pipewire-audio-capture",
+            "settings": {
+              "target": "browser_audio_source"
+            }
+          }
+        ]
+      },
+      {
+        "name": "⏸️ BE RIGHT BACK",
+        "description": "AFK/Break scene",
+        "sources": [
+          {
+            "name": "BRB Video Loop",
+            "type": "ffmpeg_source",
+            "settings": {
+              "local_file": "~/.config/wehttamsnaps/media/backgrounds/brb-loop.mp4",
+              "looping": true
+            }
+          },
+          {
+            "name": "BRB Text",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "BE RIGHT BACK",
+              "font": {
+                "face": "Fira Code",
+                "size": 100,
+                "flags": "Bold"
+              },
+              "color": "#f9e2af",
+              "outline": true,
+              "outline_size": 4
+            },
+            "transform": {
+              "position": {"x": 960, "y": 540},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Timer/Message",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "Taking a quick break...",
+              "font": {
+                "face": "Fira Code",
+                "size": 40
+              },
+              "color": "#cdd6f4"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 700},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Chat Display",
+            "type": "browser_source",
+            "settings": {
+              "url": "https://streamlabs.com/widgets/chat-box/...",
+              "width": 800,
+              "height": 400
+            },
+            "transform": {
+              "position": {"x": 560, "y": 800}
+            }
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Music (BRB)",
+            "type": "pipewire-audio-capture",
+            "settings": {
+              "target": "browser_audio_source"
+            }
+          }
+        ]
+      },
+      {
+        "name": "🎬 ENDING SOON",
+        "description": "Stream outro",
+        "sources": [
+          {
+            "name": "Outro Background",
+            "type": "ffmpeg_source",
+            "settings": {
+              "local_file": "~/.config/wehttamsnaps/media/backgrounds/ending-loop.mp4",
+              "looping": true
+            }
+          },
+          {
+            "name": "Thanks for Watching",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "THANKS FOR WATCHING!",
+              "font": {
+                "face": "Fira Code",
+                "size": 90,
+                "flags": "Bold"
+              },
+              "color": "#89b4fa",
+              "outline": true,
+              "outline_size": 4
+            },
+            "transform": {
+              "position": {"x": 960, "y": 400},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Follow/Subscribe",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "❤️ Follow for more content!\n📺 twitch.tv/WehttamSnaps\n🎬 youtube.com/@WehttamSnaps",
+              "font": {
+                "face": "Fira Code",
+                "size": 42
+              },
+              "color": "#f38ba8"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 600},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "Stream Stats",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "Stream Duration: [X hours]\nPeak Viewers: [XX]\nNew Followers: [X]",
+              "font": {
+                "face": "Fira Code",
+                "size": 32
+              },
+              "color": "#a6e3a1"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 850},
+              "alignment": "center"
+            }
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Outro Music",
+            "type": "pipewire-audio-capture"
+          }
+        ]
+      },
+      {
+        "name": "📸 PHOTO REVIEW",
+        "description": "Photography workflow showcase",
+        "sources": [
+          {
+            "name": "Desktop Capture",
+            "type": "pipewire-desktop-capture-source",
+            "transform": {
+              "position": {"x": 0, "y": 0},
+              "scale": {"x": 1.0, "y": 1.0}
+            }
+          },
+          {
+            "name": "Webcam (Corner)",
+            "type": "v4l2_input",
+            "transform": {
+              "position": {"x": 1520, "y": 800},
+              "scale": {"x": 0.3, "y": 0.3}
+            }
+          },
+          {
+            "name": "Software Label",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "GIMP / Darktable / Krita",
+              "font": {
+                "face": "Fira Code",
+                "size": 32
+              },
+              "color": "#89b4fa"
+            },
+            "transform": {
+              "position": {"x": 50, "y": 30}
+            }
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Microphone",
+            "type": "pipewire-audio-capture"
+          },
+          {
+            "name": "Desktop Audio",
+            "type": "pipewire-audio-capture"
+          }
+        ]
+      },
+      {
+        "name": "🎯 TECHNICAL DIFFICULTIES",
+        "description": "Emergency fallback scene",
+        "sources": [
+          {
+            "name": "Error Background",
+            "type": "color_source_v3",
+            "settings": {
+              "color": "#1e1e2e"
+            }
+          },
+          {
+            "name": "Error Message",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "⚠️ TECHNICAL DIFFICULTIES ⚠️\n\nExperiencing some issues...\nWe'll be back shortly!",
+              "font": {
+                "face": "Fira Code",
+                "size": 60,
+                "flags": "Bold"
+              },
+              "color": "#f38ba8",
+              "outline": true
+            },
+            "transform": {
+              "position": {"x": 960, "y": 540},
+              "alignment": "center"
+            }
+          },
+          {
+            "name": "J.A.R.V.I.S. Message",
+            "type": "text_ft2_source_v2",
+            "settings": {
+              "text": "\"Sir, we're experiencing technical difficulties.\nRebooting systems...\"",
+              "font": {
+                "face": "Fira Code",
+                "size": 36,
+                "flags": "Italic"
+              },
+              "color": "#89b4fa"
+            },
+            "transform": {
+              "position": {"x": 960, "y": 750},
+              "alignment": "center"
+            }
+          }
+        ],
+        "audio_sources": [
+          {
+            "name": "Music",
+            "type": "pipewire-audio-capture"
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "name": "Fade",
+        "type": "fade_transition",
+        "duration": 300
+      },
+      {
+        "name": "Swipe",
+        "type": "swipe_transition",
+        "duration": 500
+      },
+      {
+        "name": "Stinger",
+        "type": "obs_stinger_transition",
+        "settings": {
+          "path": "~/.config/wehttamsnaps/media/stingers/transition.webm"
+        }
+      }
+    ],
+    "hotkeys": {
+      "scenes": {
+        "GAMING": "F1",
+        "STARTING SOON": "F2",
+        "JUST CHATTING": "F3",
+        "BE RIGHT BACK": "F4",
+        "ENDING SOON": "F5",
+        "PHOTO REVIEW": "F6",
+        "TECHNICAL DIFFICULTIES": "F12"
+      },
+      "actions": {
+        "Start Streaming": "Ctrl+F1",
+        "Start Recording": "Ctrl+F2",
+        "Stop Streaming/Recording": "Ctrl+F3",
+        "Mute Microphone": "Ctrl+M",
+        "Push to Talk": "Mouse5"
+      }
+    }
+  },
+  "notes": {
+    "media_locations": {
+      "backgrounds": "~/.config/wehttamsnaps/media/backgrounds/",
+      "overlays": "~/.config/wehttamsnaps/media/overlays/",
+      "stingers": "~/.config/wehttamsnaps/media/stingers/",
+      "music": "~/.config/wehttamsnaps/media/music/"
+    },
+    "recommended_resolutions": {
+      "stream_output": "1920x1080 @ 60fps",
+      "webcam": "1280x720 @ 30fps",
+      "recording": "1920x1080 @ 60fps"
+    },
+    "audio_setup": {
+      "game": "game_audio_source → OBS Game Audio capture",
+      "mic": "HD Webcam C615 → OBS Microphone capture",
+      "discord": "discord_audio_source → OBS Discord Audio (optional)",
+      "music": "browser_audio_source → OBS Music (pre-stream/BRB)"
+    },
+    "color_scheme": {
+      "primary": "#89b4fa (Catppuccin Blue)",
+      "accent": "#f38ba8 (Catppuccin Pink)",
+      "success": "#a6e3a1 (Catppuccin Green)",
+      "warning": "#f9e2af (Catppuccin Yellow)",
+      "background": "#1e1e2e (Catppuccin Base)"
+    }
+  }
+}
