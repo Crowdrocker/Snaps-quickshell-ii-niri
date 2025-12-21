@@ -104,13 +104,13 @@ layout {
 
     border {
         width 2
-        active-gradient from="#F52A65" to="#E0AF68" angle=-45 relative-to="workspace-view"
-        inactive-gradient from="#E9E9ED" to="#15161E" angle=-45 relative-to="workspace-view"
+        active-gradient from="#f38ba8" to="#fab387" angle=45 relative-to="workspace-view"
+        inactive-gradient from="#313244" to="#45475a" angle=45 relative-to="workspace-view"
     }
 
     focus-ring {
         width 3
-        active-gradient from="#f38ba8" to="#f5c2e7" angle=45 relative-to="workspace-view"
+        active-gradient from="#eba0ac" to="#f38ba8" angle=45 relative-to="workspace-view"
         inactive-gradient from="#45475a" to="#585b70" angle=45 relative-to="workspace-view"
     }
 

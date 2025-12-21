@@ -31,47 +31,64 @@ binds {
     Mod+Shift+0 { move-column-to-workspace 10; }
 
     // System
-    Mod+Tab repeat=false { toggle-overview; }
-    Mod+Shift+E { quit; }
-    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Mod+Tab repeat=false    hotkey-overlay-title="toggle-overview"{ toggle-overview; }
+    Mod+Shift+E    hotkey-overlay-title="quit"{ quit; }
+    Mod+Escape allow-inhibiting=false    hotkey-overlay-title="toggle-keyboard-shortcuts-inhibit"{ toggle-keyboard-shortcuts-inhibit; }
+    Mod+Shift+C    hotkey-overlay-title="niri_keybind_parser"{ spawn "python3" "~/.config/niri/niri_keybind_parser.py" "~/.config/niri/10-wiri_keybinds.kdl" "html"; }
 
     // ii Window Switcher (Alt+Tab)
-    Alt+Tab { spawn "qs" "-c" "ii" "ipc" "call" "altSwitcher" "next"; }
-    Alt+Shift+Tab { spawn "qs" "-c" "ii" "ipc" "call" "altSwitcher" "previous"; }
+    Alt+Tab    hotkey-overlay-title="altSwitcher-next"{ spawn "qs" "-c" "ii" "ipc" "call" "altSwitcher" "next"; }
+    Alt+Shift+Tab    hotkey-overlay-title="altSwitcher-previous"{ spawn "qs" "-c" "ii" "ipc" "call" "altSwitcher" "previous"; }
 
     // ii Overlay
-    Super+G { spawn "qs" "-c" "ii" "ipc" "call" "overlay" "toggle"; }
+    Super+G    hotkey-overlay-title="overlay"{ spawn "qs" "-c" "ii" "ipc" "call" "overlay" "toggle"; }
 
     // ii Overview (daemon)
-    Mod+Space repeat=false { spawn "qs" "-c" "ii" "ipc" "call" "overview" "toggle"; }
-
+    //Mod+Space repeat=false    hotkey-overlay-title="overview"{ spawn "qs" "-c" "ii" "ipc" "call" "overview" "toggle"; }
     // ii Clipboard
-    Mod+V { spawn "qs" "-c" "ii" "ipc" "call" "clipboard" "toggle"; }
+    Mod+V    hotkey-overlay-title="clipboard"{ spawn "qs" "-c" "ii" "ipc" "call" "clipboard" "toggle"; }
 
     // ii Lock screen
-    Mod+Alt+L allow-when-locked=true { spawn "qs" "-c" "ii" "ipc" "call" "lock" "activate"; }
+    Mod+Alt+L allow-when-locked=true    hotkey-overlay-title="lock"{ spawn "qs" "-c" "ii" "ipc" "call" "lock" "activate"; }
 
     // ii Region tools
     //Mod+Shift+S { spawn "qs" "-c" "ii" "ipc" "call" "region" "screenshot"; }
-    Mod+Shift+X { spawn "qs" "-c" "ii" "ipc" "call" "region" "ocr"; }
-    Mod+Shift+A { spawn "qs" "-c" "ii" "ipc" "call" "region" "search"; }
+    Mod+Shift+X    hotkey-overlay-title="region-ocr"{ spawn "qs" "-c" "ii" "ipc" "call" "region" "ocr"; }
+    Mod+Shift+A    hotkey-overlay-title="region-search"{ spawn "qs" "-c" "ii" "ipc" "call" "region" "search"; }
 
     // ii Wallpaper selector
-    Ctrl+Alt+T { spawn "qs" "-c" "ii" "ipc" "call" "wallpaperSelector" "toggle"; }
+    Ctrl+Alt+T    hotkey-overlay-title="wallpaperSelector"{ spawn "qs" "-c" "ii" "ipc" "call" "wallpaperSelector" "toggle"; }
 
     // ii Settings
-    Mod+Comma { spawn "qs" "-c" "ii" "ipc" "call" "settings" "open"; }
+    Mod+Comma    hotkey-overlay-title="settings"{ spawn "qs" "-c" "ii" "ipc" "call" "settings" "open"; }
 
     // ii Cheatsheet
-    Mod+Slash { spawn "qs" "-c" "ii" "ipc" "call" "cheatsheet" "toggle"; }
+    Mod+Slash    hotkey-overlay-title="cheatsheet"{ spawn "qs" "-c" "ii" "ipc" "call" "cheatsheet" "toggle"; }
 
     // ii Panel family (cycle between Material ii and Waffle styles)
-    Mod+Shift+W { spawn "qs" "-c" "ii" "ipc" "call" "panelFamily" "cycle"; }
+    Mod+Shift+W    hotkey-overlay-title="panelFamily"{ spawn "qs" "-c" "ii" "ipc" "call" "panelFamily" "cycle"; }
 
+    // ═══════════════════════════════════════
+    // J.A.R.V.I.S. VISUAL MENU SYSTEM
+    // ═══════════════════════════════════════
 
+    // Main J.A.R.V.I.S. Command Center (Full Menu)
+    Mod+Space    hotkey-overlay-title="jarvis-menu-main"{ spawn "jarvis-menu" "main"; }
+
+    // Quick App Launcher (No categories)
+    Mod+Alt+A    hotkey-overlay-title="jarvis-menu-apps"{ spawn "jarvis-menu" "apps"; }
+
+    // Quick Workspace Switcher
+    Mod+W    hotkey-overlay-title="jarvis-menu-workspaces"{ spawn "jarvis-menu" "workspaces"; }
+
+    // Free-Form Command Input
+    Mod+Alt+Slash    hotkey-overlay-title="jarvis-menu-command"{ spawn "jarvis-menu" "command"; }
+
+    // J.A.R.V.I.S. Interactive Terminal (from before)
+    Mod+Alt+J    hotkey-overlay-title="jarvis-menu-interactive"{ spawn "konsole" "-e" "jarvis" "interactive"; }
 
     // Window management
-    Mod+Q repeat=false { spawn "bash" "-c" "$HOME/.config/quickshell/ii/scripts/close-window.sh"; }
+    Mod+Q repeat=false    hotkey-overlay-title="close-window"{ spawn "bash" "-c" "$HOME/.config/quickshell/ii/scripts/close-window.sh"; }
     Mod+D { maximize-column; }
     Mod+F { fullscreen-window; }
     Mod+A { toggle-window-floating; }
@@ -104,16 +121,15 @@ binds {
     Mod+Alt+r    hotkey-overlay-title="niri-validate" { spawn "~/bin/niri-validate.sh"; }
 
     // ── APPLICATIONS ──
-    // Applications (change "foot" to your preferred terminal)
+    // Applications (change "ghostty" to your preferred terminal)
     Mod+T { spawn "ghostty"; }
     Mod+Return { spawn "ghostty"; }
     Mod+B    hotkey-overlay-title="Open Vivaldi" { spawn "vivaldi-stable"; }
     Super+E    hotkey-overlay-title="Open Thunar" { spawn "thunar"; }
     Mod+Alt+D    hotkey-overlay-title="Open Rofi" { spawn "rofi" "-show" "drun"; }
-    //Mod+Alt+J { spawn "konsole" "-e" "jarvis" "interactive"; }
     Mod+Shift+B   hotkey-overlay-title="Open Brave" { spawn "brave"; }
-    //Mod+H   hotkey-overlay-title="Show Keyhints" { spawn "sh" "-c" "~/.config/wehttamsnaps/scripts/KeyHints.sh"; }
-    //Mod+Shift+N   hotkey-overlay-title="Show Quick Settings" { spawn "sh" "-c" "~/.config/niri/scripts/niri_quick_settings.sh"; }
+    Mod+Alt+H   hotkey-overlay-title="Show Keyhints" { spawn "sh" "-c" "~/.config/wehttamsnaps/scripts/KeyHints.sh"; }
+    Mod+Shift+N   hotkey-overlay-title="Show Quick Settings" { spawn "sh" "-c" "~/.config/niri/scripts/niri_quick_settings.sh"; }
     Mod+Shift+T   hotkey-overlay-title="Open Kate" { spawn "kate"; }
 
     // OBS Studio
@@ -130,8 +146,6 @@ binds {
     // ── GAMING & GAME LAUNCHERS ──
     // === STEAM WITH IDROID LAUNCH ===
     Mod+Shift+S  hotkey-overlay-title="Open steam" { spawn "sh" "-c" "sound-system steam-launch && steam"; }
-    //Mod+Shift+S { spawn "steam"; }
-    //Mod+Alt+L { spawn "lutris"; }
     Mod+Alt+P  hotkey-overlay-title="Open protonup-qt" { spawn "protonup-qt"; }
 
     // Audio routing

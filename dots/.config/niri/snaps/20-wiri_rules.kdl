@@ -333,7 +333,17 @@ window-rule {
 
 }
 
+// === WELCOME APP ===
 
+// WehttamSnaps welcome screen
+window-rule {
+    match title="Welcome to WehttamSnaps"
+    match app-id="^python3$|^python$"
+    geometry-corner-radius 8
+    open-floating true
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 700; }
+}
 
 // === SPECIAL MODDING FEATURES ===
 
