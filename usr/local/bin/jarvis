@@ -1,0 +1,516 @@
+#!/bin/bash
+# WehttamSnaps J.A.R.V.I.S. Voice Assistant
+# Natural language command processing with voice feedback
+# Author: Matthew (WehttamSnaps)
+
+set -euo pipefail
+
+# ================================
+# CONFIGURATION
+# ================================
+
+SOUND_SYSTEM="/usr/local/bin/sound-system"
+VOICE_BASE="/usr/share/wehttamsnaps/sounds/jarvis"
+CACHE_DIR="$HOME/.cache/wehttamsnaps"
+VOICE_LOG="$CACHE_DIR/jarvis-commands.log"
+
+# Ensure cache exists
+mkdir -p "$CACHE_DIR"
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+NC='\033[0m'
+
+# ================================
+# VOICE RESPONSE SYSTEM
+# ================================
+
+# Play J.A.R.V.I.S. response
+jarvis_speak() {
+    local response_file="$1"
+    local fallback_message="${2:-}"
+
+    if [[ -f "$VOICE_BASE/$response_file.mp3" ]]; then
+        paplay "$VOICE_BASE/$response_file.mp3" &
+    elif [[ -n "$fallback_message" ]]; then
+        notify-send "J.A.R.V.I.S." "$fallback_message" -i audio-speakers
+    fi
+}
+
+# Log command for history
+log_command() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $*" >> "$VOICE_LOG"
+}
+
+# ================================
+# COMMAND PROCESSORS
+# ================================
+
+# Process application launch commands
+launch_application() {
+    local app="$1"
+
+    case "$app" in
+        firefox|browser)
+            jarvis_speak "launching-firefox" "Launching Firefox, sir"
+            firefox &
+            ;;
+        chrome|google*)
+            jarvis_speak "launching-chrome" "Launching Chrome"
+            google-chrome-stable &
+            ;;
+        steam)
+            jarvis_speak "steam-launch" "Launching Steam"
+            $SOUND_SYSTEM steam-launch
+            steam &
+            ;;
+        discord)
+            jarvis_speak "launching-discord" "Opening Discord"
+            discord &
+            ;;
+        spotify|music)
+            jarvis_speak "launching-spotify" "Opening Spotify"
+            spotify &
+            ;;
+        vscode|code|editor)
+            jarvis_speak "launching-editor" "Opening VS Code"
+            code &
+            ;;
+        terminal|konsole)
+            jarvis_speak "opening-terminal" "Opening terminal"
+            konsole &
+            ;;
+        files|dolphin|filemanager)
+            jarvis_speak "opening-files" "Opening file manager"
+            dolphin &
+            ;;
+        gimp|photoshop)
+            jarvis_speak "launching-gimp" "Launching GIMP"
+            gimp &
+            ;;
+        obs)
+            jarvis_speak "launching-obs" "Launching OBS Studio"
+            obs &
+            ;;
+        *)
+            jarvis_speak "app-not-found" "Application not recognized, sir"
+            notify-send "J.A.R.V.I.S." "Unknown application: $app" -i dialog-error
+            return 1
+            ;;
+    esac
+}
+
+# Process window management commands
+manage_window() {
+    local action="$1"
+
+    case "$action" in
+        close)
+            jarvis_speak "closing-window" "Closing window"
+            niri msg action close-window
+            $SOUND_SYSTEM window-close
+            ;;
+        maximize|fullscreen)
+            jarvis_speak "window-fullscreen" "Fullscreen mode"
+            niri msg action fullscreen-window
+            ;;
+        tile)
+            jarvis_speak "window-tile" "Tiling window"
+            # Niri auto-tiles, just acknowledge
+            ;;
+        float)
+            jarvis_speak "window-float" "Setting window to float"
+            niri msg action set-window-floating true
+            ;;
+        center)
+            jarvis_speak "window-center" "Centering window"
+            niri msg action center-window
+            ;;
+        *)
+            jarvis_speak "command-unknown" "I don't understand that window command"
+            ;;
+    esac
+}
+
+# Process workspace commands
+manage_workspace() {
+    local target="$1"
+
+    if [[ "$target" =~ ^[0-9]+$ ]]; then
+        jarvis_speak "workspace-switch" "Switching to workspace $target"
+        niri msg action focus-workspace "$target"
+        $SOUND_SYSTEM workspace "$target"
+    else
+        case "$target" in
+            gaming)
+                jarvis_speak "workspace-switch" "Switching to gaming workspace"
+                niri msg action focus-workspace 2
+                $SOUND_SYSTEM workspace 2
+                ;;
+            photography|photo)
+                jarvis_speak "workspace-switch" "Switching to photography workspace"
+                niri msg action focus-workspace 3
+                $SOUND_SYSTEM workspace 3
+                ;;
+            next)
+                jarvis_speak "workspace-next" "Next workspace"
+                niri msg action focus-workspace-next
+                ;;
+            previous|prev)
+                jarvis_speak "workspace-previous" "Previous workspace"
+                niri msg action focus-workspace-previous
+                ;;
+        esac
+    fi
+}
+
+# Process system commands
+system_control() {
+    local action="$1"
+
+    case "$action" in
+        screenshot|capture)
+            jarvis_speak "screenshot" "Screenshot captured"
+            grim "$HOME/Pictures/Screenshots/$(date +%Y%m%d-%H%M%S).png"
+            $SOUND_SYSTEM screenshot
+            ;;
+        lock)
+            jarvis_speak "locking-screen" "Locking screen, sir"
+            sleep 0.5
+            loginctl lock-session
+            ;;
+        reload|refresh)
+            jarvis_speak "reloading-config" "Reloading configuration"
+            niri msg action reload-config
+            ;;
+        *)
+            jarvis_speak "command-unknown" "System command not recognized"
+            ;;
+    esac
+}
+
+# Process audio commands
+audio_control() {
+    local action="$1"
+
+    case "$action" in
+        mute)
+            $SOUND_SYSTEM mute
+            ;;
+        unmute)
+            wpctl set-mute @DEFAULT_AUDIO_SINK@ 0
+            jarvis_speak "audio-unmute" "Audio restored"
+            ;;
+        "volume up"|louder|increase)
+            $SOUND_SYSTEM volume-up
+            ;;
+        "volume down"|quieter|decrease)
+            $SOUND_SYSTEM volume-down
+            ;;
+        "play music"|play|resume)
+            jarvis_speak "music-play" "Playing music"
+            playerctl play
+            ;;
+        "pause music"|pause|stop)
+            jarvis_speak "music-pause" "Pausing music"
+            playerctl pause
+            ;;
+        "next track"|next|skip)
+            jarvis_speak "music-next" "Next track"
+            playerctl next
+            ;;
+        "previous track"|previous|back)
+            jarvis_speak "music-previous" "Previous track"
+            playerctl previous
+            ;;
+    esac
+}
+
+# Process search commands
+web_search() {
+    local engine="$1"
+    shift
+    local query="$*"
+
+    case "$engine" in
+        google)
+            jarvis_speak "searching-google" "Searching Google for $query"
+            firefox "https://www.google.com/search?q=${query// /+}" &
+            ;;
+        youtube)
+            jarvis_speak "searching-youtube" "Searching YouTube"
+            firefox "https://www.youtube.com/results?search_query=${query// /+}" &
+            ;;
+        github)
+            jarvis_speak "searching-github" "Searching GitHub"
+            firefox "https://github.com/search?q=${query// /+}" &
+            ;;
+        *)
+            jarvis_speak "searching-google" "Searching for $engine $query"
+            firefox "https://www.google.com/search?q=${engine}+${query// /+}" &
+            ;;
+    esac
+}
+
+# Gaming mode toggle
+toggle_gaming_mode() {
+    $SOUND_SYSTEM gaming-toggle
+}
+
+# Photography mode
+start_photography() {
+    jarvis_speak "photo-mode" "Entering photography mode"
+    niri msg action focus-workspace 3
+    $SOUND_SYSTEM workspace 3
+    # Launch Darktable if installed
+    if command -v darktable &> /dev/null; then
+        darktable &
+    fi
+}
+
+# System status report
+system_status() {
+    jarvis_speak "status-report" "Generating status report, sir"
+
+    local cpu_usage
+    cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print $2}' | cut -d'%' -f1)
+    local mem_usage
+    mem_usage=$(free | grep Mem | awk '{printf "%.0f", $3/$2 * 100}')
+    local workspace
+    workspace=$($SOUND_SYSTEM status | grep "Workspace:" | awk '{print $2}')
+
+    notify-send "J.A.R.V.I.S. System Status" \
+        "CPU: ${cpu_usage}%
+Memory: ${mem_usage}%
+Workspace: $workspace" \
+        -i utilities-system-monitor
+}
+
+# ================================
+# NATURAL LANGUAGE PARSER
+# ================================
+
+parse_command() {
+    local input="$*"
+    local cmd_lower="${input,,}"  # Convert to lowercase
+
+    log_command "$input"
+
+    # Remove common prefixes
+    cmd_lower="${cmd_lower#jarvis }"
+    cmd_lower="${cmd_lower#hey jarvis }"
+    cmd_lower="${cmd_lower#ok jarvis }"
+
+    # Application launching
+    if [[ "$cmd_lower" =~ ^(open|launch|start|run)[[:space:]](.+)$ ]]; then
+        launch_application "${BASH_REMATCH[2]}"
+
+    # Window management
+    elif [[ "$cmd_lower" =~ ^(close|maximize|fullscreen|tile|float|center)[[:space:]]?(window|this)?$ ]]; then
+        manage_window "${BASH_REMATCH[1]}"
+
+    # Workspace switching
+    elif [[ "$cmd_lower" =~ ^(go to|switch to|workspace)[[:space:]](.+)$ ]]; then
+        manage_workspace "${BASH_REMATCH[2]}"
+
+    # Search commands
+    elif [[ "$cmd_lower" =~ ^search[[:space:]](google|youtube|github)?[[:space:]]*for[[:space:]](.+)$ ]]; then
+        web_search "${BASH_REMATCH[1]:-google}" "${BASH_REMATCH[2]}"
+
+    # Audio control
+    elif [[ "$cmd_lower" =~ ^(mute|unmute|play|pause|stop|next|previous|volume[[:space:]]up|volume[[:space:]]down)$ ]]; then
+        audio_control "$cmd_lower"
+
+    # System commands
+    elif [[ "$cmd_lower" =~ ^(screenshot|capture|lock|reload|refresh)$ ]]; then
+        system_control "${BASH_REMATCH[1]}"
+
+    # Gaming mode
+    elif [[ "$cmd_lower" =~ ^(gaming mode|enable gaming|disable gaming|toggle gaming)$ ]]; then
+        toggle_gaming_mode
+
+    # Photography mode
+    elif [[ "$cmd_lower" =~ ^(photography|photo mode|darkroom)$ ]]; then
+        start_photography
+
+    # System status
+    elif [[ "$cmd_lower" =~ ^(status|system status|report|how are you)$ ]]; then
+        system_status
+
+    # Greeting responses
+    elif [[ "$cmd_lower" =~ ^(hello|hi|hey|good morning|good evening)$ ]]; then
+        jarvis_speak "greeting" "Hello, sir. How may I assist you?"
+
+    # Thank you
+    elif [[ "$cmd_lower" =~ ^(thank you|thanks|good job)$ ]]; then
+        jarvis_speak "you-welcome" "My pleasure, sir"
+
+    # Unknown command
+    else
+        jarvis_speak "command-unknown" "I'm sorry sir, I don't understand that command"
+        echo -e "${YELLOW}❓${NC} Unknown command: $input"
+        echo "Try: jarvis help"
+    fi
+}
+
+# ================================
+# INTERACTIVE MODE
+# ================================
+
+interactive_mode() {
+    jarvis_speak "startup" "J.A.R.V.I.S. online. Awaiting your command, sir"
+
+    echo -e "${CYAN}╔════════════════════════════════════════╗${NC}"
+    echo -e "${CYAN}║   J.A.R.V.I.S. Voice Assistant v1.0   ║${NC}"
+    echo -e "${CYAN}╚════════════════════════════════════════╝${NC}"
+    echo ""
+    echo -e "${YELLOW}Type commands or 'exit' to quit${NC}"
+    echo -e "${YELLOW}Type 'help' for command examples${NC}"
+    echo ""
+
+    while true; do
+        echo -ne "${GREEN}Matthew >${NC} "
+        read -r command
+
+        if [[ "$command" == "exit" || "$command" == "quit" ]]; then
+            jarvis_speak "shutdown" "Goodbye, sir"
+            break
+        elif [[ "$command" == "help" ]]; then
+            show_examples
+        elif [[ -n "$command" ]]; then
+            parse_command "$command"
+            echo ""
+        fi
+    done
+}
+
+# ================================
+# HELP & EXAMPLES
+# ================================
+
+show_examples() {
+    cat << EOF
+
+${CYAN}J.A.R.V.I.S. Voice Command Examples:${NC}
+
+${YELLOW}Applications:${NC}
+  open firefox
+  launch steam
+  start spotify
+  run terminal
+
+${YELLOW}Window Control:${NC}
+  close window
+  maximize
+  fullscreen
+  tile window
+
+${YELLOW}Workspaces:${NC}
+  go to workspace 2
+  switch to gaming
+  workspace photography
+
+${YELLOW}Web Search:${NC}
+  search google for linux tips
+  search youtube for music
+  search github for niri
+
+${YELLOW}Audio:${NC}
+  mute
+  play music
+  pause
+  next track
+  volume up
+
+${YELLOW}System:${NC}
+  screenshot
+  lock screen
+  gaming mode
+  status report
+  reload config
+
+${YELLOW}Social:${NC}
+  hello
+  thank you
+  how are you
+
+EOF
+}
+
+show_help() {
+    cat << EOF
+${CYAN}WehttamSnaps J.A.R.V.I.S. Voice Assistant${NC}
+
+${YELLOW}Usage:${NC}
+  jarvis [command]              Execute single command
+  jarvis interactive            Start interactive mode
+  jarvis help                   Show this help
+  jarvis examples               Show command examples
+
+${YELLOW}Quick Commands:${NC}
+  jarvis open firefox
+  jarvis close window
+  jarvis search google for cats
+  jarvis gaming mode
+  jarvis workspace 2
+
+${YELLOW}Keybind Setup:${NC}
+  Add to ~/.config/niri/conf.d/10-keybinds.kdl:
+
+  Mod+Space { spawn "rofi" "-show" "drun" "-modi" "run,drun,jarvis:jarvis-rofi-mode"; }
+  Mod+J { spawn "konsole" "-e" "jarvis" "interactive"; }
+
+EOF
+}
+
+# ================================
+# ROFI INTEGRATION
+# ================================
+
+rofi_mode() {
+    # This allows J.A.R.V.I.S. to be used as a Rofi modi
+    if [[ "${ROFI_RETV:-0}" == "0" ]]; then
+        # Return menu options
+        cat << EOF
+open firefox
+launch steam
+close window
+gaming mode
+search google for
+screenshot
+lock screen
+status report
+EOF
+    else
+        # Execute selected command
+        parse_command "$@"
+    fi
+}
+
+# ================================
+# MAIN
+# ================================
+
+case "${1:-help}" in
+    interactive|i)
+        interactive_mode
+        ;;
+    examples|ex)
+        show_examples
+        ;;
+    rofi)
+        shift
+        rofi_mode "$@"
+        ;;
+    help|--help|-h)
+        show_help
+        ;;
+    *)
+        # Parse as natural language command
+        parse_command "$@"
+        ;;
+esac
